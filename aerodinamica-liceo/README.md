@@ -39,7 +39,7 @@ Questo repository raccoglie lezioni, quiz ed esercizi risolti su profilo alare, 
 | 3 | Resistenza in crociera | 🟢 Base | ATR 72 ✅ |
 | 4 | Efficienza massima | 🟡 Medio | Aliante ASK-21 ✅ |
 | 5 | Portanza in quota (ISA) | 🟡 Medio | Boeing 737 ✅ |
-| 6 | Confronto profili NACA | 🟡 Medio | Cessna 172 vs P-51 🚧 |
+| 6 | Confronto profili NACA | 🟡 Medio | NACA 2412 vs 0012 ✅ |
 | 7 | Reynolds e regime di flusso | 🟡 Medio | Generico 🚧 |
 | 8 | Velocità di max efficienza in planata | 🔴 Avanzato | Aliante 🚧 |
 | 9 | Decollo con flap (alta portanza) | 🔴 Avanzato | Airbus A320 🚧 |
