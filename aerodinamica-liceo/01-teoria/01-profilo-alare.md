@@ -50,12 +50,7 @@ NACA (oggi NASA) ha catalogato migliaia di profili negli anni '30–'40 con un s
 
 ### Profili NACA a 4 cifre — `NACA MPXX`
 
-```
-NACA  2  4  12
-       │  │  ╲___ spessore max in % della corda
-       │  ╲────── posizione della curvatura max (in decimi di corda)
-       ╲────────── curvatura max in % della corda
-```
+![Codice NACA 4-cifre con annotazioni colorate per ogni cifra](../assets/img/grafici/naca-4-cifre.svg)
 
 **Esempio: NACA 2412** (montato sul **Cessna 172** 🛩️):
 

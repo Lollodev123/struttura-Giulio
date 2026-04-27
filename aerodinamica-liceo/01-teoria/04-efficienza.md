@@ -29,19 +29,7 @@ L'efficienza è il **parametro singolo più importante** del progetto aeronautic
 
 In **planata stabilizzata** (motore spento, discesa a velocità costante), il velivolo si muove lungo una traiettoria inclinata di un angolo $\gamma$ (gamma) rispetto all'orizzontale. Le forze in gioco sono solo tre: portanza, resistenza, peso.
 
-```
-      ←── distanza percorsa (orizzontale) ───→
-                                                
-       ╲                                          
-        ╲ ←── traiettoria di planata               ↑
-         ╲                                          │
-          ╲                                          │ quota
-           ╲                                          │ persa
-            ╲                                          │
-              ●  velivolo                              ↓
-              
-                  γ = angolo di planata (rispetto all'orizzontale)
-```
+![Planata stabilizzata: distanza al suolo = E × quota persa](../assets/img/grafici/planata-aliante.svg)
 
 La matematica del liceo arriva a questa relazione:
 

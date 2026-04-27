@@ -20,17 +20,7 @@ Fin qui hai trattato l'aereo come un **punto** — una massa che subisce 4 forze
 
 Se CG e CP non coincidono, c'è un **braccio** $\Delta x$ tra le due forze → si crea un **momento** (= tendenza a ruotare) intorno al baricentro.
 
-```
-                  CP
-                  ↑   L (portanza)
-                  │
-      ───────●────│────────────  fusoliera (vista laterale)
-              CG  
-              ↓
-              W (peso)
-              
-        ←── Δx ──→
-```
+![Stabilità statica: CG davanti vs CG dietro al CP](../assets/img/grafici/stabilita-cg.svg)
 
 **Senza piano di coda orizzontale, l'aereo ruoterebbe** in beccheggio (cabra o picchia). Per evitare disastri, serve la **coda orizzontale (stabilizzatore)**: genera una piccola portanza correttiva che cancella il momento residuo.
 
@@ -90,16 +80,7 @@ graph LR
 
 Il piano di coda (stabilizzatore + equilibratore) genera una **piccola portanza, generalmente verso il basso** (deportanza), che bilancia il momento dell'ala principale e mantiene l'equilibrio:
 
-```
-              ala principale                    coda
-              ↑ L (grande)                       
-              │                                   ↓ L_coda (piccola, verso giù)
-   ●─────────●────────────────────●──────────────●
-   CG     CP_ala                                CP_coda
-              ←── braccio ala ──→  ←── braccio coda ──→
-   
-   Equilibrio momenti: L · braccio_ala = L_coda · braccio_coda
-```
+In schema: l'ala genera una grande portanza nel suo CP (più o meno al 25% MAC), mentre la coda orizzontale genera una **piccola deportanza** nel suo CP (il braccio della coda è lungo, quindi una forza piccola produce un momento sufficiente per bilanciare).
 
 **Equilibrio dei momenti** (intorno al CG):
 $$L_{ala} \cdot d_{ala} = L_{coda} \cdot d_{coda}$$
@@ -122,18 +103,7 @@ $$\text{CG}_{\%MAC} = \frac{\text{distanza CG dal bordo d'attacco MAC}}{\text{lu
 - **MAC del Cessna**: ~1,5 m
 - **Range CG ammissibile**: ~$0{,}22$ m → solo **22 cm** di tolleranza!
 
-```
-                 Centro aerodinamico (25% MAC)
-                          │
-                          ↓
-   ┌─────────────────────────────────────┐
-   │         15% ←──── CG ammissibile ────→ 36%
-   │         │                              │
-   │   ↑ limite anteriore           ↑ limite posteriore
-   │   "scuola guida"               "agile"
-   └─────────────────────────────────────┘
-              0%        25%        50%       100% MAC
-```
+![Busta di centraggio del Cessna 172 (15-36% MAC) con AC al 25%](../assets/img/grafici/busta-centraggio.svg)
 
 > 💡 Caricare un Cessna 172 con due adulti pesanti dietro e niente davanti **può portare il CG fuori limite posteriore** — il manuale POH richiede un check W&B prima di ogni volo.
 
