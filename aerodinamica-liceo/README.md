@@ -37,7 +37,7 @@ Questo repository raccoglie lezioni, quiz ed esercizi risolti su profilo alare, 
 | 1 | Coefficiente di portanza in crociera | 🟢 Base | Cessna 172 ✅ |
 | 2 | Velocità di stallo | 🟢 Base | Piper PA-28 ✅ |
 | 3 | Resistenza in crociera | 🟢 Base | ATR 72 ✅ |
-| 4 | Efficienza massima | 🟡 Medio | Aliante ASK-21 🚧 |
+| 4 | Efficienza massima | 🟡 Medio | Aliante ASK-21 ✅ |
 | 5 | Portanza in quota (ISA) | 🟡 Medio | Boeing 737 🚧 |
 | 6 | Confronto profili NACA | 🟡 Medio | Cessna 172 vs P-51 🚧 |
 | 7 | Reynolds e regime di flusso | 🟡 Medio | Generico 🚧 |
