@@ -121,6 +121,7 @@ $$C_D^* = 0{,}025 + \dfrac{0{,}817^2}{26{,}70} = 0{,}025 + 0{,}0250 = 0{,}050$$
 **Domanda chiave**: perché il 737 vola in crociera con $C_L = 0{,}5$ e non $C_L = 0{,}82$?
 
 **Risposta**:
+
 - A $C_L = 0{,}82$: velocità lenta, autonomia ottima MA tempo di volo lunghissimo → costoso in personale, parcheggi gate, comfort passeggeri
 - A $C_L = 0{,}5$: velocità di crociera 230 m/s (Mach 0,78), efficienza 89% del massimo — sacrificio del 11% di efficienza, **velocità raddoppiata**
 
@@ -197,6 +198,7 @@ Confronto: in crociera a Mach 0,78 = ~230 m/s = 447 kt.
   - $C_{D,0}$ asintotico — bassa portanza, alta velocità
   - **$C_L^*$, $E_{max}$** — punto ottimo
   - $C_{L,max}$ — limite di stallo
+
 - A **massima efficienza**, parassita e indotta sono uguali. Verifica gratis.
 - La **crociera commerciale** è $C_L < C_L^*$: si vola sotto l'ottimo per essere veloci.
 - I numeri dei manuali Boeing/Airbus si possono **ricostruire** entro il 10% con il modello del liceo. **Non è solo teoria.**

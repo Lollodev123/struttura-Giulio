@@ -40,6 +40,7 @@ Se CG e CP non coincidono, c'è un **braccio** $\Delta x$ tra le due forze → s
 
 ### 1. Baricentro (CG = Center of Gravity)
 Il **centro di massa** del velivolo. Cambia col carico:
+
 - Più passeggeri davanti → CG più avanti
 - Più bagagli dietro → CG più indietro
 - Carburante consumato (serbatoi nelle ali) → cambia poco se i serbatoi sono vicini al CG
@@ -48,6 +49,7 @@ Nei manuali di volo c'è una **busta di centraggio** (W&B envelope): un grafico 
 
 ### 2. Centro di pressione (CP)
 Il punto in cui si concentra la **portanza** generata dall'ala. **Si muove con l'angolo di attacco**:
+
 - $\alpha$ basso (alta velocità) → CP più indietro
 - $\alpha$ alto (bassa velocità) → CP più avanti
 - Allo stallo → CP cambia bruscamente

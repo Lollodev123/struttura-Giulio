@@ -89,6 +89,7 @@ $$Re = \frac{\rho V c}{\mu}$$
 | $\mu$ | Viscosità dinamica dell'aria ($\approx 1{,}78 \cdot 10^{-5}$ a 15°C) | Pa·s |
 
 **Soglie indicative**:
+
 - $Re < 5 \cdot 10^5$ → flusso laminare
 - $Re > 5 \cdot 10^5$ → transizione/turbolento
 - Aviazione generale in crociera: $Re \sim 10^6$–$10^7$
@@ -102,6 +103,7 @@ $$\lambda = \frac{b^2}{S} \quad \text{(allungamento)}$$
 $$\text{rastremazione} = \frac{c_{tip}}{c_{root}}$$
 
 **Allungamenti tipici**:
+
 - Caccia: $\lambda \approx 3$–$4$
 - Aviazione generale: $\lambda \approx 6$–$8$
 - Aliante: $\lambda \approx 20$–$30$

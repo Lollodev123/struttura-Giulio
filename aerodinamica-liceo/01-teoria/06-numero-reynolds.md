@@ -20,6 +20,7 @@ Il Reynolds determina **la natura stessa del flusso**:
 - **Re alto** → forze d'inerzia dominano → flusso **turbolento** (vortici caotici, mescolamento)
 
 Da questa "natura" dipende **tutto** in aerodinamica:
+
 - Il coefficiente di resistenza ($C_D$ varia anche del 50% tra laminare e turbolento)
 - Il punto di stallo (a $Re$ basso, lo stallo arriva prima)
 - L'aderenza del flusso al profilo
@@ -44,6 +45,7 @@ $$Re = \frac{\rho V c}{\mu}$$
 
 ### Cos'è "lunghezza caratteristica"?
 Dipende da cosa stai studiando:
+
 - Per un'**ala**: la **corda** (avanti-indietro)
 - Per una **palla**: il **diametro**
 - Per un **tubo**: il **diametro interno**

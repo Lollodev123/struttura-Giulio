@@ -84,6 +84,7 @@ Sostituisco:
 $$V_S = \sqrt{\dfrac{2 \times 11\,350{,}17}{1{,}225 \times 15{,}8 \times 1{,}5}}$$
 
 Calcolo a tappe:
+
 - Numeratore: $2 \times 11\,350{,}17 = 22\,700{,}34$
 - Denominatore: $1{,}225 \times 15{,}8 \times 1{,}5 = 1{,}225 \times 23{,}7 = 29{,}03$
 - Rapporto: $22\,700{,}34 / 29{,}03 = 781{,}96$
@@ -96,6 +97,7 @@ Stessa formula, ma con $C_{L,max} = 2{,}1$:
 $$V_{S,0} = \sqrt{\dfrac{2 \times 11\,350{,}17}{1{,}225 \times 15{,}8 \times 2{,}1}}$$
 
 Calcolo:
+
 - Denominatore: $1{,}225 \times 15{,}8 \times 2{,}1 = 40{,}64$
 - Rapporto: $22\,700{,}34 / 40{,}64 = 558{,}54$
 - Radice: $\sqrt{558{,}54} = 23{,}63$ m/s
@@ -123,6 +125,7 @@ Il manuale POH (Pilot's Operating Handbook) del Piper PA-28-181 Archer dichiara:
 | $V_S$ flap pieni | 47 kt | 46 kt ✅ |
 
 Differenza < 2% → modello eccellente. La piccola differenza è dovuta a:
+
 - $C_{L,max}$ effettivo dipende da Reynolds e finitura superficiale
 - Il manuale considera condizioni reali (non ISA pura)
 

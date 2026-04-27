@@ -131,6 +131,7 @@ A parità di velocità e $C_L$ del Cessna a livello mare, la portanza scende del
 - $T \approx -54{,}3\,°\text{C}$ — fuori cabina è −54°C, dentro 22°C grazie al condizionamento
 
 A questa quota, il 737 vola a Mach 0,78 = ~470 kt. Vola così alto perché:
+
 - Densità bassa → meno resistenza parassita → meno consumo
 - Sopra il maltempo (cumulonimbi non superano 12-15 km)
 - Aria ferma → meno turbolenza

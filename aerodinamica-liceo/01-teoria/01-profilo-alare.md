@@ -15,6 +15,7 @@ Il **profilo alare** è la **sezione trasversale dell'ala** — la forma che ved
 L'ala intera è tridimensionale e complicata. Ma se "affetti" l'ala, ottieni una forma 2D molto più semplice da studiare: il profilo. **Tutta la teoria della portanza parte da qui**, da una forma piatta vista di lato.
 
 Profili diversi = velivoli con missioni diverse:
+
 - Profilo spesso e curvo → portanza alta a bassa velocità → aerei da turismo, cargo, aliante
 - Profilo sottile e simmetrico → bassa resistenza ad alta velocità → caccia, aerobatica
 - Profilo laminare → resistenza minima in crociera → aerei da record di autonomia
@@ -47,6 +48,7 @@ Profili diversi = velivoli con missioni diverse:
 | **Freccia max (curvatura, $f$)** | Distanza max tra linea media e corda | Determina la portanza ad $\alpha = 0$ |
 
 **Tutto si esprime in % della corda**:
+
 - Spessore 12% di corda → se $c = 1$ m, lo spessore max è 12 cm
 - Curvatura 2% di corda → $f = 2$ cm
 
@@ -66,6 +68,7 @@ NACA  2  4  12
 ```
 
 **Esempio: NACA 2412** (montato sul **Cessna 172** 🛩️):
+
 - **2** → curvatura max = 2% della corda
 - **4** → posizione della curvatura max al 40% della corda (4 decimi)
 - **12** → spessore max = 12% della corda
@@ -94,6 +97,7 @@ graph LR
 | Tipico uso | Acrobatica, caccia | Trasporto, turismo |
 
 **Esempio reale**:
+
 - **NACA 0012**: profilo simmetrico, 12% di spessore, zero curvatura. Usato sugli **stabilizzatori** di moltissimi velivoli (compreso il Cessna 172 — la coda è simmetrica anche se l'ala no).
 - **NACA 2412**: asimmetrico, ala del Cessna 172. Genera portanza anche con corda parallela al vento.
 
@@ -104,6 +108,7 @@ graph LR
 I profili **NACA serie 6** (es. NACA 64-212) sono progettati per mantenere il flusso **laminare** sulla maggior parte del dorso → resistenza ridotta in crociera.
 
 **Famosi**:
+
 - **P-51 Mustang** (caccia WWII): primo aereo da caccia con ala laminare
 - **Alianti moderni** (ASK-21, DG-1000): profili laminari spinti con $E_{max} > 40$
 
