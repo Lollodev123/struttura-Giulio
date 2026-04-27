@@ -2,9 +2,10 @@
   "_meta": {
     "versione": "1.0",
     "data": "2026-04-27",
-    "totale": 25,
+    "totale": 26,
     "originali": 10,
-    "alternativi": 15
+    "alternativi": 15,
+    "stile_prof": 1
   },
   "esercizi": [
     { "id": 1, "titolo": "Coefficiente di portanza in crociera", "difficolta": "BASE", "argomento": "Portanza", "velivolo": "Cessna 172", "file": "01-base-portanza-cessna.md", "tipo": "originale" },
@@ -32,6 +33,8 @@
     { "id": 22, "titolo": "Polare del Concorde (delta supersonico)", "difficolta": "AVANZATO", "argomento": "Polare", "velivolo": "Concorde", "file": "varianti/22-avanzato-concorde.md", "tipo": "alternativo" },
     { "id": 23, "titolo": "Numero di Mach critico (737 vs Concorde)", "difficolta": "AVANZATO", "argomento": "Velocità", "velivolo": "737 vs Concorde", "file": "varianti/23-avanzato-mach.md", "tipo": "alternativo" },
     { "id": 24, "titolo": "Effetto winglet su Boeing 737NG vs MAX", "difficolta": "AVANZATO", "argomento": "Resistenza", "velivolo": "Boeing 737", "file": "varianti/24-avanzato-winglet.md", "tipo": "alternativo" },
-    { "id": 25, "titolo": "Atterraggio short-field Pilatus PC-6 (STOL)", "difficolta": "AVANZATO", "argomento": "Alta portanza", "velivolo": "Pilatus PC-6", "file": "varianti/25-avanzato-stol.md", "tipo": "alternativo" }
+    { "id": 25, "titolo": "Atterraggio short-field Pilatus PC-6 (STOL)", "difficolta": "AVANZATO", "argomento": "Alta portanza", "velivolo": "Pilatus PC-6", "file": "varianti/25-avanzato-stol.md", "tipo": "alternativo" },
+
+    { "id": 26, "titolo": "Ala rettangolare con polare completa (stile prof)", "difficolta": "AVANZATO", "argomento": "Polare", "velivolo": "Ala generica", "file": "varianti/26-stile-prof-ala-freccia.md", "tipo": "stile_prof" }
   ]
 }

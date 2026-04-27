@@ -14,6 +14,29 @@ exclude_docs: |
   03-esercizi/_template-esercizio.md
   .github/
 
+nav:
+  - Home: README.md
+  - "✏️ Tutti gli esercizi": 03-esercizi/tutti.md
+  - "📚 Teoria":
+      - 1. Profilo alare: 01-teoria/01-profilo-alare.md
+      - 2. Portanza: 01-teoria/02-portanza.md
+      - 3. Resistenza: 01-teoria/03-resistenza.md
+      - 4. Efficienza e polare: 01-teoria/04-efficienza.md
+      - 5. Atmosfera ISA: 01-teoria/05-atmosfera-isa.md
+      - 6. Reynolds: 01-teoria/06-numero-reynolds.md
+      - 7. Geometria alare: 01-teoria/07-geometria-alare.md
+      - 8. Momento e centraggio: 01-teoria/08-momento-centraggio.md
+      - 9. Alta portanza: 01-teoria/09-alta-portanza.md
+  - "🧠 Quiz":
+      - Quiz dinamico (60 domande): 02-quiz/quiz-dinamico.md
+      - Quiz BASE: 02-quiz/quiz-base.md
+      - Quiz MEDIO: 02-quiz/quiz-medio.md
+      - Quiz AVANZATO: 02-quiz/quiz-avanzato.md
+      - Soluzioni: 02-quiz/soluzioni/soluzioni-quiz.md
+  - "📐 Formulario":
+      - Formulario: 00-formulario/formulario.md
+      - Glossario IT/EN: 00-formulario/glossario.md
+
 theme:
   name: material
   language: it

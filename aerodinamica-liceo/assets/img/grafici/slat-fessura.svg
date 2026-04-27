@@ -6,7 +6,7 @@
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-04-27T15:16:01.669867</dc:date>
+    <dc:date>2026-04-27T21:32:05.199905</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
@@ -31,7 +31,7 @@ z
   <g id="axes_1">
    <g id="PolyCollection_1">
     <defs>
-     <path id="mae6a72e5c4" d="M 97.236 -85.565608 
+     <path id="mde612794d4" d="M 97.236 -85.565608 
 L 97.236 -112.451829 
 L 99.91 -113.454649 
 L 102.584 -114.383765 
@@ -236,8 +236,8 @@ L 97.236 -85.565608
 z
 " style="stroke: #1976d2; stroke-width: 2"/>
     </defs>
-    <g clip-path="url(#p1899aaefd1)">
-     <use xlink:href="#mae6a72e5c4" x="0" y="303.6195" style="fill: #bbdefb; stroke: #1976d2; stroke-width: 2"/>
+    <g clip-path="url(#pdada1802f5)">
+     <use xlink:href="#mde612794d4" x="0" y="303.6195" style="fill: #bbdefb; stroke: #1976d2; stroke-width: 2"/>
     </g>
    </g>
    <g id="text_1">
@@ -530,7 +530,7 @@ z
   <g id="axes_2">
    <g id="PolyCollection_2">
     <defs>
-     <path id="ma8dfcaf1f0" d="M 487.296 -85.565608 
+     <path id="m338a6cf10b" d="M 487.296 -85.565608 
 L 487.296 -112.451829 
 L 489.97 -113.454649 
 L 492.644 -114.383765 
@@ -735,13 +735,13 @@ L 487.296 -85.565608
 z
 " style="stroke: #1976d2; stroke-width: 2"/>
     </defs>
-    <g clip-path="url(#pef57522718)">
-     <use xlink:href="#ma8dfcaf1f0" x="0" y="303.6195" style="fill: #bbdefb; stroke: #1976d2; stroke-width: 2"/>
+    <g clip-path="url(#p0b21009129)">
+     <use xlink:href="#m338a6cf10b" x="0" y="303.6195" style="fill: #bbdefb; stroke: #1976d2; stroke-width: 2"/>
     </g>
    </g>
    <g id="PolyCollection_3">
     <defs>
-     <path id="m4c20560797" d="M 449.478 -97.05045 
+     <path id="ma2993d87dc" d="M 449.478 -97.05045 
 L 449.478 -97.185188 
 L 450.932538 -101.347659 
 L 452.387077 -103.126297 
@@ -826,8 +826,8 @@ L 449.478 -97.05045
 z
 " style="stroke: #43a047; stroke-width: 1.5"/>
     </defs>
-    <g clip-path="url(#pef57522718)">
-     <use xlink:href="#m4c20560797" x="0" y="303.6195" style="fill: #c8e6c9; stroke: #43a047; stroke-width: 1.5"/>
+    <g clip-path="url(#p0b21009129)">
+     <use xlink:href="#ma2993d87dc" x="0" y="303.6195" style="fill: #c8e6c9; stroke: #43a047; stroke-width: 1.5"/>
     </g>
    </g>
    <g id="patch_2">
@@ -1697,10 +1697,10 @@ z
   </g>
  </g>
  <defs>
-  <clipPath id="p1899aaefd1">
+  <clipPath id="pdada1802f5">
    <rect x="21.6" y="74.0205" width="378.18" height="207.999"/>
   </clipPath>
-  <clipPath id="pef57522718">
+  <clipPath id="p0b21009129">
    <rect x="411.66" y="74.0205" width="378.18" height="207.999"/>
   </clipPath>
  </defs>
