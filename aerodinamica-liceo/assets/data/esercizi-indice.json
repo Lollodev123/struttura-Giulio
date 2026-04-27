@@ -1,0 +1,37 @@
+{
+  "_meta": {
+    "versione": "1.0",
+    "data": "2026-04-27",
+    "totale": 25,
+    "originali": 10,
+    "alternativi": 15
+  },
+  "esercizi": [
+    { "id": 1, "titolo": "Coefficiente di portanza in crociera", "difficolta": "BASE", "argomento": "Portanza", "velivolo": "Cessna 172", "file": "01-base-portanza-cessna.md", "tipo": "originale" },
+    { "id": 2, "titolo": "Velocità di stallo", "difficolta": "BASE", "argomento": "Stallo", "velivolo": "Piper PA-28", "file": "02-base-velocita-stallo.md", "tipo": "originale" },
+    { "id": 3, "titolo": "Resistenza in crociera", "difficolta": "BASE", "argomento": "Resistenza", "velivolo": "ATR 72", "file": "03-base-resistenza-atr.md", "tipo": "originale" },
+    { "id": 4, "titolo": "Efficienza massima e planata", "difficolta": "MEDIO", "argomento": "Efficienza", "velivolo": "ASK-21", "file": "04-medio-efficienza-aliante.md", "tipo": "originale" },
+    { "id": 5, "titolo": "Portanza in quota ISA (FL350)", "difficolta": "MEDIO", "argomento": "ISA", "velivolo": "Boeing 737", "file": "05-medio-portanza-quota.md", "tipo": "originale" },
+    { "id": 6, "titolo": "Confronto profili NACA 2412 vs 0012", "difficolta": "MEDIO", "argomento": "Profilo", "velivolo": "Confronto", "file": "06-medio-confronto-naca.md", "tipo": "originale" },
+    { "id": 7, "titolo": "Reynolds in 3 condizioni", "difficolta": "MEDIO", "argomento": "Reynolds", "velivolo": "Cessna 172", "file": "07-medio-reynolds.md", "tipo": "originale" },
+    { "id": 8, "titolo": "Planata con vento contrario", "difficolta": "AVANZATO", "argomento": "Efficienza", "velivolo": "DG-1000", "file": "08-avanzato-planata-aliante.md", "tipo": "originale" },
+    { "id": 9, "titolo": "Decollo con flap T/O", "difficolta": "AVANZATO", "argomento": "Alta portanza", "velivolo": "Airbus A320", "file": "09-avanzato-decollo-flap.md", "tipo": "originale" },
+    { "id": 10, "titolo": "Polare completa con punti notevoli", "difficolta": "AVANZATO", "argomento": "Polare", "velivolo": "Boeing 737", "file": "10-avanzato-polare-completa.md", "tipo": "originale" },
+
+    { "id": 11, "titolo": "Portanza in crociera Cirrus SR22", "difficolta": "BASE", "argomento": "Portanza", "velivolo": "Cirrus SR22", "file": "varianti/11-base-portanza-cirrus.md", "tipo": "alternativo" },
+    { "id": 12, "titolo": "Stallo con flap T/O del Cessna 172", "difficolta": "BASE", "argomento": "Stallo", "velivolo": "Cessna 172", "file": "varianti/12-base-stallo-cessna-flap.md", "tipo": "alternativo" },
+    { "id": 13, "titolo": "Resistenza in crociera Piper PA-28", "difficolta": "BASE", "argomento": "Resistenza", "velivolo": "Piper PA-28", "file": "varianti/13-base-resistenza-piper.md", "tipo": "alternativo" },
+    { "id": 14, "titolo": "Efficienza Schweizer 2-33 (aliante scuola)", "difficolta": "MEDIO", "argomento": "Efficienza", "velivolo": "Schweizer 2-33", "file": "varianti/14-medio-efficienza-schweizer.md", "tipo": "alternativo" },
+    { "id": 15, "titolo": "Portanza Boeing 777 a FL400", "difficolta": "MEDIO", "argomento": "ISA", "velivolo": "Boeing 777", "file": "varianti/15-medio-portanza-777.md", "tipo": "alternativo" },
+    { "id": 16, "titolo": "Confronto NACA 23012 (Beechcraft) vs NACA 4412", "difficolta": "MEDIO", "argomento": "Profilo", "velivolo": "Beechcraft Bonanza", "file": "varianti/16-medio-confronto-naca-23012.md", "tipo": "alternativo" },
+    { "id": 17, "titolo": "Reynolds di un modello in galleria del vento", "difficolta": "MEDIO", "argomento": "Reynolds", "velivolo": "Modello scala", "file": "varianti/17-medio-reynolds-galleria.md", "tipo": "alternativo" },
+    { "id": 18, "titolo": "Confronto carico alare 3 velivoli", "difficolta": "MEDIO", "argomento": "Geometria", "velivolo": "Cessna/ATR/737", "file": "varianti/18-medio-carico-alare.md", "tipo": "alternativo" },
+    { "id": 19, "titolo": "Effetto temperatura sull'aria (giorno caldo)", "difficolta": "MEDIO", "argomento": "ISA", "velivolo": "Cessna 172", "file": "varianti/19-medio-aria-calda.md", "tipo": "alternativo" },
+    { "id": 20, "titolo": "Planata Boeing 787 con vento al traverso", "difficolta": "AVANZATO", "argomento": "Efficienza", "velivolo": "Boeing 787", "file": "varianti/20-avanzato-787-traverso.md", "tipo": "alternativo" },
+    { "id": 21, "titolo": "Decollo A320 da Cuzco (3399 m alta quota)", "difficolta": "AVANZATO", "argomento": "Alta portanza", "velivolo": "Airbus A320", "file": "varianti/21-avanzato-cuzco.md", "tipo": "alternativo" },
+    { "id": 22, "titolo": "Polare del Concorde (delta supersonico)", "difficolta": "AVANZATO", "argomento": "Polare", "velivolo": "Concorde", "file": "varianti/22-avanzato-concorde.md", "tipo": "alternativo" },
+    { "id": 23, "titolo": "Numero di Mach critico (737 vs Concorde)", "difficolta": "AVANZATO", "argomento": "Velocità", "velivolo": "737 vs Concorde", "file": "varianti/23-avanzato-mach.md", "tipo": "alternativo" },
+    { "id": 24, "titolo": "Effetto winglet su Boeing 737NG vs MAX", "difficolta": "AVANZATO", "argomento": "Resistenza", "velivolo": "Boeing 737", "file": "varianti/24-avanzato-winglet.md", "tipo": "alternativo" },
+    { "id": 25, "titolo": "Atterraggio short-field Pilatus PC-6 (STOL)", "difficolta": "AVANZATO", "argomento": "Alta portanza", "velivolo": "Pilatus PC-6", "file": "varianti/25-avanzato-stol.md", "tipo": "alternativo" }
+  ]
+}
