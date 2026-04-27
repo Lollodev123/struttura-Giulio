@@ -16,13 +16,13 @@ Nel codice NACA `MPXX`, le ultime due cifre sono lo spessore massimo in % della 
 ### 3. **C** — NACA 0012
 Le prime due cifre `00` indicano curvatura zero → profilo simmetrico. Tutti gli altri (2412, 4412, 23012) sono asimmetrici.
 
-### 4. **B** — $L = \frac{1}{2} \rho V^2 S C_L$
+### 4. **B** — $P = \frac{1}{2} \rho V^2 S C_p$
 Mai dimenticare il fattore ½ e il quadrato di V. Vedi [Lezione 2](../../01-teoria/02-portanza.md).
 
 ### 5. **B** — Quadruplica
-$L \propto V^2$, quindi raddoppi V → $L$ × 4. Errore classico: pensare che raddoppi.
+$P \propto V^2$, quindi raddoppi V → $L$ × 4. Errore classico: pensare che raddoppi.
 
-### 6. **B** — $L = W$ e $T = D$
+### 6. **B** — $P = Q$ e $T = R$
 Equilibrio in volo livellato: forze a coppie. Vedi [Esercizio 1](../../03-esercizi/01-base-portanza-cessna.md).
 
 ### 7. **C** — La portanza dipende solo dalla forma, non dall'angolo
@@ -47,32 +47,32 @@ Linea media = corda = profilo simmetrico, portanza zero a $\alpha = 0$.
 È l'errore più comune, mai dimenticarlo. Sta dentro il termine di pressione dinamica $\frac{1}{2}\rho V^2$.
 
 ### 14. **C** — 10 232 N
-$W = m \cdot g = 1043 \times 9{,}81 = 10\,231{,}83$ N. Le altre risposte confondono kg con N (errore di unità).
+$Q = m \cdot g = 1043 \times 9{,}81 = 10\,231{,}83$ N. Le altre risposte confondono kg con N (errore di unità).
 
 ### 15. **C** — Crolla bruscamente
-Allo stallo, il flusso si separa dal dorso → $C_L$ scende drasticamente. Non resta costante né cresce.
+Allo stallo, il flusso si separa dal dorso → $C_p$ scende drasticamente. Non resta costante né cresce.
 
 ---
 
 ## 🟡 Quiz MEDIO (Lezioni 3-6)
 
 ### 1. **B** — Parassita + indotta
-$C_D = C_{D,0} + C_{D,i}$. La parassita esiste anche senza portanza; l'indotta è il prezzo della portanza. Vedi [Lezione 3](../../01-teoria/03-resistenza.md).
+$C_R = C_{R,0} + C_{R,i}$. La parassita esiste anche senza portanza; l'indotta è il prezzo della portanza. Vedi [Lezione 3](../../01-teoria/03-resistenza.md).
 
-### 2. **B** — $C_L^2$
-$C_{D,i} = C_L^2/(\pi \lambda e)$. Cresce col **quadrato** di $C_L$.
+### 2. **B** — $C_p^2$
+$C_{R,i} = C_p^2/(\pi \lambda e)$. Cresce col **quadrato** di $C_p$.
 
 ### 3. **C** — Ridurre la resistenza indotta tramite alto allungamento
-Allungamento $\lambda$ alto → $C_{D,i}$ basso → efficienza massima alta. È il principio cardine degli alianti.
+Allungamento $\lambda$ alto → $C_{R,i}$ basso → efficienza massima alta. È il principio cardine degli alianti.
 
-### 4. **B** — $C_L/C_D$ (o equivalentemente $L/D$)
+### 4. **B** — $C_p/C_R$ (o equivalentemente $L/D$)
 È il rapporto adimensionale tra portanza e resistenza, anch'esso adimensionale.
 
 ### 5. **B** — 45 km
 distanza = $E \times h = 30 \times 1{,}5\,km = 45$ km. Formula della planata, [Lezione 4](../../01-teoria/04-efficienza.md).
 
 ### 6. **C** — Allungamento, Oswald, parassita
-$E_{max} = \frac{1}{2}\sqrt{\pi \lambda e / C_{D,0}}$. Non dipende dal peso!
+$E_{max} = \frac{1}{2}\sqrt{\pi \lambda e / C_{R,0}}$. Non dipende dal peso!
 
 ### 7. **C** — Parassita = indotta
 A massima efficienza, le due componenti di resistenza sono uguali. Risultato matematico molto elegante.
@@ -87,7 +87,7 @@ Gradiente standard troposferico ISA. Da memorizzare.
 Dalla tabella ISA. A 10 km, densità ridotta a circa un terzo del livello mare.
 
 ### 11. **B** — Aumenta
-$V_S = \sqrt{2W/(\rho S C_{L,max})}$: $\rho$ scende → $V_S$ sale. Per questo gli aeroporti d'alta quota hanno piste più lunghe.
+$V_S = \sqrt{2W/(\rho S C_{p,max})}$: $\rho$ scende → $V_S$ sale. Per questo gli aeroporti d'alta quota hanno piste più lunghe.
 
 ### 12. **B** — Rapporto adimensionale tra forze inerziali e viscose
 $Re = \rho V c / \mu$, numero puro. Vedi [Lezione 6](../../01-teoria/06-numero-reynolds.md).
@@ -109,7 +109,7 @@ A $V^*$ (~70 kt) si va più "economici" ma arrivare a destinazione ci vorrebbe i
 Allungamento = apertura al quadrato fratto superficie. Memorizza la formula.
 
 ### 2. **B** — Resistenza indotta molto maggiore
-$C_{D,i} \propto 1/\lambda$. Un caccia con $\lambda = 3$ ha indotta quasi 8 volte quella di un aliante con $\lambda = 25$, a parità di $C_L$.
+$C_{R,i} \propto 1/\lambda$. Un caccia con $\lambda = 3$ ha indotta quasi 8 volte quella di un aliante con $\lambda = 25$, a parità di $C_p$.
 
 ### 3. **C** — Stabilità laterale
 Diedro positivo = ala più bassa "vede" più aria = più portanza = aereo torna dritto. È uno dei meccanismi base di stabilità di volo.
@@ -124,7 +124,7 @@ Punto canonico per profili convenzionali a bassa velocità. Memorizza questo num
 Errore comune: pensare che la coda spinga verso l'alto. In realtà fa una deportanza correttiva.
 
 ### 7. **B** — Aumentano contemporaneamente curvatura E superficie alare
-Caratteristica unica dei Fowler: scivolano indietro lungo binari. Massimo aumento di $C_{L,max}$ disponibile.
+Caratteristica unica dei Fowler: scivolano indietro lungo binari. Massimo aumento di $C_{p,max}$ disponibile.
 
 ### 8. **B** — Sul bordo d'attacco
 Slat e flap stanno in punti opposti dell'ala: slat avanti, flap dietro.

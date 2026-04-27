@@ -1,8 +1,8 @@
 # Esercizio 6 — Confronto profili NACA (asimmetrico vs simmetrico)
 
-> 🟡 **Difficoltà: MEDIO** — Confronta due profili NACA usando la curva $C_L$–$\alpha$ linearizzata.
+> 🟡 **Difficoltà: MEDIO** — Confronta due profili NACA usando la curva $C_p$–$\alpha$ linearizzata.
 >
-> 🎯 **Obiettivi didattici**: imparare a (a) usare la pendenza della curva $C_L$–$\alpha$, (b) capire l'effetto della curvatura sul coefficiente di portanza a $\alpha = 0$, (c) decidere quale profilo conviene per quale missione.
+> 🎯 **Obiettivi didattici**: imparare a (a) usare la pendenza della curva $C_p$–$\alpha$, (b) capire l'effetto della curvatura sul coefficiente di portanza a $\alpha = 0$, (c) decidere quale profilo conviene per quale missione.
 
 ---
 
@@ -12,13 +12,13 @@ Confronta due profili NACA in **regime lineare** (lontano dallo stallo, $\alpha 
 
 - **Profilo A**: NACA 2412 (asimmetrico, ala del **Cessna 172**). Angolo di portanza nulla $\alpha_0 = -2°$.
 - **Profilo B**: NACA 0012 (simmetrico, **stabilizzatore** di molti velivoli). Angolo di portanza nulla $\alpha_0 = 0°$.
-- Pendenza della curva $C_L$–$\alpha$ per entrambi: $a = 0{,}11$ per grado (vicino al valore teorico $2\pi$ rad/rad).
-- $C_{L,max}$ A: 1,55 (a $\alpha_{stallo} = 16°$). $C_{L,max}$ B: 1,40 (a $\alpha_{stallo} = 14°$).
+- Pendenza della curva $C_p$–$\alpha$ per entrambi: $a = 0{,}11$ per grado (vicino al valore teorico $2\pi$ rad/rad).
+- $C_{p,max}$ A: 1,55 (a $\alpha_{stallo} = 16°$). $C_{p,max}$ B: 1,40 (a $\alpha_{stallo} = 14°$).
 
 **Determina**:
 
-1. Il $C_L$ di ciascun profilo a $\alpha = 0°, 5°, 10°$
-2. Per generare $C_L = 0{,}5$ (crociera tipica), a quale $\alpha$ ciascun profilo deve operare?
+1. Il $C_p$ di ciascun profilo a $\alpha = 0°, 5°, 10°$
+2. Per generare $C_p = 0{,}5$ (crociera tipica), a quale $\alpha$ ciascun profilo deve operare?
 3. Quale profilo è più adatto per un Cessna 172 in crociera, e perché?
 
 ---
@@ -27,7 +27,7 @@ Confronta due profili NACA in **regime lineare** (lontano dallo stallo, $\alpha 
 
 ![Confronto curva CL-alpha tra NACA 2412 (asimmetrico) e NACA 0012 (simmetrico)](../assets/img/grafici/confronto-profili-naca.svg)
 
-In regime lineare le due rette sono parallele (stessa pendenza $a = 0{,}11$/°), ma il **profilo asimmetrico parte 2° avanti**: a $\alpha = 0°$ genera già $C_L = 0{,}22$, mentre il simmetrico è a zero. La differenza $\Delta C_L = 0{,}22$ rimane **costante** a tutti gli $\alpha$ del regime lineare. Lo stallo arriva a 16° per il 2412 (con $C_{L,max} = 1{,}55$) e 14° per il 0012 (con $C_{L,max} = 1{,}40$).
+In regime lineare le due rette sono parallele (stessa pendenza $a = 0{,}11$/°), ma il **profilo asimmetrico parte 2° avanti**: a $\alpha = 0°$ genera già $C_p = 0{,}22$, mentre il simmetrico è a zero. La differenza $\Delta C_p = 0{,}22$ rimane **costante** a tutti gli $\alpha$ del regime lineare. Lo stallo arriva a 16° per il 2412 (con $C_{p,max} = 1{,}55$) e 14° per il 0012 (con $C_{p,max} = 1{,}40$).
 
 ---
 
@@ -37,15 +37,15 @@ In regime lineare le due rette sono parallele (stessa pendenza $a = 0{,}11$/°),
 |---|---|---|
 | Angolo portanza nulla $\alpha_0$ | $-2°$ | $0°$ |
 | Pendenza $a$ | 0,11 /° | 0,11 /° |
-| $C_{L,max}$ | 1,55 | 1,40 |
+| $C_{p,max}$ | 1,55 | 1,40 |
 | $\alpha_{stallo}$ | 16° | 14° |
 
 ---
 
 ## 🧠 Strategia di risoluzione
 
-1. **Cosa mi sta chiedendo?** Tabulare $C_L$ in funzione di $\alpha$ per i due profili e confrontarli.
-2. **Quale fenomeno?** La curva $C_L$–$\alpha$ in regime lineare: $C_L = a(\alpha - \alpha_0)$.
+1. **Cosa mi sta chiedendo?** Tabulare $C_p$ in funzione di $\alpha$ per i due profili e confrontarli.
+2. **Quale fenomeno?** La curva $C_p$–$\alpha$ in regime lineare: $C_p = a(\alpha - \alpha_0)$.
 3. **Quali formule?** Solo la formula lineare. Sostituire diversi $\alpha$.
 4. **Dati e unità coerenti?** Sì, $\alpha$ in gradi, $a$ in /°. Risultato adimensionale.
 5. **Algebra**: tabulare 3 valori per 2 profili. Per la 2ª domanda, isolare $\alpha$.
@@ -57,27 +57,27 @@ In regime lineare le due rette sono parallele (stessa pendenza $a = 0{,}11$/°),
 ### Passo 1 — Formula della curva linearizzata
 
 In regime lineare (lontano dallo stallo):
-$$C_L = a \cdot (\alpha - \alpha_0)$$
+$$C_p = a \cdot (\alpha - \alpha_0)$$
 
 con $\alpha$ e $\alpha_0$ in gradi, $a$ in /°. Per il liceo, **niente derivate**: si usa direttamente questa retta.
 
-### Passo 2 — Tabulazione $C_L$ a tre angoli
+### Passo 2 — Tabulazione $C_p$ a tre angoli
 
 **Profilo A (NACA 2412)**: $\alpha_0 = -2°$
-$$C_L^A(\alpha) = 0{,}11 \times (\alpha - (-2°)) = 0{,}11 \times (\alpha + 2°)$$
+$$C_p^A(\alpha) = 0{,}11 \times (\alpha - (-2°)) = 0{,}11 \times (\alpha + 2°)$$
 
 **Profilo B (NACA 0012)**: $\alpha_0 = 0°$
-$$C_L^B(\alpha) = 0{,}11 \times \alpha$$
+$$C_p^B(\alpha) = 0{,}11 \times \alpha$$
 
-| $\alpha$ | $C_L^A$ (2412) | $C_L^B$ (0012) | Differenza |
+| $\alpha$ | $C_p^A$ (2412) | $C_p^B$ (0012) | Differenza |
 |---|---|---|---|
 | $0°$ | $0{,}11 \times 2 = 0{,}22$ | $0{,}11 \times 0 = 0{,}00$ | +0,22 |
 | $5°$ | $0{,}11 \times 7 = 0{,}77$ | $0{,}11 \times 5 = 0{,}55$ | +0,22 |
 | $10°$ | $0{,}11 \times 12 = 1{,}32$ | $0{,}11 \times 10 = 1{,}10$ | +0,22 |
 
-> 💡 **Osservazione importante**: la differenza $C_L^A - C_L^B$ è **costante** (= 0,22), pari a $a \cdot |\alpha_0^A - \alpha_0^B|$. È l'effetto della curvatura del profilo asimmetrico: una "spinta gratis" di $C_L = 0{,}22$ a qualsiasi $\alpha$.
+> 💡 **Osservazione importante**: la differenza $C_p^A - C_p^B$ è **costante** (= 0,22), pari a $a \cdot |\alpha_0^A - \alpha_0^B|$. È l'effetto della curvatura del profilo asimmetrico: una "spinta gratis" di $C_p = 0{,}22$ a qualsiasi $\alpha$.
 
-### Passo 3 — Quale $\alpha$ serve per $C_L = 0{,}5$?
+### Passo 3 — Quale $\alpha$ serve per $C_p = 0{,}5$?
 
 **Profilo A (2412)**:
 $$0{,}5 = 0{,}11 \times (\alpha + 2°) \Rightarrow \alpha + 2 = \dfrac{0{,}5}{0{,}11} = 4{,}55°$$
@@ -87,24 +87,24 @@ $$\alpha^A = 2{,}55°$$
 **Profilo B (0012)**:
 $$0{,}5 = 0{,}11 \times \alpha \Rightarrow \alpha^B = \dfrac{0{,}5}{0{,}11} = 4{,}55°$$
 
-| Profilo | $\alpha$ richiesto per $C_L = 0{,}5$ |
+| Profilo | $\alpha$ richiesto per $C_p = 0{,}5$ |
 |---|---|
 | A (2412) | $2{,}55°$ |
 | B (0012) | $4{,}55°$ |
 
-→ Il profilo asimmetrico A ha bisogno di **2° in meno** di angolo di attacco per generare lo stesso $C_L$.
+→ Il profilo asimmetrico A ha bisogno di **2° in meno** di angolo di attacco per generare lo stesso $C_p$.
 
 ### Passo 4 — Conclusione: quale per il Cessna 172?
 
-Per **crociera del Cessna** ($C_L \approx 0{,}26$, dall'[Esercizio 1](./01-base-portanza-cessna.md)):
+Per **crociera del Cessna** ($C_p \approx 0{,}26$, dall'[Esercizio 1](./01-base-portanza-cessna.md)):
 
 - **Profilo A**: $\alpha = (0{,}26/0{,}11) - 2° = 2{,}36 - 2 = 0{,}36°$ (quasi orizzontale, comodissimo)
 - **Profilo B**: $\alpha = 0{,}26/0{,}11 = 2{,}36°$ (deve cabrare di 2° rispetto al simmetrico)
 
 Il **profilo A (NACA 2412 asimmetrico)** è preferibile per il Cessna in crociera perché:
 
-1. **Genera $C_L$ già a $\alpha = 0°$** → il velivolo può volare in crociera con la fusoliera quasi orizzontale (passeggeri comodi, visibilità migliore).
-2. **$C_{L,max}$ maggiore** (1,55 vs 1,40) → atterra a velocità leggermente più bassa.
+1. **Genera $C_p$ già a $\alpha = 0°$** → il velivolo può volare in crociera con la fusoliera quasi orizzontale (passeggeri comodi, visibilità migliore).
+2. **$C_{p,max}$ maggiore** (1,55 vs 1,40) → atterra a velocità leggermente più bassa.
 3. **$\alpha_{stallo}$ leggermente maggiore** (16° vs 14°) → margine di sicurezza.
 
 **Profilo B (simmetrico)** è preferibile per:
@@ -127,7 +127,7 @@ Cessna stallato a $\alpha = 16°$: testato in galleria del vento e confermato da
 
 ## 🔄 Variante per autovalutazione
 
-Un velivolo ha bisogno di un $C_L = 0{,}9$ per atterrare a velocità ridotta. Quale **angolo di attacco** deve mantenere il pilota se l'ala è NACA 2412? E se fosse NACA 0012?
+Un velivolo ha bisogno di un $C_p = 0{,}9$ per atterrare a velocità ridotta. Quale **angolo di attacco** deve mantenere il pilota se l'ala è NACA 2412? E se fosse NACA 0012?
 
 <details markdown="1">
 <summary>👉 Solo il risultato (prima provaci da solo!)</summary>
@@ -144,11 +144,11 @@ Un velivolo ha bisogno di un $C_L = 0{,}9$ per atterrare a velocità ridotta. Qu
 
 ## 🎓 Cosa hai imparato
 
-- La **curva $C_L$–$\alpha$** è lineare in regime non-stallato, con pendenza $a \approx 0{,}11$/° per la maggior parte dei profili sottili.
+- La **curva $C_p$–$\alpha$** è lineare in regime non-stallato, con pendenza $a \approx 0{,}11$/° per la maggior parte dei profili sottili.
 - L'**$\alpha_0$ (angolo di portanza nulla)** è la "leva di curvatura": più curvo è il profilo, più $\alpha_0$ è negativo, più portanza si ha "gratis" a $\alpha = 0$.
 - I **profili asimmetrici** sono ottimali per missioni di trasporto/turismo (volo livellato, comfort).
 - I **profili simmetrici** sono per acrobatica, code orizzontali e velivoli che devono lavorare bene "in entrambi i sensi".
-- A parità di altri parametri, **profilo asimmetrico = stesso $C_L$ con $\alpha$ minore** → fusoliera più orizzontale, comfort migliore.
+- A parità di altri parametri, **profilo asimmetrico = stesso $C_p$ con $\alpha$ minore** → fusoliera più orizzontale, comfort migliore.
 
 ---
 

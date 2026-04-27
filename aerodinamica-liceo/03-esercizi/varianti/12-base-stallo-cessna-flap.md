@@ -8,9 +8,9 @@
 
 ## 📋 Testo del problema
 
-Il **Cessna 172** ha **3 posizioni flap** standard. Per ciascuna, $C_{L,max}$ cresce:
+Il **Cessna 172** ha **3 posizioni flap** standard. Per ciascuna, $C_{p,max}$ cresce:
 
-| Configurazione | $C_{L,max}$ | Quando si usa |
+| Configurazione | $C_{p,max}$ | Quando si usa |
 |---|---|---|
 | Pulita (no flap) | 1,50 | Crociera, salita iniziale |
 | Flap 10° | 1,70 | Decollo (più portanza, poca resistenza extra) |
@@ -27,7 +27,7 @@ Il velivolo è al **MTOW** ($m = 1\,043$ kg, $S = 16{,}2$ m²) al livello mare I
 
 ![Curva CL-alpha con angolo di stallo critico](../../assets/img/grafici/schema-stallo.svg)
 
-Le 4 configurazioni hanno **stessa curva $C_L$–α** in regime lineare ma **picchi diversi** ($C_{L,max}$ che sale con i flap). Più $C_{L,max}$ → più bassa $V_S$.
+Le 4 configurazioni hanno **stessa curva $C_p$–α** in regime lineare ma **picchi diversi** ($C_{p,max}$ che sale con i flap). Più $C_{p,max}$ → più bassa $V_S$.
 
 ---
 
@@ -38,15 +38,15 @@ Le 4 configurazioni hanno **stessa curva $C_L$–α** in regime lineare ma **pic
 | Massa | $m$ | 1 043 | kg |
 | Superficie alare | $S$ | 16,2 | m² |
 | Densità (mare ISA) | $\rho$ | 1,225 | kg/m³ |
-| **Da trovare** | $V_S$ per 4 valori di $C_{L,max}$ | ? | m/s, kt |
+| **Da trovare** | $V_S$ per 4 valori di $C_{p,max}$ | ? | m/s, kt |
 
 ---
 
 ## 🧠 Strategia
 
-1. **Formula unica**: $V_S = \sqrt{\dfrac{2W}{\rho S C_{L,max}}}$
-2. **Variabile** = solo $C_{L,max}$. Ricalcolo 4 volte.
-3. **Trucco**: $V_S \propto 1/\sqrt{C_{L,max}}$ → valori si scalano facilmente.
+1. **Formula unica**: $V_S = \sqrt{\dfrac{2Q}{\rho S C_{p,max}}}$
+2. **Variabile** = solo $C_{p,max}$. Ricalcolo 4 volte.
+3. **Trucco**: $V_S \propto 1/\sqrt{C_{p,max}}$ → valori si scalano facilmente.
 
 ---
 
@@ -54,18 +54,18 @@ Le 4 configurazioni hanno **stessa curva $C_L$–α** in regime lineare ma **pic
 
 ### Passo 1 — Peso (invariato per le 4 configurazioni)
 
-$$W = 1\,043 \times 9{,}81 = 10\,231{,}83 \text{ N}$$
+$$Q = 1\,043 \times 9{,}81 = 10\,231{,}83 \text{ N}$$
 
-### Passo 2 — Calcolo per ciascuna $C_{L,max}$
+### Passo 2 — Calcolo per ciascuna $C_{p,max}$
 
 Formula:
-$$V_S = \sqrt{\dfrac{2 \times 10\,231{,}83}{1{,}225 \times 16{,}2 \times C_{L,max}}} = \sqrt{\dfrac{20\,463{,}66}{19{,}845 \times C_{L,max}}}$$
+$$V_S = \sqrt{\dfrac{2 \times 10\,231{,}83}{1{,}225 \times 16{,}2 \times C_{p,max}}} = \sqrt{\dfrac{20\,463{,}66}{19{,}845 \times C_{p,max}}}$$
 
-Riordino: $V_S = \sqrt{\dfrac{1031{,}3}{C_{L,max}}}$
+Riordino: $V_S = \sqrt{\dfrac{1031{,}3}{C_{p,max}}}$
 
 Ora le 4 configurazioni:
 
-| $C_{L,max}$ | $V_S$ (m/s) | $V_S$ (kt) | Riduzione % |
+| $C_{p,max}$ | $V_S$ (m/s) | $V_S$ (kt) | Riduzione % |
 |---|---|---|---|
 | 1,50 (pulita) | $\sqrt{1031{,}3/1{,}50} = \sqrt{687{,}5} = 26{,}22$ | **51,0** | — |
 | 1,70 (flap 10°) | $\sqrt{1031{,}3/1{,}70} = \sqrt{606{,}6} = 24{,}63$ | **47,9** | −6,1% |
@@ -122,7 +122,7 @@ $V_S$ flap 30° = $\sqrt{(2 \cdot 7456)/(1{,}225 \cdot 16{,}2 \cdot 2{,}1)} = \s
 ## 🎓 Cosa hai imparato
 
 - I **flap del Cessna 172** sono semplici (plain flap) ma efficaci: riducono $V_S$ del 16% in posizione massima.
-- $V_S \propto 1/\sqrt{C_{L,max}}$: per dimezzare $V_S$ servirebbe $C_{L,max}$ × 4 — impossibile coi soli flap.
+- $V_S \propto 1/\sqrt{C_{p,max}}$: per dimezzare $V_S$ servirebbe $C_{p,max}$ × 4 — impossibile coi soli flap.
 - Il modello del liceo **coincide al 100% col manuale di volo** del velivolo certificato.
 - **Peso ridotto** = $V_S$ ridotta (radice quadrata): un Cessna leggero atterra a velocità anche 30% inferiori del MTOW.
 

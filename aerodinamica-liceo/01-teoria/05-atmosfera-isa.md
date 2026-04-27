@@ -14,9 +14,9 @@ L'**Atmosfera Standard Internazionale** (ISA) è un **modello matematico convenz
 
 Ogni formula che hai visto fin qui ha una $\rho$ dentro:
 
-- $L = \frac{1}{2}\rho V^2 S C_L$
-- $D = \frac{1}{2}\rho V^2 S C_D$
-- $V_S = \sqrt{2W/(\rho S C_{L,max})}$
+- $P = \frac{1}{2}\rho V^2 S C_p$
+- $R = \frac{1}{2}\rho V^2 S C_R$
+- $V_S = \sqrt{2W/(\rho S C_{p,max})}$
 - $Re = \rho V c / \mu$
 
 **Se $\rho$ cambia, cambia tutto**. E $\rho$ cambia con la quota: a 10 000 m è circa **un terzo** del valore al livello mare. Questo significa che un velivolo:
@@ -107,7 +107,7 @@ Ricopio i valori più usati negli esercizi (vedi formulario per la versione comp
 - $\rho(3000) = 0{,}909$ kg/m³ (tabella)
 - $T(3000) = -4{,}5\,°\text{C}$ → fa freschetto, anche d'estate
 
-A parità di velocità e $C_L$ del Cessna a livello mare, la portanza scende del fattore $\sigma = 0{,}742$ → del 26%. Per recuperare, il pilota **aumenta l'angolo di attacco** (più $C_L$) o **accelera**.
+A parità di velocità e $C_p$ del Cessna a livello mare, la portanza scende del fattore $\sigma = 0{,}742$ → del 26%. Per recuperare, il pilota **aumenta l'angolo di attacco** (più $C_p$) o **accelera**.
 
 ### Boeing 737 a FL350 (10 670 m)
 - $\rho \approx 0{,}38$ kg/m³ (interpolato)
@@ -155,7 +155,7 @@ Per generare la stessa portanza del livello mare, deve volare a velocità **rido
 ## 🧠 Domande di autoverifica
 
 1. Qual è la temperatura ISA a 4500 m di quota, in °C e in K?
-2. Un Cessna 172 vola a 5000 m con la stessa velocità che usava al mare. La sua portanza è il 100%, 60%, 40% o 30% di quella al livello mare (a parità di $C_L$)?
+2. Un Cessna 172 vola a 5000 m con la stessa velocità che usava al mare. La sua portanza è il 100%, 60%, 40% o 30% di quella al livello mare (a parità di $C_p$)?
 3. Perché un Boeing 737 a FL350 vola circa 80 kt più veloce della sua velocità di crociera al livello mare?
 4. La velocità di stallo $V_S$ di un velivolo aumenta o diminuisce con la quota? Di quanto, percentualmente, a 5000 m?
 5. Calcola la pressione $p$ a 11 000 m sapendo che $p(0) = 101\,325$ Pa e che la formula barometrica per la troposfera è $p(h) = p_0 \cdot (T(h)/T_0)^{5{,}256}$.
@@ -165,11 +165,11 @@ Per generare la stessa portanza del livello mare, deve volare a velocità **rido
 
 1. $T(4500) = 15 - 0{,}0065 \cdot 4500 = 15 - 29{,}25 = -14{,}25\,°\text{C}$. In kelvin: $-14{,}25 + 273{,}15 = 258{,}9$ K.
 
-2. **60%**. A 5000 m, $\sigma = 0{,}601$. Portanza scende dello stesso fattore di $\rho$, quindi è il **60%** di quella al mare. Il pilota deve compensare alzando $\alpha$ (più $C_L$) o accelerando.
+2. **60%**. A 5000 m, $\sigma = 0{,}601$. Portanza scende dello stesso fattore di $\rho$, quindi è il **60%** di quella al mare. Il pilota deve compensare alzando $\alpha$ (più $C_p$) o accelerando.
 
-3. La portanza richiesta è la stessa (peso non cambia). Con $\rho$ ridotta di un fattore $\sigma \approx 0{,}30$ a FL350, per mantenere $L = W$ occorre **velocità maggiore**: $V_{quota} = V_{mare}/\sqrt{\sigma}$. Il fattore $1/\sqrt{0{,}30} \approx 1{,}83$ → la velocità "vera" deve essere ~83% maggiore. (In realtà i piloti lavorano in *velocità indicata IAS*, che si riferisce alla pressione dinamica $\frac{1}{2}\rho V^2$ — la IAS resta uguale, è la *true airspeed TAS* che cresce.)
+3. La portanza richiesta è la stessa (peso non cambia). Con $\rho$ ridotta di un fattore $\sigma \approx 0{,}30$ a FL350, per mantenere $P = Q$ occorre **velocità maggiore**: $V_{quota} = V_{mare}/\sqrt{\sigma}$. Il fattore $1/\sqrt{0{,}30} \approx 1{,}83$ → la velocità "vera" deve essere ~83% maggiore. (In realtà i piloti lavorano in *velocità indicata IAS*, che si riferisce alla pressione dinamica $\frac{1}{2}\rho V^2$ — la IAS resta uguale, è la *true airspeed TAS* che cresce.)
 
-4. **Aumenta**. $V_S = \sqrt{2W/(\rho S C_{L,max})}$. Se $\rho$ diminuisce, $V_S$ aumenta. A 5000 m con $\sigma = 0{,}601$: $V_{S,5000} = V_{S,mare}/\sqrt{0{,}601} \approx 1{,}29 \cdot V_{S,mare}$. Quindi $V_S$ a 5000 m è circa **+29%** rispetto al mare. Per questo i decolli/atterraggi in alta quota (aeroporti come La Paz, El Alto, 4000 m) richiedono piste lunghissime.
+4. **Aumenta**. $V_S = \sqrt{2W/(\rho S C_{p,max})}$. Se $\rho$ diminuisce, $V_S$ aumenta. A 5000 m con $\sigma = 0{,}601$: $V_{S,5000} = V_{S,mare}/\sqrt{0{,}601} \approx 1{,}29 \cdot V_{S,mare}$. Quindi $V_S$ a 5000 m è circa **+29%** rispetto al mare. Per questo i decolli/atterraggi in alta quota (aeroporti come La Paz, El Alto, 4000 m) richiedono piste lunghissime.
 
 5. $T(11000) = 15 - 0{,}0065 \cdot 11000 = -56{,}5\,°\text{C} = 216{,}65$ K. $T_0 = 288{,}15$ K. Rapporto $T/T_0 = 0{,}7519$. $p = 101325 \cdot 0{,}7519^{5{,}256}$. Calcoliamo $0{,}7519^{5{,}256}$: $\ln(0{,}7519) = -0{,}2851$; $-0{,}2851 \cdot 5{,}256 = -1{,}498$; $e^{-1{,}498} \approx 0{,}2236$. Quindi $p \approx 101325 \cdot 0{,}2236 \approx 22\,650$ Pa. Confronta con tabella: **22 632 Pa** ✅ (ottima approssimazione).
 

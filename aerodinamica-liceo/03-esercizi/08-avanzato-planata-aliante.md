@@ -15,7 +15,7 @@ Dati DG-1000:
 - Massa con due piloti: $m = 700$ kg
 - Superficie alare: $S = 16{,}7$ m²
 - Allungamento: $\lambda = 24$
-- Resistenza parassita: $C_{D,0} = 0{,}012$
+- Resistenza parassita: $C_{R,0} = 0{,}012$
 - Fattore di Oswald: $e = 0{,}95$
 
 **Determina**:
@@ -42,7 +42,7 @@ Con vento contrario di 20 kt, l'aliante mantiene $V^* = 26{,}9$ m/s **rispetto a
 | Massa | $m$ | 700 | kg |
 | Superficie alare | $S$ | 16,7 | m² |
 | Allungamento | $\lambda$ | 24 | — |
-| Resistenza parassita | $C_{D,0}$ | 0,012 | — |
+| Resistenza parassita | $C_{R,0}$ | 0,012 | — |
 | Fattore Oswald | $e$ | 0,95 | — |
 | Densità (mare ISA) | $\rho$ | 1,225 | kg/m³ |
 | Quota | $h$ | 1 500 | m |
@@ -56,9 +56,9 @@ Con vento contrario di 20 kt, l'aliante mantiene $V^* = 26{,}9$ m/s **rispetto a
 1. **Cosa mi sta chiedendo?** Efficienza, velocità ottima, ground speed, e distanza effettiva con vento.
 2. **Quale fenomeno?** Equilibrio aerodinamico in planata + composizione del moto con il vento (matematica vettoriale di base).
 3. **Quali formule?**
-   - $E_{max} = \frac{1}{2}\sqrt{\pi \lambda e / C_{D,0}}$
-   - $C_L^* = \sqrt{\pi \lambda e \cdot C_{D,0}}$
-   - $V^* = \sqrt{2W/(\rho S C_L^*)}$
+   - $E_{max} = \frac{1}{2}\sqrt{\pi \lambda e / C_{R,0}}$
+   - $C_p^* = \sqrt{\pi \lambda e \cdot C_{R,0}}$
+   - $V^* = \sqrt{2W/(\rho S C_p^*)}$
    - $V_{ground} = V_{air} - V_{wind}$ (vento contrario)
    - distanza al suolo = $E \times h \times (V_g/V^*)$
 
@@ -71,11 +71,11 @@ Con vento contrario di 20 kt, l'aliante mantiene $V^* = 26{,}9$ m/s **rispetto a
 
 ### Passo 1 — Peso
 
-$$W = m \cdot g = 700 \times 9{,}81 = 6\,867 \text{ N}$$
+$$Q = m \cdot g = 700 \times 9{,}81 = 6\,867 \text{ N}$$
 
 ### Passo 2 — $E_{max}$
 
-$$E_{max} = \dfrac{1}{2}\sqrt{\dfrac{\pi \lambda e}{C_{D,0}}} = \dfrac{1}{2}\sqrt{\dfrac{\pi \times 24 \times 0{,}95}{0{,}012}}$$
+$$E_{max} = \dfrac{1}{2}\sqrt{\dfrac{\pi \lambda e}{C_{R,0}}} = \dfrac{1}{2}\sqrt{\dfrac{\pi \times 24 \times 0{,}95}{0{,}012}}$$
 
 Calcolo:
 
@@ -88,13 +88,13 @@ $$\boxed{E_{max} \approx 38{,}6}$$
 
 > ✅ Il manuale del DG-1000 dichiara $E_{max} = 50$. Il modello sottostima del 23% (errore tipico per alianti di alta classe — la realtà sfrutta effetti laminari avanzati che il modello non cattura). Per il liceo va comunque bene.
 
-### Passo 3 — $C_L^*$ e $V^*$
+### Passo 3 — $C_p^*$ e $V^*$
 
-$C_L^*$:
-$$C_L^* = \sqrt{\pi \lambda e \cdot C_{D,0}} = \sqrt{71{,}63 \times 0{,}012} = \sqrt{0{,}860} \approx 0{,}927$$
+$C_p^*$:
+$$C_p^* = \sqrt{\pi \lambda e \cdot C_{R,0}} = \sqrt{71{,}63 \times 0{,}012} = \sqrt{0{,}860} \approx 0{,}927$$
 
 $V^*$:
-$$V^* = \sqrt{\dfrac{2W}{\rho S C_L^*}} = \sqrt{\dfrac{2 \times 6\,867}{1{,}225 \times 16{,}7 \times 0{,}927}}$$
+$$V^* = \sqrt{\dfrac{2Q}{\rho S C_p^*}} = \sqrt{\dfrac{2 \times 6\,867}{1{,}225 \times 16{,}7 \times 0{,}927}}$$
 
 Calcolo:
 
@@ -172,7 +172,7 @@ Stesso aliante, stessa quota, stesso vento, ma il pilota decide di **volare più
 
 ## 🎓 Cosa hai imparato
 
-- **$E_{max}$ e $V^*$ si calcolano dalla geometria**: $E_{max}$ dipende solo da $\lambda$, $e$, $C_{D,0}$.
+- **$E_{max}$ e $V^*$ si calcolano dalla geometria**: $E_{max}$ dipende solo da $\lambda$, $e$, $C_{R,0}$.
 - Il **vento contrario** non cambia la velocità nell'aria, ma riduce la velocità al suolo → distanza ridotta.
 - La **distanza al suolo** è proporzionale al rapporto $V_g/V_{air}$: con vento al 38% di $V^*$, la distanza scende al 62% di quella in aria calma.
 - **MacCready** (volo a vela): non sempre $V^*$ è la velocità migliore. Con vento contrario, si vola più veloce per minimizzare l'effetto del vento.

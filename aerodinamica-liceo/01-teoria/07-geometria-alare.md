@@ -66,7 +66,7 @@ $$\lambda = \frac{b^2}{S}$$
 
 **$\lambda$ è la leva più potente per controllare**:
 
-- Resistenza indotta ($C_{D,i} \propto 1/\lambda$ — vedi Lezione 3)
+- Resistenza indotta ($C_{R,i} \propto 1/\lambda$ — vedi Lezione 3)
 - Efficienza massima ($E_{max} \propto \sqrt{\lambda}$ — Lezione 4)
 
 > 🎯 **Memo**: caccia $\lambda \approx 2$–$4$, aviazione generale 6–9, jet di linea 8–12, alianti 16–30. Più $\lambda$ → più efficienza, ma più peso strutturale e fragilità → compromessi.
@@ -197,7 +197,7 @@ $\lambda = 16$, rettangolare nella zona centrale poi rastremata, freccia 0°, di
 
 4. $\lambda = (10)^2/30 = 100/30 \approx 3{,}33$. **Allungamento ~3,3**, simile a un caccia! Ma nel suo regime di Reynolds (laminare, ~$10^4$) le regole aerodinamiche sono diverse: a quel $Re$ l'allungamento alto non aiuta come nei velivoli "macroscopici".
 
-5. **L'Eurofighter** ha carico alare maggiore (320 kg/m² vs 64 kg/m² del Cessna). $V_S = \sqrt{2(W/S)/(\rho C_{L,max})}$: a parità di $C_{L,max}$, $V_S \propto \sqrt{W/S}$. Rapporto: $\sqrt{320/64} = \sqrt{5} \approx 2{,}24$. Quindi $V_S$ Eurofighter $\approx 2{,}24 \times V_S$ Cessna ≈ $2{,}24 \cdot 25 = 56$ m/s. La velocità di approccio è ancora più alta (1,3 × $V_S$ ≈ 73 m/s ≈ 142 kt), coerente con i 80 m/s indicati.
+5. **L'Eurofighter** ha carico alare maggiore (320 kg/m² vs 64 kg/m² del Cessna). $V_S = \sqrt{2(W/S)/(\rho C_{p,max})}$: a parità di $C_{p,max}$, $V_S \propto \sqrt{W/S}$. Rapporto: $\sqrt{320/64} = \sqrt{5} \approx 2{,}24$. Quindi $V_S$ Eurofighter $\approx 2{,}24 \times V_S$ Cessna ≈ $2{,}24 \cdot 25 = 56$ m/s. La velocità di approccio è ancora più alta (1,3 × $V_S$ ≈ 73 m/s ≈ 142 kt), coerente con i 80 m/s indicati.
 
 </details>
 

@@ -49,7 +49,7 @@ Sequenza V_S → V_R → V_2 invariata. Cambiano i **valori** delle velocità pe
 
 1. **Pressione a Cuzco**: dalla [tabella ISA](../../00-formulario/formulario.md#7-atmosfera-standard-isa--valori-chiave), interpolando a 3399 m
 2. **Densità con T reale**: $\rho = p/(R T)$, con $T = 291{,}15$ K (NON quella ISA)
-3. $V_S = \sqrt{2W/(\rho S C_{L,max})}$ per Roma e Cuzco
+3. $V_S = \sqrt{2W/(\rho S C_{p,max})}$ per Roma e Cuzco
 4. $V_R = 1{,}1 V_S$, $V_2 = 1{,}2 V_S$
 5. Distanza decollo $\propto V_R^2 / \rho$ (energia + spinta motore minore)
 
@@ -78,7 +78,7 @@ $$\rho = \dfrac{p}{R T} = \dfrac{66\,899}{287 \times 291{,}15} = \dfrac{66\,899}
 
 ### Passo 3 — Peso
 
-$$W = 70\,000 \times 9{,}81 = 686\,700 \text{ N}$$
+$$Q = 70\,000 \times 9{,}81 = 686\,700 \text{ N}$$
 
 ### Passo 4 — $V_S$, $V_R$, $V_2$ a Cuzco
 

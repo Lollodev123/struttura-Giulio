@@ -15,11 +15,11 @@ Dati:
 - Massa con due persone: $m = 410$ kg
 - Superficie alare: $S = 20{,}06$ m²
 - Apertura alare: $b = 15{,}24$ m → allungamento $\lambda = b^2/S = 11{,}6$ (più basso dell'ASK-21!)
-- Resistenza parassita: $C_{D,0} = 0{,}019$ (peggiore di un aliante moderno — costruzione metallica meno pulita)
+- Resistenza parassita: $C_{R,0} = 0{,}019$ (peggiore di un aliante moderno — costruzione metallica meno pulita)
 - Fattore Oswald: $e = 0{,}85$
 
 **Determina**:
-1. $C_L^*$ ed $E_{max}$
+1. $C_p^*$ ed $E_{max}$
 2. $V^*$ (velocità di max efficienza)
 3. Distanza di planata da **1 000 m** AGL
 4. Confronto numerico con l'ASK-21 dell'Esercizio 4 ($E_{max} = 33$)
@@ -42,7 +42,7 @@ Stesso schema dell'aliante ASK-21: equilibrio in planata, distanza = $E \times h
 | Superficie | $S$ | 20,06 | m² |
 | Apertura | $b$ | 15,24 | m |
 | Allungamento | $\lambda$ | 11,6 | — |
-| $C_{D,0}$ | — | 0,019 | — |
+| $C_{R,0}$ | — | 0,019 | — |
 | $e$ | — | 0,85 | — |
 | Quota | $h$ | 1 000 | m |
 
@@ -52,9 +52,9 @@ Stesso schema dell'aliante ASK-21: equilibrio in planata, distanza = $E \times h
 
 Stessa dell'Esercizio 4. Le formule chiave:
 
-- $C_L^* = \sqrt{\pi \lambda e \cdot C_{D,0}}$
-- $E_{max} = \frac{1}{2}\sqrt{\pi \lambda e / C_{D,0}}$
-- $V^* = \sqrt{2W/(\rho S C_L^*)}$
+- $C_p^* = \sqrt{\pi \lambda e \cdot C_{R,0}}$
+- $E_{max} = \frac{1}{2}\sqrt{\pi \lambda e / C_{R,0}}$
+- $V^* = \sqrt{2W/(\rho S C_p^*)}$
 - distanza = $E_{max} \times h$
 
 ---
@@ -63,15 +63,15 @@ Stessa dell'Esercizio 4. Le formule chiave:
 
 ### Passo 1 — Peso
 
-$$W = 410 \times 9{,}81 = 4\,022{,}1 \text{ N}$$
+$$Q = 410 \times 9{,}81 = 4\,022{,}1 \text{ N}$$
 
 ### Passo 2 — $\pi \lambda e$ (utile costante)
 
 $$\pi \lambda e = \pi \times 11{,}6 \times 0{,}85 = 30{,}98$$
 
-### Passo 3 — $C_L^*$
+### Passo 3 — $C_p^*$
 
-$$C_L^* = \sqrt{30{,}98 \times 0{,}019} = \sqrt{0{,}5886} \approx 0{,}767$$
+$$C_p^* = \sqrt{30{,}98 \times 0{,}019} = \sqrt{0{,}5886} \approx 0{,}767$$
 
 ### Passo 4 — $E_{max}$
 
@@ -105,8 +105,8 @@ Il manuale dello Schweizer 2-33 dichiara $E_{max} \approx 22$ a velocità di bes
 | | Schweizer 2-33 (anni '60) | ASK-21 (moderno) | Rapporto |
 |---|---|---|---|
 | $\lambda$ | 11,6 | 16,6 | ASK 1,43× |
-| $C_{D,0}$ | 0,019 | 0,014 | Sch +36% |
-| $C_L^*$ | 0,77 | 0,83 | quasi uguali |
+| $C_{R,0}$ | 0,019 | 0,014 | Sch +36% |
+| $C_p^*$ | 0,77 | 0,83 | quasi uguali |
 | **$E_{max}$** | 20 | 30 | **ASK 1,5× migliore!** |
 | $V^*$ | 40 kt | 49 kt | ASK +20% (più pesante) |
 | Planata da 1 km | 20 km | 30 km | ASK +50% |
@@ -114,7 +114,7 @@ Il manuale dello Schweizer 2-33 dichiara $E_{max} \approx 22$ a velocità di bes
 **Lettura**: 30 anni di evoluzione (1960 → 1990) hanno aumentato l'efficienza degli alianti del **50%**. Le leve sono state due:
 
 - Allungamento maggiore ($\lambda$ da 12 a 17)
-- Profili più puliti, materiali compositi ($C_{D,0}$ da 0,019 a 0,014)
+- Profili più puliti, materiali compositi ($C_{R,0}$ da 0,019 a 0,014)
 
 ---
 
@@ -142,7 +142,7 @@ Ma se c'è vento contrario o forti termiche da raggiungere, **conviene accelerar
 ## 🎓 Cosa hai imparato
 
 - **L'aliante didattico** ha $E_{max}$ "modesta" (~20) rispetto a uno moderno (~30-50).
-- Le due leve fondamentali per migliorare $E_{max}$: **allungamento $\lambda$** e **resistenza parassita $C_{D,0}$**.
+- Le due leve fondamentali per migliorare $E_{max}$: **allungamento $\lambda$** e **resistenza parassita $C_{R,0}$**.
 - Una pista di addestramento di 1000 m → 20 km di planata possibile = puoi facilmente provare le manovre senza paura.
 - I **vecchi alianti metallici** restano didatticamente preziosi proprio perché meno performanti: insegnano a pilotare con margini più stretti, abituando il pilota a ottimizzare ogni manovra.
 

@@ -8,7 +8,7 @@
 
 ## 📋 Testo del problema
 
-Stesso Cessna 172 ($m = 1\,043$ kg, $S = 16{,}2$ m², $C_{L,max} = 2{,}1$ con flap) deve atterrare al **livello mare** in due giorni diversi:
+Stesso Cessna 172 ($m = 1\,043$ kg, $S = 16{,}2$ m², $C_{p,max} = 2{,}1$ con flap) deve atterrare al **livello mare** in due giorni diversi:
 
 - **Giorno A — ISA standard**: $T = 15°C$, $\rho = 1{,}225$ kg/m³
 - **Giorno B — giornata calda di luglio**: $T = 35°C$ (20°C sopra ISA), $p$ = standard 101 325 Pa
@@ -39,7 +39,7 @@ Riferimento: [Lezione 5 — Atmosfera ISA](../../01-teoria/05-atmosfera-isa.md).
 | $T$ | 15°C = 288,15 K | 35°C = 308,15 K |
 | $p$ | 101 325 Pa | 101 325 Pa |
 | $\rho$ | 1,225 kg/m³ | da calcolare |
-| $C_{L,max}$ atterraggio | 2,1 | 2,1 (invariato) |
+| $C_{p,max}$ atterraggio | 2,1 | 2,1 (invariato) |
 
 ---
 
@@ -47,7 +47,7 @@ Riferimento: [Lezione 5 — Atmosfera ISA](../../01-teoria/05-atmosfera-isa.md).
 
 1. Equazione di stato gas perfetto: $\rho = p/(RT)$
 2. Calcolo $\rho_B$ a 308 K (mantenendo $p$ standard)
-3. Applico $V_S = \sqrt{2W/(\rho S C_{L,max})}$ per i 2 casi
+3. Applico $V_S = \sqrt{2W/(\rho S C_{p,max})}$ per i 2 casi
 4. Confronto
 
 ---
@@ -66,7 +66,7 @@ $$\boxed{\rho_B \approx 1{,}146 \text{ kg/m}^3}$$
 
 ### Passo 2 — Peso (invariato)
 
-$$W = 1\,043 \times 9{,}81 = 10\,232 \text{ N}$$
+$$Q = 1\,043 \times 9{,}81 = 10\,232 \text{ N}$$
 
 ### Passo 3 — $V_S$ in atterraggio
 

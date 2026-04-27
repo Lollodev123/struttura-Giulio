@@ -7,32 +7,32 @@ Riferimento rapido. Ogni formula ha simboli, unità SI e quando si usa.
 ## 1. Forze fondamentali sul velivolo
 
 ### Portanza (Lift)
-$$L = \frac{1}{2} \rho V^2 S C_L$$
+$$P = \frac{1}{2} \rho V^2 S C_p$$
 
 | Simbolo | Significato | Unità SI |
 |---|---|---|
-| $L$ | Portanza | N |
+| $P$ | Portanza | N |
 | $\rho$ | Densità dell'aria | kg/m³ |
 | $V$ | Velocità (rispetto all'aria) | m/s |
 | $S$ | Superficie alare | m² |
-| $C_L$ | Coefficiente di portanza | adimensionale |
+| $C_p$ | Coefficiente di portanza | adimensionale |
 
-**Quando**: in qualsiasi problema dove serve calcolare la forza che sostiene il velivolo, o per ricavare $C_L$, $V$, $S$ note le altre.
+**Quando**: in qualsiasi problema dove serve calcolare la forza che sostiene il velivolo, o per ricavare $C_p$, $V$, $S$ note le altre.
 
 ---
 
 ### Resistenza (Drag)
-$$D = \frac{1}{2} \rho V^2 S C_D$$
+$$R = \frac{1}{2} \rho V^2 S C_R$$
 
 | Simbolo | Significato | Unità SI |
 |---|---|---|
-| $D$ | Resistenza | N |
-| $C_D$ | Coefficiente di resistenza totale | adimensionale |
+| $R$ | Resistenza | N |
+| $C_R$ | Coefficiente di resistenza totale | adimensionale |
 
 ---
 
 ### Resistenza indotta (componente di $D$)
-$$C_{Di} = \frac{C_L^2}{\pi \cdot \lambda \cdot e}$$
+$$C_{Di} = \frac{C_p^2}{\pi \cdot \lambda \cdot e}$$
 
 | Simbolo | Significato |
 |---|---|
@@ -40,13 +40,13 @@ $$C_{Di} = \frac{C_L^2}{\pi \cdot \lambda \cdot e}$$
 | $e$ | Fattore di Oswald (~0,7–0,9) |
 | $b$ | Apertura alare (m) |
 
-**Lettura**: la resistenza indotta cresce con $C_L^2$ → grandi a bassa velocità (alti $C_L$), piccola in crociera.
+**Lettura**: la resistenza indotta cresce con $C_p^2$ → grandi a bassa velocità (alti $C_p$), piccola in crociera.
 
 ---
 
 ## 2. Efficienza aerodinamica
 
-$$E = \frac{C_L}{C_D} = \frac{L}{D}$$
+$$E = \frac{C_p}{C_R} = \frac{L}{D}$$
 
 **Significato**: quanti newton di portanza generi per ogni newton di resistenza. Per un Cessna 172 $E_{max} \approx 10$, per un aliante $E_{max} \approx 40$–$60$.
 
@@ -57,12 +57,12 @@ $$\text{distanza} = E \cdot \text{quota persa}$$
 
 ## 3. Equilibrio in volo livellato
 
-$$L = W = m \cdot g$$
-$$T = D$$
+$$P = Q = m \cdot g$$
+$$T = R$$
 
 | Simbolo | Significato | Unità SI |
 |---|---|---|
-| $W$ | Peso | N |
+| $Q$ | Peso | N |
 | $m$ | Massa | kg |
 | $g$ | $9{,}81$ m/s² | m/s² |
 | $T$ | Spinta (Thrust) | N |
@@ -73,9 +73,9 @@ $$T = D$$
 
 ## 4. Velocità di stallo
 
-$$V_S = \sqrt{\frac{2 \cdot W}{\rho \cdot S \cdot C_{L,max}}}$$
+$$V_S = \sqrt{\frac{2 \cdot Q}{\rho \cdot S \cdot C_{p,max}}}$$
 
-**Lettura**: $V_S$ aumenta con la massa, diminuisce con la densità (in quota stalli prima!) e con $C_{L,max}$ (per questo esistono i flap).
+**Lettura**: $V_S$ aumenta con la massa, diminuisce con la densità (in quota stalli prima!) e con $C_{p,max}$ (per questo esistono i flap).
 
 ---
 
@@ -142,22 +142,22 @@ Sopra 11 km (tropopausa) la temperatura è costante a −56,5 °C.
 
 ## 9. Coefficienti tipici (ordine di grandezza)
 
-| Configurazione | $C_L$ tipico | Note |
+| Configurazione | $C_p$ tipico | Note |
 |---|---|---|
 | Crociera, velivolo GA | 0,2 – 0,4 | Cessna, Piper |
 | Crociera, jet di linea | 0,4 – 0,6 | Boeing, Airbus |
 | Salita ottimale | 0,6 – 1,0 | |
 | Avvicinamento con flap | 1,5 – 2,2 | |
-| $C_{L,max}$ ala "pulita" | 1,2 – 1,5 | Senza flap |
-| $C_{L,max}$ con flap+slat | 2,5 – 3,5 | Liner moderno |
+| $C_{p,max}$ ala "pulita" | 1,2 – 1,5 | Senza flap |
+| $C_{p,max}$ con flap+slat | 2,5 – 3,5 | Liner moderno |
 
 ---
 
 ## 10. Errori da non fare mai
 
-1. **Confondere $C_L$ con $L$**. $C_L$ è adimensionale, $L$ è in newton.
+1. **Confondere $C_p$ con $L$**. $C_p$ è adimensionale, $L$ è in newton.
 2. **Dimenticare il fattore ½** nella formula della portanza.
 3. **Usare $\rho_0 = 1{,}225$ in quota**. La densità diminuisce con l'altitudine — usa la tabella ISA.
 4. **Mescolare unità**. Se la velocità è in km/h, prima dividi per 3,6.
-5. **Confondere massa e peso**. $W = m \cdot g$, sempre.
-6. **Calcolare $V_S$ senza $C_{L,max}$**. Si usa il $C_L$ massimo, non quello in crociera.
+5. **Confondere massa e peso**. $Q = m \cdot g$, sempre.
+6. **Calcolare $V_S$ senza $C_{p,max}$**. Si usa il $C_p$ massimo, non quello in crociera.

@@ -18,8 +18,8 @@ Dati:
 
 **Determina**:
 1. $\rho$ a 12 192 m (interpolando dalla tabella ISA)
-2. $C_L$ richiesto in crociera
-3. **Confronto** con il Boeing 737 dell'Esercizio 5: stesso $C_L$ o diverso? Perché?
+2. $C_p$ richiesto in crociera
+3. **Confronto** con il Boeing 737 dell'Esercizio 5: stesso $C_p$ o diverso? Perché?
 
 ---
 
@@ -46,8 +46,8 @@ A FL400 siamo **sopra la tropopausa** (11 km): T è costante a $-56{,}5\,°\text
 ## 🧠 Strategia
 
 1. Densità a 12 km: oltre la tropopausa, formula esponenziale dalla [Lezione 5](../../01-teoria/05-atmosfera-isa.md)
-2. Peso: $W = m \cdot g$
-3. $C_L = 2W/(\rho V^2 S)$
+2. Peso: $Q = m \cdot g$
+3. $C_p = 2W/(\rho V^2 S)$
 4. Confronto: stessa formula del 737 ma con valori diversi
 
 ---
@@ -76,11 +76,11 @@ $$\boxed{\rho(12\,192\,m) \approx 0{,}302 \text{ kg/m}^3}$$
 
 ### Passo 2 — Peso del 777
 
-$$W = 280\,000 \times 9{,}81 = 2\,746\,800 \text{ N}$$
+$$Q = 280\,000 \times 9{,}81 = 2\,746\,800 \text{ N}$$
 
-### Passo 3 — $C_L$ in crociera
+### Passo 3 — $C_p$ in crociera
 
-$$C_L = \dfrac{2W}{\rho V^2 S} = \dfrac{2 \times 2\,746\,800}{0{,}302 \times 252^2 \times 427{,}8}$$
+$$C_p = \dfrac{2Q}{\rho V^2 S} = \dfrac{2 \times 2\,746\,800}{0{,}302 \times 252^2 \times 427{,}8}$$
 
 Calcolo:
 
@@ -90,11 +90,11 @@ Calcolo:
 - Denominatore: $19\,178 \times 427{,}8 = 8\,205\,375$
 - Rapporto: $5\,493\,600 / 8\,205\,375 = 0{,}6695$
 
-$$\boxed{C_L \approx 0{,}67}$$
+$$\boxed{C_p \approx 0{,}67}$$
 
 ### Passo 4 — Confronto col Boeing 737-800
 
-Dall'[Esercizio 5](../05-medio-portanza-quota.md): 737 a FL350, 70 t, 230 m/s → $C_L \approx 0{,}55$.
+Dall'[Esercizio 5](../05-medio-portanza-quota.md): 737 a FL350, 70 t, 230 m/s → $C_p \approx 0{,}55$.
 
 | | Boeing 737-800 | Boeing 777-300ER | Rapporto |
 |---|---|---|---|
@@ -104,27 +104,27 @@ Dall'[Esercizio 5](../05-medio-portanza-quota.md): 737 a FL350, 70 t, 230 m/s �
 | Quota | FL350 | FL400 | +1500 m |
 | $\rho$ a quota | 0,381 | 0,302 | -21% |
 | $V$ (TAS) | 230 m/s | 252 m/s | +9,6% |
-| **$C_L$** | 0,55 | 0,67 | +22% |
+| **$C_p$** | 0,55 | 0,67 | +22% |
 
-**Lettura**: il 777 vola con **$C_L$ maggiore** del 737 perché:
+**Lettura**: il 777 vola con **$C_p$ maggiore** del 737 perché:
 
 - Carico alare più alto (richiede più portanza per m²)
 - Densità minore in quota (FL400 vs FL350)
 - Aumento velocità non sufficiente a compensare
 
-→ Il 777 lavora più vicino al $C_L^* \approx 0{,}80$ → **efficienza maggiore** in crociera. Per questo i widebody intercontinentali (777, 787, A350) hanno consumi/passeggero migliori dei narrowbody (737, A320) nei voli lunghi.
+→ Il 777 lavora più vicino al $C_p^* \approx 0{,}80$ → **efficienza maggiore** in crociera. Per questo i widebody intercontinentali (777, 787, A350) hanno consumi/passeggero migliori dei narrowbody (737, A320) nei voli lunghi.
 
 ---
 
 ## ✅ Verifica di plausibilità
 
-Dal [formulario, sezione 9](../../00-formulario/formulario.md#9-coefficienti-tipici-ordine-di-grandezza): jet di linea in crociera → $C_L \in [0{,}4;\, 0{,}6]$.
+Dal [formulario, sezione 9](../../00-formulario/formulario.md#9-coefficienti-tipici-ordine-di-grandezza): jet di linea in crociera → $C_p \in [0{,}4;\, 0{,}6]$.
 
-Il nostro $C_L = 0{,}67$ è **leggermente sopra il range** ma:
+Il nostro $C_p = 0{,}67$ è **leggermente sopra il range** ma:
 
 - Il 777 a FL400 vola al limite operativo della quota (massima efficienza in cruise climb)
-- Carico alare alto giustifica $C_L$ alto
-- Real world: i 777 in crociera hanno $C_L$ effettivo 0,55-0,70 a seconda di peso/quota
+- Carico alare alto giustifica $C_p$ alto
+- Real world: i 777 in crociera hanno $C_p$ effettivo 0,55-0,70 a seconda di peso/quota
 
 → Risultato **realistico**.
 
@@ -135,7 +135,7 @@ Il nostro $C_L = 0{,}67$ è **leggermente sopra il range** ma:
 Lo stesso 777, ma a **inizio rotta** dopo decollo (peso massimo $m = 351\,500$ kg = MTOW), in crociera iniziale a **FL310** (9 449 m).
 
 a. Calcola $\rho$ a FL310 (interpolando dalla tabella ISA: tra 8000 m con ρ=0,526 e 11000 m con ρ=0,365)
-b. Calcola $C_L$
+b. Calcola $C_p$
 c. Spiega perché il 777 inizia il volo a FL310 e non subito a FL400
 
 <details markdown="1">
@@ -144,9 +144,9 @@ c. Spiega perché il 777 inizia il volo a FL310 e non subito a FL400
 a. Interpolazione: $\rho(9449) \approx 0{,}526 - (0{,}526-0{,}365) \cdot (9449-8000)/(11000-8000) = 0{,}526 - 0{,}161 \cdot 0{,}483 = $ **0,448 kg/m³**
 
 b. $W = 351500 \cdot 9{,}81 = 3\,448\,215$ N
-$C_L = 2 \cdot 3448215 / (0{,}448 \cdot 252^2 \cdot 427{,}8) = 6\,896\,430 / 12\,166\,624 \approx$ **0,567**
+$C_p = 2 \cdot 3448215 / (0{,}448 \cdot 252^2 \cdot 427{,}8) = 6\,896\,430 / 12\,166\,624 \approx$ **0,567**
 
-c. Il 777 a peso massimo NON può salire subito a FL400. La portanza richiesta è troppo alta → il velivolo dovrebbe volare con $C_L > 0{,}80$ (oltre $C_L^*$, cioè in zona **inefficiente**, vicino allo stallo). Soluzione: **step climb** — parti FL310, poi sali a FL330 dopo 2-3 ore (peso scende), poi FL370, poi FL400. Ogni step climb richiede coordinamento con ATC ma fa risparmiare 3-5% di carburante per tappa.
+c. Il 777 a peso massimo NON può salire subito a FL400. La portanza richiesta è troppo alta → il velivolo dovrebbe volare con $C_p > 0{,}80$ (oltre $C_p^*$, cioè in zona **inefficiente**, vicino allo stallo). Soluzione: **step climb** — parti FL310, poi sali a FL330 dopo 2-3 ore (peso scende), poi FL370, poi FL400. Ogni step climb richiede coordinamento con ATC ma fa risparmiare 3-5% di carburante per tappa.
 
 </details>
 
@@ -155,9 +155,9 @@ c. Il 777 a peso massimo NON può salire subito a FL400. La portanza richiesta �
 ## 🎓 Cosa hai imparato
 
 - **Sopra la tropopausa**, la densità segue una formula esponenziale (no più la formula 4,256 della troposfera).
-- I **widebody** (777, 787, A350) volano con $C_L$ relativamente alto (0,55-0,70) → vicino a $C_L^*$ → **massima efficienza**.
+- I **widebody** (777, 787, A350) volano con $C_p$ relativamente alto (0,55-0,70) → vicino a $C_p^*$ → **massima efficienza**.
 - Il **carico alare** del 777 (~654 kg/m²) è il 16% maggiore del 737 nonostante l'ala sia 4× più grande. È coerente: missione = trasporto carico/passeggeri massimi.
-- **Step climb**: i lunghi raggi non volano mai a quota costante. Salgono per inseguire $C_L^*$ man mano che bruciano carburante.
+- **Step climb**: i lunghi raggi non volano mai a quota costante. Salgono per inseguire $C_p^*$ man mano che bruciano carburante.
 
 ---
 

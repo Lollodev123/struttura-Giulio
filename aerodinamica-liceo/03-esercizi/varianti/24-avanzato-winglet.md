@@ -16,13 +16,13 @@ Confronta lo stesso Boeing 737-800 (peso = 70 t, $S = 124{,}6$ m², crociera FL3
 | **737-800 NG con blended winglet** (2003+) | Inclinato 60°, 2,4 m alto | 9,8 | 0,86 |
 | **737 MAX 8 (2017+)** | Split scimitar (a forcella) | 10,2 | 0,89 |
 
-$C_{D,0} = 0{,}025$ (invariato).
+$C_{R,0} = 0{,}025$ (invariato).
 
 **Determina**:
 
-1. $C_L$ in crociera (uguale per tutte: $L = W$)
-2. $C_{D,i}$ per le 3 versioni
-3. $C_D$ totale e $E$ in crociera per le 3 versioni
+1. $C_p$ in crociera (uguale per tutte: $P = Q$)
+2. $C_{R,i}$ per le 3 versioni
+3. $C_R$ totale e $E$ in crociera per le 3 versioni
 4. Resistenza $D$ in newton e potenza richiesta $P$
 5. **Risparmio carburante annuo** (assumendo 3000 ore di volo/anno e che il consumo sia proporzionale a $D$)
 
@@ -48,33 +48,33 @@ Il **vortice di estremità alare** (wingtip vortex) si forma perché l'aria del 
 
 ## 🧠 Strategia
 
-$C_L$ uguale per le 3 versioni (stessi $W$, $V$, $\rho$, $S$). Cambia $C_{D,i}$ per via di $\pi \lambda e$ diverso.
+$C_p$ uguale per le 3 versioni (stessi $W$, $V$, $\rho$, $S$). Cambia $C_{R,i}$ per via di $\pi \lambda e$ diverso.
 
 ---
 
 ## ✏️ Risoluzione passo-passo
 
-### Passo 1 — Pressione dinamica e $C_L$ (uguali per tutte)
+### Passo 1 — Pressione dinamica e $C_p$ (uguali per tutte)
 
 $q = \frac{1}{2} \cdot 0{,}38 \cdot 230^2 = 0{,}5 \cdot 0{,}38 \cdot 52\,900 = 10\,051$ Pa
 $W = 70\,000 \cdot 9{,}81 = 686\,700$ N
-$C_L = W/(qS) = 686\,700/(10\,051 \cdot 124{,}6) = 686\,700/1\,252\,355 \approx 0{,}548$
+$C_p = W/(qS) = 686\,700/(10\,051 \cdot 124{,}6) = 686\,700/1\,252\,355 \approx 0{,}548$
 
-### Passo 2 — $C_{D,i}$ per ciascuna versione
+### Passo 2 — $C_{R,i}$ per ciascuna versione
 
-$$C_{D,i} = \dfrac{C_L^2}{\pi \lambda e} = \dfrac{0{,}548^2}{\pi \lambda e}$$
+$$C_{R,i} = \dfrac{C_p^2}{\pi \lambda e} = \dfrac{0{,}548^2}{\pi \lambda e}$$
 
 $0{,}548^2 = 0{,}3003$
 
-| Versione | $\pi \lambda e$ | $C_{D,i}$ |
+| Versione | $\pi \lambda e$ | $C_{R,i}$ |
 |---|---|---|
 | Classic | 23,88 | $0{,}3003/23{,}88 = 0{,}01258$ |
 | NG (blended) | 26,48 | $0{,}3003/26{,}48 = 0{,}01134$ |
 | MAX (split) | 28,51 | $0{,}3003/28{,}51 = 0{,}01054$ |
 
-### Passo 3 — $C_D$ totale ed efficienza
+### Passo 3 — $C_R$ totale ed efficienza
 
-| Versione | $C_{D,0}$ | $C_{D,i}$ | $C_D$ totale | $E = C_L/C_D$ |
+| Versione | $C_{R,0}$ | $C_{R,i}$ | $C_R$ totale | $E = C_p/C_R$ |
 |---|---|---|---|---|
 | Classic | 0,025 | 0,01258 | 0,03758 | **14,58** |
 | NG | 0,025 | 0,01134 | 0,03634 | **15,08** |
@@ -84,7 +84,7 @@ $0{,}548^2 = 0{,}3003$
 
 ### Passo 4 — Resistenza in newton e potenza
 
-$D = q \cdot S \cdot C_D = 10\,051 \cdot 124{,}6 \cdot C_D = 1\,252\,355 \cdot C_D$
+$R = q \cdot S \cdot C_R = 10\,051 \cdot 124{,}6 \cdot C_R = 1\,252\,355 \cdot C_R$
 
 | Versione | $D$ (N) | Riduzione % | $P = D \cdot V$ (kW) |
 |---|---|---|---|
@@ -129,7 +129,7 @@ I nostri 3,3% e 5,5% (NG e MAX vs Classic) coincidono coi valori certificati. Il
 ### Aspetti reali aggiuntivi non coperti
 
 - I winglet aumentano leggermente il **peso** (~200 kg per coppia) → riduce parte del beneficio
-- Aumentano **resistenza parassita** in atterraggio (a piccoli angoli di attacco) → -0,5% di $C_D$ in cruise
+- Aumentano **resistenza parassita** in atterraggio (a piccoli angoli di attacco) → -0,5% di $C_R$ in cruise
 - **Vibrazioni in turbolenza** = attenuate con winglet (sicurezza extra)
 
 ---
@@ -163,7 +163,7 @@ d. Tempo rientro: $300M / 43M/anno = $ **7 anni**.
 ## 🎓 Cosa hai imparato
 
 - I **winglet** aumentano il **fattore di Oswald $e$** ostacolando i vortici di estremità.
-- $C_{D,i} \propto 1/(\pi \lambda e)$: aumentare $e$ del 10% riduce indotta del 9%.
+- $C_{R,i} \propto 1/(\pi \lambda e)$: aumentare $e$ del 10% riduce indotta del 9%.
 - Il guadagno in **efficienza totale** è 3-6% (a seconda della percentuale di indotta in crociera).
 - Su un aereo che vola 3000 h/anno, **3-6% di risparmio = $200-400 mila/anno**.
 - Per questo i winglet sono diventati **standard** su tutti i jet moderni (737NG/MAX, 757-Winglet retrofit, A320 sharklets, A330 winglet, 787 raked tip).

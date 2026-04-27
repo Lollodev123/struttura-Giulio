@@ -2,7 +2,7 @@
 
 > 🔴 **Difficoltà: AVANZATO** — Costruzione punto per punto della polare di un velivolo, identificazione dei punti notevoli (massima efficienza, crociera, stallo).
 >
-> 🎯 **Obiettivi didattici**: imparare a (a) costruire la curva $C_D = f(C_L)$ punto per punto, (b) trovare $C_L^*$ ed $E_{max}$ analiticamente E graficamente, (c) identificare la posizione del punto di crociera reale e capire perché non coincide con $E_{max}$.
+> 🎯 **Obiettivi didattici**: imparare a (a) costruire la curva $C_R = f(C_p)$ punto per punto, (b) trovare $C_p^*$ ed $E_{max}$ analiticamente E graficamente, (c) identificare la posizione del punto di crociera reale e capire perché non coincide con $E_{max}$.
 
 ---
 
@@ -12,15 +12,15 @@ Costruisci la **polare** di un Boeing 737-800 (al MLW per atterraggio = 65 000 k
 
 - Superficie alare: $S = 124{,}6$ m²
 - Allungamento: $\lambda = 10$
-- $C_{D,0} = 0{,}025$
+- $C_{R,0} = 0{,}025$
 - $e = 0{,}85$
-- $C_{L,max}$ (pulito): 1,40
+- $C_{p,max}$ (pulito): 1,40
 
 **Procedi così**:
 
-1. Calcola $C_D$ per $C_L$ = $\{0{,}1;\, 0{,}2;\, 0{,}3;\, 0{,}4;\, 0{,}5;\, 0{,}6;\, 0{,}8;\, 1{,}0;\, 1{,}2;\, 1{,}4\}$.
-2. Trova analiticamente $C_L^*$ ed $E_{max}$ (formula della Lezione 4).
-3. Confronta il punto di max efficienza col punto di **crociera reale** del 737 ($C_L \approx 0{,}5$).
+1. Calcola $C_R$ per $C_p$ = $\{0{,}1;\, 0{,}2;\, 0{,}3;\, 0{,}4;\, 0{,}5;\, 0{,}6;\, 0{,}8;\, 1{,}0;\, 1{,}2;\, 1{,}4\}$.
+2. Trova analiticamente $C_p^*$ ed $E_{max}$ (formula della Lezione 4).
+3. Confronta il punto di max efficienza col punto di **crociera reale** del 737 ($C_p \approx 0{,}5$).
 4. Disegna la polare in ASCII art.
 
 ---
@@ -29,7 +29,7 @@ Costruisci la **polare** di un Boeing 737-800 (al MLW per atterraggio = 65 000 k
 
 ![Polare del Boeing 737-800 con punti notevoli e tangente per E_max](../assets/img/grafici/polare-737.svg)
 
-I cerchi azzurri sono i 10 punti che calcoleremo nella tabella sotto. La retta tratteggiata rossa è la tangente all'origine: tocca la polare nel punto di **massima efficienza** ($C_L^* \approx 0{,}82$). La stella arancione è il punto operativo reale di crociera (M = 0,78), che vola con $C_L \approx 0{,}5$ — sotto $C_L^*$, sacrificando un po' di efficienza per andare più veloce.
+I cerchi azzurri sono i 10 punti che calcoleremo nella tabella sotto. La retta tratteggiata rossa è la tangente all'origine: tocca la polare nel punto di **massima efficienza** ($C_p^* \approx 0{,}82$). La stella arancione è il punto operativo reale di crociera (M = 0,78), che vola con $C_p \approx 0{,}5$ — sotto $C_p^*$, sacrificando un po' di efficienza per andare più veloce.
 
 ---
 
@@ -37,7 +37,7 @@ I cerchi azzurri sono i 10 punti che calcoleremo nella tabella sotto. La retta t
 
 | Parametro | Valore |
 |---|---|
-| $C_{D,0}$ | 0,025 |
+| $C_{R,0}$ | 0,025 |
 | $\lambda$ | 10 |
 | $e$ | 0,85 |
 | $\pi \lambda e$ | $\pi \cdot 10 \cdot 0{,}85 = 26{,}70$ |
@@ -46,12 +46,12 @@ I cerchi azzurri sono i 10 punti che calcoleremo nella tabella sotto. La retta t
 
 ## 🧠 Strategia di risoluzione
 
-1. **Cosa mi sta chiedendo?** Tabulare $C_D$, trovare punti notevoli, disegnare polare.
-2. **Quale fenomeno?** L'equazione della polare $C_D = C_{D,0} + C_L^2/(\pi \lambda e)$ è il modello base.
+1. **Cosa mi sta chiedendo?** Tabulare $C_R$, trovare punti notevoli, disegnare polare.
+2. **Quale fenomeno?** L'equazione della polare $C_R = C_{R,0} + C_p^2/(\pi \lambda e)$ è il modello base.
 3. **Quali formule?**
-   - $C_D = C_{D,0} + \dfrac{C_L^2}{\pi \lambda e}$
-   - $C_L^* = \sqrt{\pi \lambda e \cdot C_{D,0}}$
-   - $E_{max} = \frac{1}{2}\sqrt{\pi \lambda e / C_{D,0}}$
+   - $C_R = C_{R,0} + \dfrac{C_p^2}{\pi \lambda e}$
+   - $C_p^* = \sqrt{\pi \lambda e \cdot C_{R,0}}$
+   - $E_{max} = \frac{1}{2}\sqrt{\pi \lambda e / C_{R,0}}$
 
 4. **Dati e unità coerenti?** Sì, tutto adimensionale.
 5. **Algebra**: 10 sostituzioni nella formula della polare. Ordine: prima costruire la tabella, poi punti notevoli.
@@ -62,11 +62,11 @@ I cerchi azzurri sono i 10 punti che calcoleremo nella tabella sotto. La retta t
 
 ### Passo 1 — Funzione polare esplicita
 
-$$C_D(C_L) = 0{,}025 + \dfrac{C_L^2}{26{,}70}$$
+$$C_R(C_p) = 0{,}025 + \dfrac{C_p^2}{26{,}70}$$
 
 ### Passo 2 — Tabulazione
 
-| $C_L$ | $C_L^2$ | $C_L^2/26{,}70$ | $C_D$ | $E = C_L/C_D$ |
+| $C_p$ | $C_p^2$ | $C_p^2/26{,}70$ | $C_R$ | $E = C_p/C_R$ |
 |---|---|---|---|---|
 | 0,1 | 0,01 | 0,00037 | 0,02537 | **3,94** |
 | 0,2 | 0,04 | 0,00150 | 0,02650 | 7,55 |
@@ -79,37 +79,37 @@ $$C_D(C_L) = 0{,}025 + \dfrac{C_L^2}{26{,}70}$$
 | 1,2 | 1,44 | 0,05393 | 0,07893 | 15,20 |
 | 1,4 | 1,96 | 0,07341 | 0,09841 | **14,23** ← *stallo* |
 
-> 💡 **Lettura della tabella**: $E$ cresce, raggiunge il massimo intorno a $C_L = 0{,}82$, poi cala lentamente. Lo stallo arriva a $C_L = 1{,}4$ con $E = 14{,}2$ — paradossalmente buono, ma a velocità troppo bassa.
+> 💡 **Lettura della tabella**: $E$ cresce, raggiunge il massimo intorno a $C_p = 0{,}82$, poi cala lentamente. Lo stallo arriva a $C_p = 1{,}4$ con $E = 14{,}2$ — paradossalmente buono, ma a velocità troppo bassa.
 
-### Passo 3 — Analisi: $C_L^*$ ed $E_{max}$
+### Passo 3 — Analisi: $C_p^*$ ed $E_{max}$
 
-$$C_L^* = \sqrt{26{,}70 \times 0{,}025} = \sqrt{0{,}6675} = 0{,}817$$
+$$C_p^* = \sqrt{26{,}70 \times 0{,}025} = \sqrt{0{,}6675} = 0{,}817$$
 
 $$E_{max} = \dfrac{1}{2}\sqrt{\dfrac{26{,}70}{0{,}025}} = \dfrac{1}{2}\sqrt{1\,068} = \dfrac{32{,}68}{2} = 16{,}34$$
 
-**Verifica**: nella tabella, a $C_L = 0{,}82$, calcolato $E = 16{,}33$. ✅ Coincide al millesimo. Le formule e la tabulazione sono coerenti.
+**Verifica**: nella tabella, a $C_p = 0{,}82$, calcolato $E = 16{,}33$. ✅ Coincide al millesimo. Le formule e la tabulazione sono coerenti.
 
-A $C_L^*$:
-$$C_D^* = 0{,}025 + \dfrac{0{,}817^2}{26{,}70} = 0{,}025 + 0{,}0250 = 0{,}050$$
+A $C_p^*$:
+$$C_R^* = 0{,}025 + \dfrac{0{,}817^2}{26{,}70} = 0{,}025 + 0{,}0250 = 0{,}050$$
 
-→ A massima efficienza, **parassita = indotta** (entrambe valgono $C_{D,0}$). Confermato.
+→ A massima efficienza, **parassita = indotta** (entrambe valgono $C_{R,0}$). Confermato.
 
 ### Passo 4 — Confronto con la crociera reale
 
-| Condizione | $C_L$ | $C_D$ | $E$ | Posizione |
+| Condizione | $C_p$ | $C_R$ | $E$ | Posizione |
 |---|---|---|---|---|
-| Crociera 737 | 0,50 | 0,034 | **14,55** | Sotto $C_L^*$ |
+| Crociera 737 | 0,50 | 0,034 | **14,55** | Sotto $C_p^*$ |
 | Massima efficienza | 0,82 | 0,050 | **16,34** | Punto ottimo |
 | Stallo | 1,40 | 0,098 | 14,23 | Limite superiore |
 
-**Domanda chiave**: perché il 737 vola in crociera con $C_L = 0{,}5$ e non $C_L = 0{,}82$?
+**Domanda chiave**: perché il 737 vola in crociera con $C_p = 0{,}5$ e non $C_p = 0{,}82$?
 
 **Risposta**:
 
-- A $C_L = 0{,}82$: velocità lenta, autonomia ottima MA tempo di volo lunghissimo → costoso in personale, parcheggi gate, comfort passeggeri
-- A $C_L = 0{,}5$: velocità di crociera 230 m/s (Mach 0,78), efficienza 89% del massimo — sacrificio del 11% di efficienza, **velocità raddoppiata**
+- A $C_p = 0{,}82$: velocità lenta, autonomia ottima MA tempo di volo lunghissimo → costoso in personale, parcheggi gate, comfort passeggeri
+- A $C_p = 0{,}5$: velocità di crociera 230 m/s (Mach 0,78), efficienza 89% del massimo — sacrificio del 11% di efficienza, **velocità raddoppiata**
 
-In **autonomia massima** (es. ferry flight per riposizionare aerei), si vola a $C_L^*$. In **operazioni commerciali standard**, si compromette per la velocità.
+In **autonomia massima** (es. ferry flight per riposizionare aerei), si vola a $C_p^*$. In **operazioni commerciali standard**, si compromette per la velocità.
 
 ### Passo 5 — La polare disegnata
 
@@ -119,22 +119,22 @@ Riportando i 10 punti calcolati nella tabella, otteniamo la polare del nostro Bo
 
 **Cosa vedere nel grafico**:
 
-- I **10 cerchi azzurri** sono i punti della tabella sopra (a $C_L$ crescenti da 0,1 a 1,4)
-- L'**asintoto verticale** sinistro è il valore di parassita $C_{D,0} = 0{,}025$ — la polare non scende mai sotto questa soglia, perché c'è sempre un minimo di resistenza
-- La **retta tratteggiata rossa** (tangente all'origine) tocca la polare nel punto di max efficienza ($C_L^* = 0{,}82$)
-- La **stella arancione** è il punto operativo reale di crociera ($C_L = 0{,}5$, $E = 14{,}55$)
+- I **10 cerchi azzurri** sono i punti della tabella sopra (a $C_p$ crescenti da 0,1 a 1,4)
+- L'**asintoto verticale** sinistro è il valore di parassita $C_{R,0} = 0{,}025$ — la polare non scende mai sotto questa soglia, perché c'è sempre un minimo di resistenza
+- La **retta tratteggiata rossa** (tangente all'origine) tocca la polare nel punto di max efficienza ($C_p^* = 0{,}82$)
+- La **stella arancione** è il punto operativo reale di crociera ($C_p = 0{,}5$, $E = 14{,}55$)
 
-> 💡 **Lettura grafica**: la polare sembra una "L corica" o "fluctuazione", aperta a destra. La parte sinistra (basso $C_D$, basso $C_L$) è il regime di alta velocità. La parte alta ($C_L > 0{,}82$) è il regime di alta portanza, prossimo allo stallo.
+> 💡 **Lettura grafica**: la polare sembra una "L corica" o "fluctuazione", aperta a destra. La parte sinistra (basso $C_R$, basso $C_p$) è il regime di alta velocità. La parte alta ($C_p > 0{,}82$) è il regime di alta portanza, prossimo allo stallo.
 
 ---
 
 ## ✅ Verifica di plausibilità
 
 - $E_{max} = 16{,}34$: il manuale del 737-800 dichiara **17-19** in condizioni ideali. Sottostima di ~10%, coerente.
-- $C_L^* = 0{,}82$: nei manuali Boeing si trova "best L/D speed" attorno a 220 kt a peso medio, che corrisponde a $C_L \approx 0{,}80$. ✅
-- A $C_L^*$: parassita = indotta = $C_{D,0}$. Verificato numericamente.
+- $C_p^* = 0{,}82$: nei manuali Boeing si trova "best L/D speed" attorno a 220 kt a peso medio, che corrisponde a $C_p \approx 0{,}80$. ✅
+- A $C_p^*$: parassita = indotta = $C_{R,0}$. Verificato numericamente.
 
-**Implicazione operativa**: in caso di **avaria motore**, il pilota deve immediatamente **rallentare** dal regime di crociera (230 m/s) verso $V^*$ (~190 m/s). $V^*$ corrisponde a $C_L^*$ → massima distanza percorribile.
+**Implicazione operativa**: in caso di **avaria motore**, il pilota deve immediatamente **rallentare** dal regime di crociera (230 m/s) verso $V^*$ (~190 m/s). $V^*$ corrisponde a $C_p^*$ → massima distanza percorribile.
 
 ---
 
@@ -146,7 +146,7 @@ Calcola **velocità di max efficienza** $V^*$ del 737 al peso 65 000 kg, in croc
 <summary>👉 Solo il risultato (prima provaci da solo!)</summary>
 
 $W = 65000 \times 9{,}81 = 637\,650$ N
-$V^* = \sqrt{2W/(\rho S C_L^*)} = \sqrt{2 \cdot 637650 / (0{,}38 \cdot 124{,}6 \cdot 0{,}817)} = \sqrt{32\,937} \approx 181{,}5$ m/s = **352,8 kt**.
+$V^* = \sqrt{2W/(\rho S C_p^*)} = \sqrt{2 \cdot 637650 / (0{,}38 \cdot 124{,}6 \cdot 0{,}817)} = \sqrt{32\,937} \approx 181{,}5$ m/s = **352,8 kt**.
 
 Confronto: in crociera a Mach 0,78 = ~230 m/s = 447 kt.
 
@@ -158,15 +158,15 @@ Confronto: in crociera a Mach 0,78 = ~230 m/s = 447 kt.
 
 ## 🎓 Cosa hai imparato
 
-- La **polare** $C_D = C_{D,0} + C_L^2/(\pi \lambda e)$ è la formula chiave: descrive aerodinamica del velivolo in **un solo grafico**.
+- La **polare** $C_R = C_{R,0} + C_p^2/(\pi \lambda e)$ è la formula chiave: descrive aerodinamica del velivolo in **un solo grafico**.
 - I **punti notevoli** della polare sono:
   - Origine (0,0) — non fisico
-  - $C_{D,0}$ asintotico — bassa portanza, alta velocità
-  - **$C_L^*$, $E_{max}$** — punto ottimo
-  - $C_{L,max}$ — limite di stallo
+  - $C_{R,0}$ asintotico — bassa portanza, alta velocità
+  - **$C_p^*$, $E_{max}$** — punto ottimo
+  - $C_{p,max}$ — limite di stallo
 
 - A **massima efficienza**, parassita e indotta sono uguali. Verifica gratis.
-- La **crociera commerciale** è $C_L < C_L^*$: si vola sotto l'ottimo per essere veloci.
+- La **crociera commerciale** è $C_p < C_p^*$: si vola sotto l'ottimo per essere veloci.
 - I numeri dei manuali Boeing/Airbus si possono **ricostruire** entro il 10% con il modello del liceo. **Non è solo teoria.**
 
 ---

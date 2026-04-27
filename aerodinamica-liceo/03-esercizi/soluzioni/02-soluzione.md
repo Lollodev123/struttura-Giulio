@@ -1,6 +1,6 @@
 # Soluzione — Variante Esercizio 2
 
-**Variante**: stesso Piper PA-28 ($m = 1\,157$ kg, $S = 15{,}8$ m², $C_{L,max} = 1{,}5$ ala pulita), ma in volo a **2 000 m** di quota ISA invece che al livello mare.
+**Variante**: stesso Piper PA-28 ($m = 1\,157$ kg, $S = 15{,}8$ m², $C_{p,max} = 1{,}5$ ala pulita), ma in volo a **2 000 m** di quota ISA invece che al livello mare.
 
 ### Passo 1 — Densità a 2000 m (tabella ISA)
 
@@ -10,11 +10,11 @@ $$\rho(2000) = 1{,}007 \text{ kg/m}^3$$
 
 ### Passo 2 — Peso (invariato)
 
-$$W = m \cdot g = 1\,157 \times 9{,}81 = 11\,350{,}17 \text{ N}$$
+$$Q = m \cdot g = 1\,157 \times 9{,}81 = 11\,350{,}17 \text{ N}$$
 
 ### Passo 3 — Velocità di stallo a 2000 m
 
-$$V_S(2000) = \sqrt{\dfrac{2W}{\rho S C_{L,max}}} = \sqrt{\dfrac{2 \times 11\,350{,}17}{1{,}007 \times 15{,}8 \times 1{,}5}}$$
+$$V_S(2000) = \sqrt{\dfrac{2Q}{\rho S C_{p,max}}} = \sqrt{\dfrac{2 \times 11\,350{,}17}{1{,}007 \times 15{,}8 \times 1{,}5}}$$
 
 Calcolo:
 
