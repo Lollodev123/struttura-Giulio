@@ -43,7 +43,7 @@ Questo repository raccoglie lezioni, quiz ed esercizi risolti su profilo alare, 
 | 7 | Reynolds e regime di flusso | 🟡 Medio | Cessna 172 ✅ |
 | 8 | Velocità di max efficienza in planata | 🔴 Avanzato | Aliante DG-1000 ✅ |
 | 9 | Decollo con flap (alta portanza) | 🔴 Avanzato | Airbus A320 ✅ |
-| 10 | Polare completa e punti notevoli | 🔴 Avanzato | Boeing 737 🚧 |
+| 10 | Polare completa e punti notevoli | 🔴 Avanzato | Boeing 737 ✅ |
 
 ---
 
