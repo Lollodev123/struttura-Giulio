@@ -4,13 +4,14 @@ site_url: https://lollodev123.github.io/struttura-Giulio/
 repo_url: https://github.com/Lollodev123/struttura-Giulio
 repo_name: Lollodev123/struttura-Giulio
 edit_uri: edit/main/aerodinamica-liceo/
-docs_dir: .
-site_dir: ../site
+docs_dir: aerodinamica-liceo
+site_dir: site
 
 exclude_docs: |
   SETUP.md
   CONTRIBUTING.md
-  /**/_template-*.md
+  01-teoria/_template-lezione.md
+  03-esercizi/_template-esercizio.md
   .github/
 
 theme:
