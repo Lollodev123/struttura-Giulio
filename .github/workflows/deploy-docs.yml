@@ -22,9 +22,8 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-          cache: pip
       - name: Install dependencies
-        run: pip install mkdocs-material pymdown-extensions
+        run: pip install mkdocs-material==9.5.49 pymdown-extensions==10.14
       - name: Build site
         working-directory: aerodinamica-liceo
         run: mkdocs build --strict
