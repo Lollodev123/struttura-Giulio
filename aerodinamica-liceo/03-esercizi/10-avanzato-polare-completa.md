@@ -25,28 +25,11 @@ Costruisci la **polare** di un Boeing 737-800 (al MLW per atterraggio = 65 000 k
 
 ---
 
-## 🖼️ Diagramma del problema
+## 🖼️ La polare del velivolo
 
-```
-   La polare di un velivolo:
-   
-      C_L
-       │
-       │     ╱─── stallo (1,4)
-   1,4 │   ╱
-       │ ╱  ●  C_L,max
-       │╱
-   1,0 │     ●  alta portanza (atterraggio)
-       │
-       │       ●  C_L*  ←── E_max (tangente all'origine)
-   0,5 │           ●  crociera
-       │           
-       │              ●  alta velocità
-   0,1 │             
-       │
-   0,0 ●─────────────────── C_D
-       │ 0,025  0,05    0,1
-```
+![Polare del Boeing 737-800 con punti notevoli e tangente per E_max](../assets/img/grafici/polare-737.svg)
+
+I cerchi azzurri sono i 10 punti che calcoleremo nella tabella sotto. La retta tratteggiata rossa è la tangente all'origine: tocca la polare nel punto di **massima efficienza** ($C_L^* \approx 0{,}82$). La stella arancione è il punto operativo reale di crociera (M = 0,78), che vola con $C_L \approx 0{,}5$ — sotto $C_L^*$, sacrificando un po' di efficienza per andare più veloce.
 
 ---
 

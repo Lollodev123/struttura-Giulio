@@ -45,26 +45,9 @@ Per questo motivo i jet di linea volano alti (8 000–12 000 m): risparmiano car
 
 ## 🌡️ La struttura dell'atmosfera in altezza — quello che davvero ti serve
 
-```
-    quota (km)
-       ↑
-    20 │┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄
-       │
-    15 │   STRATOSFERA INFERIORE
-       │   (T costante ≈ -56,5°C)
-       │
-    11 │┄┄┄┄┄┄┄ TROPOPAUSA ┄┄┄┄┄┄┄
-       │
-       │
-       │   TROPOSFERA
-       │   (T diminuisce linearmente)
-       │   gradiente: -6,5 °C ogni 1000 m
-       │
-     0 │___________________________
-       T = +15 °C
-       p = 101 325 Pa
-       ρ = 1,225 kg/m³
-```
+![Atmosfera Standard ISA: variazione di T, p, ρ con la quota fino a 20 km](../assets/img/grafici/atmosfera-isa.svg)
+
+I tre grafici mostrano come **temperatura, pressione e densità** cambiano con la quota. La linea tratteggiata orizzontale a 11 km segna la **tropopausa**: sopra, la temperatura resta costante a −56,5 °C (stratosfera inferiore). Pressione e densità invece continuano a scendere esponenzialmente.
 
 Per il liceo ti basta sapere **due strati**:
 

@@ -24,19 +24,9 @@ Profili diversi = velivoli con missioni diverse:
 
 ## 📐 Geometria: le 6 parti che devi conoscere
 
-```
-                  spessore max
-                  ↓
-        ___________╲___________
-      ╱                          ╲___
-     ╱  ←─── linea media ───→        ╲___
-    ●────────────────────────────────────●
-    ▲                                    ▲
-    bordo                          bordo
-    d'attacco                    d'uscita
-    
-    └─────────── corda (c) ─────────────┘
-```
+![Profilo NACA 2412 con linea media, corda, spessore e freccia di curvatura](../assets/img/grafici/profilo-naca-2412.svg)
+
+Il profilo blu è il **NACA 2412** del Cessna 172. La linea tratteggiata rossa è la **linea media** (separa dorso e ventre). La freccia viola misura lo **spessore massimo** (12% della corda). La freccia verde misura la **curvatura massima** (2% della corda, posta al 40% della corda).
 
 | Elemento | Cosa è | Perché conta |
 |---|---|---|
