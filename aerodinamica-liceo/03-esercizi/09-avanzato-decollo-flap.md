@@ -20,6 +20,7 @@ Dati:
 - $V_2$ (velocità sicura decollo) = $1{,}2 \cdot V_S$
 
 **Determina**:
+
 1. $V_S$ in configurazione di decollo (flap CONF 1+F)
 2. $V_R$ in nodi
 3. $V_2$ in nodi
@@ -73,6 +74,7 @@ Dati:
    - $V_R = 1{,}1 \cdot V_S$
    - $V_2 = 1{,}2 \cdot V_S$
    - In quota: $V_S(h) = V_S(0) \cdot \sqrt{\rho_0/\rho(h)}$
+
 4. **Dati e unità coerenti?** Tutto SI; converto in nodi ($\div 0{,}5144$) alla fine.
 5. **Algebra**: catena di rapporti.
 

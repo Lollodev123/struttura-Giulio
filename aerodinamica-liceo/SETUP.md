@@ -10,6 +10,7 @@ Tre opzioni in ordine di facilità. **Scegli UNA**.
    - **Nome**: `aerodinamica-liceo` (o quello che preferisci)
    - **Privacy**: 🔒 **Private** (importante: lo studente entra come collaborator)
    - **NON** spuntare "Add a README" — lo abbiamo già
+
 2. Nella pagina del repo vuoto, clicca **"uploading an existing file"**
 3. Trascina **tutti i file e cartelle** del .zip estratto
 4. Scrivi messaggio commit: `Initial commit: scaffold + lezione 1 + esercizio 1`
@@ -62,6 +63,7 @@ Se vuoi che il materiale diventi un **sito mobile-friendly** invece di un repo, 
    ```bash
    pip install mkdocs-material pymdown-extensions
    ```
+
 2. Aggiungi un `mkdocs.yml` minimale (te lo posso generare quando vuoi).
 3. Attiva GitHub Pages: **Settings → Pages → Source: GitHub Actions**.
 4. Risultato: sito tipo `https://tuousername.github.io/aerodinamica-liceo/` con search, dark mode, navigazione ad albero.
@@ -78,6 +80,7 @@ Quando io ti consegno una nuova lezione/esercizio in chat:
 2. ```bash
    git add . && git commit -m "Aggiunta lezione 2: portanza" && git push
    ```
+
 3. Lo studente vede l'aggiornamento entro pochi secondi su GitHub
 
 Oppure, se stai lavorando in browser: vai sul repo → **Add file → Upload files**.

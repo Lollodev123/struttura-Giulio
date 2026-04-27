@@ -19,6 +19,7 @@ Dati DG-1000:
 - Fattore di Oswald: $e = 0{,}95$
 
 **Determina**:
+
 1. L'efficienza massima $E_{max}$ in aria calma
 2. La velocità di max efficienza $V^*$ (rispetto all'aria) al livello mare
 3. La velocità al suolo (groundspeed) durante la planata, con vento contrario di 20 kt
@@ -71,6 +72,7 @@ Dati DG-1000:
    - $V^* = \sqrt{2W/(\rho S C_L^*)}$
    - $V_{ground} = V_{air} - V_{wind}$ (vento contrario)
    - distanza al suolo = $E \times h \times (V_g/V^*)$
+
 4. **Dati e unità coerenti?** Sì, tutto SI.
 5. **Algebra**: catena di calcoli, attenzione al rapporto velocità.
 

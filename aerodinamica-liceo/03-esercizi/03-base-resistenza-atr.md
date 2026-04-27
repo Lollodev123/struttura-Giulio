@@ -17,6 +17,7 @@ Un **ATR 72-600** (turboelica regionale) è in crociera livellata a **7 000 m** 
 - Fattore di Oswald: $e = 0{,}85$
 
 **Determina**:
+
 1. Il coefficiente di portanza $C_L$ richiesto
 2. Il coefficiente di resistenza indotta $C_{D,i}$
 3. La resistenza totale $D$ in newton
@@ -77,6 +78,7 @@ Un **ATR 72-600** (turboelica regionale) è in crociera livellata a **7 000 m** 
    - $C_{D,i} = C_L^2/(\pi \lambda e)$
    - $C_D = C_{D,0} + C_{D,i}$
    - $D = \frac{1}{2}\rho V^2 S C_D$
+
 4. **Dati e unità sono coerenti?** Sì, tutti SI. Velocità già in m/s. Densità in quota da tabella.
 5. **Algebra**: catena di sostituzioni. Calcolo intermedio: la pressione dinamica $q = \frac{1}{2}\rho V^2$ — utile da calcolare una volta sola.
 

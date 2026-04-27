@@ -17,6 +17,7 @@ Dati comuni:
 - Quota: livello mare ISA per i casi (a) e (c); 3000 m per il (b)
 
 **Condizioni**:
+
 1. **Crociera** al livello mare, $V = 122$ kt (velocità di crociera standard)
 2. **Crociera** a 3000 m, stessa V (122 kt)
 3. **Avvicinamento finale** al livello mare, $V = 60$ kt

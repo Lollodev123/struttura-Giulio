@@ -69,6 +69,7 @@ Costruisci la **polare** di un Boeing 737-800 (al MLW per atterraggio = 65 000 k
    - $C_D = C_{D,0} + \dfrac{C_L^2}{\pi \lambda e}$
    - $C_L^* = \sqrt{\pi \lambda e \cdot C_{D,0}}$
    - $E_{max} = \frac{1}{2}\sqrt{\pi \lambda e / C_{D,0}}$
+
 4. **Dati e unità coerenti?** Sì, tutto adimensionale.
 5. **Algebra**: 10 sostituzioni nella formula della polare. Ordine: prima costruire la tabella, poi punti notevoli.
 
