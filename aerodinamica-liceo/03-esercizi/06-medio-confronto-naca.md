@@ -16,6 +16,7 @@ Confronta due profili NACA in **regime lineare** (lontano dallo stallo, $\alpha 
 - $C_{L,max}$ A: 1,55 (a $\alpha_{stallo} = 16°$). $C_{L,max}$ B: 1,40 (a $\alpha_{stallo} = 14°$).
 
 **Determina**:
+
 1. Il $C_L$ di ciascun profilo a $\alpha = 0°, 5°, 10°$
 2. Per generare $C_L = 0{,}5$ (crociera tipica), a quale $\alpha$ ciascun profilo deve operare?
 3. Quale profilo è più adatto per un Cessna 172 in crociera, e perché?

@@ -19,6 +19,7 @@ Un **aliante ASK-21** sta planando in atmosfera ISA al livello del mare. Dati:
 L'aliante si trova a **2 000 m** sopra il punto di atterraggio, in aria calma.
 
 **Determina**:
+
 1. Il coefficiente di portanza ottimale $C_L^*$ (per $E_{max}$)
 2. L'efficienza massima $E_{max}$
 3. La velocità di max efficienza $V^*$ (in m/s e in nodi)
@@ -74,6 +75,7 @@ L'aliante si trova a **2 000 m** sopra il punto di atterraggio, in aria calma.
    - $E_{max} = \frac{1}{2}\sqrt{\pi \lambda e / C_{D,0}}$
    - $V^* = \sqrt{\dfrac{2W}{\rho S C_L^*}}$
    - Distanza = $E_{max} \times $ quota persa
+
 4. **Dati e unità sono coerenti?** Sì, tutto SI.
 5. **Algebra**: applicare la formula a tappe; il risultato di una entra nella successiva.
 

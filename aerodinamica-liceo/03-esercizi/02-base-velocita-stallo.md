@@ -16,6 +16,7 @@ Un **Piper PA-28-181 Archer** vola in atmosfera standard al livello del mare. I 
 - Coefficiente di portanza massimo, **flap pieni** (40°): $C_{L,max,flap} = 2{,}1$
 
 **Determina**:
+
 1. La velocità di stallo $V_S$ con ala pulita
 2. La velocità di stallo $V_{S,0}$ con flap pieni
 3. La percentuale di riduzione di $V_S$ ottenuta estraendo i flap
@@ -66,6 +67,7 @@ Un **Piper PA-28-181 Archer** vola in atmosfera standard al livello del mare. I 
    - Portanza: $L = \frac{1}{2}\rho V^2 S C_L$
    - Allo stallo: $L_{max} = \frac{1}{2}\rho V_S^2 S C_{L,max}$
    - Da cui: $V_S = \sqrt{\dfrac{2 W}{\rho S C_{L,max}}}$
+
 4. **Dati e unità sono coerenti?** Sì, tutti SI. Il risultato sarà in m/s; converto in nodi alla fine.
 5. **Algebra**: stessa formula due volte, con $C_{L,max}$ diverso. Confronto i risultati.
 

@@ -63,6 +63,7 @@ Prima di scrivere una formula, ragiona così:
 3. **Quali formule mi servono?**
    - Equilibrio verticale: $L = W = m \cdot g$
    - Definizione di portanza: $L = \frac{1}{2}\rho V^2 S C_L$
+
 4. **Dati e unità sono coerenti?** Quasi: la velocità è in **nodi**, devo convertirla in **m/s** prima di sostituirla.
 5. **Algebra**: combino le due equazioni, isolo $C_L$, sostituisco i numeri.
 

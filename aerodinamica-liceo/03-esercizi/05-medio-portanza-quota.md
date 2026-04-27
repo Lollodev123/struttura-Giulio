@@ -15,6 +15,7 @@ Un **Boeing 737-800** è in crociera livellata a **FL350** (Flight Level 350 = 1
 - Quota: $h = 10\,670$ m, atmosfera ISA
 
 **Determina**:
+
 1. La densità $\rho$ alla quota di volo (interpolando dalla tabella ISA)
 2. Il coefficiente di portanza $C_L$ richiesto in crociera
 3. **Confronto**: se lo stesso velivolo volasse al livello mare a 230 m/s, quale $C_L$ servirebbe? Cosa significa fisicamente?
@@ -63,6 +64,7 @@ Un **Boeing 737-800** è in crociera livellata a **FL350** (Flight Level 350 = 1
 3. **Quali formule?**
    - Tabella ISA per $\rho$ (interpolazione lineare tra 10000 e 11000 m)
    - $C_L = 2W/(\rho V^2 S)$
+
 4. **Dati e unità coerenti?** Sì, tutto SI.
 5. **Algebra**: applicare la stessa formula a due densità diverse, confrontare.
 
