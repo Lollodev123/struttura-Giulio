@@ -51,9 +51,9 @@ Questo repository raccoglie lezioni, quiz ed esercizi risolti su profilo alare, 
 
 Se non capisci un passaggio, **non rimuginare**: chiedi direttamente a **Claude nel Project di studio**.
 
-- Apri Claude.ai → entra nel Project "Aerodinamica — Giulio" (configurato sul Mac di papà).
+- Apri Claude.ai → entra nel Project "Aerodinamica — Giulio" (configurato sul Mac desktop).
 - Scrivi liberamente: *"non capisco il passo 4 dell'esercizio 1"*, *"perché la portanza dipende da V²?"*, *"creami un esercizio nuovo sulla velocità di stallo"*.
-- Claude risponde usando **questo repo** come contesto.
+- Claude risponde usando **questa repository** come contesto.
 
 **Per segnalare un errore nel materiale** (refuso, calcolo sbagliato), apri una **Issue** dal tab in alto col template *"Errore nel materiale"*. Le issue servono solo per gli errori — le domande vanno in chat.
 
