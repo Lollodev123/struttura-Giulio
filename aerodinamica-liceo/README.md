@@ -24,7 +24,7 @@ Questo repository raccoglie lezioni, quiz ed esercizi risolti su profilo alare, 
 2. [Portanza](./01-teoria/02-portanza.md) ✅ *completa*
 3. [Resistenza aerodinamica](./01-teoria/03-resistenza.md) ✅ *completa*
 4. [Efficienza aerodinamica e polare](./01-teoria/04-efficienza.md) ✅ *completa*
-5. [Atmosfera Standard ISA](./01-teoria/05-atmosfera-isa.md) 🚧
+5. [Atmosfera Standard ISA](./01-teoria/05-atmosfera-isa.md) ✅ *completa*
 6. [Numero di Reynolds](./01-teoria/06-numero-reynolds.md) 🚧
 7. [Geometria alare](./01-teoria/07-geometria-alare.md) 🚧
 8. [Momento e centraggio](./01-teoria/08-momento-centraggio.md) 🚧
