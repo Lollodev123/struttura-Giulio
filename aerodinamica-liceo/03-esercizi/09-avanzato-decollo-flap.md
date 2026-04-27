@@ -1,6 +1,7 @@
 # Esercizio 9 — Decollo con flap (Airbus A320)
 
 > 🔴 **Difficoltà: AVANZATO** — Combina effetto flap, velocità di stallo e velocità operative del decollo.
+>
 > 🎯 **Obiettivi didattici**: imparare a (a) calcolare $V_S$ con flap di decollo, (b) ricavare le velocità $V_R$ (rotation) e $V_2$ (decollo sicuro) usando i fattori standard, (c) confrontare con la situazione in alta quota (aeroporti come La Paz).
 
 ---
@@ -121,6 +122,7 @@ Calcolo:
 - $V_S(4000) = 71{,}4 \times 1{,}222 = 87{,}3$ m/s = 169,7 kt
 
 $$V_R(4000) = 1{,}1 \cdot 87{,}3 = 96{,}0 \text{ m/s} = 187 \text{ kt}$$
+
 $$V_2(4000) = 1{,}2 \cdot 87{,}3 = 104{,}8 \text{ m/s} = 204 \text{ kt}$$
 
 ### Passo 5 — Confronto

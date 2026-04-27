@@ -1,6 +1,7 @@
 # Esercizio 5 — Portanza in quota ISA (Boeing 737-800)
 
 > 🟡 **Difficoltà: MEDIO** — Applicazione della formula di portanza in quota usando la tabella ISA.
+>
 > 🎯 **Obiettivi didattici**: imparare a (a) usare la tabella ISA per ricavare $\rho$, (b) calcolare $C_L$ a quote diverse, (c) confrontare il comportamento di un velivolo a livello mare e in crociera ad alta quota.
 
 ---

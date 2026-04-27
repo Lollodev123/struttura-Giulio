@@ -1,6 +1,7 @@
 # Esercizio 3 — Resistenza in crociera (ATR 72-600)
 
 > 🟢 **Difficoltà: BASE** — Applicazione della formula della resistenza con decomposizione parassita+indotta.
+>
 > 🎯 **Obiettivi didattici**: imparare a (a) calcolare $C_L$ in crociera in quota, (b) decomporre $C_D$ in parassita e indotta, (c) ottenere la spinta richiesta dal motore.
 
 ---

@@ -1,6 +1,7 @@
 # Esercizio 4 — Efficienza massima e planata (aliante ASK-21)
 
 > 🟡 **Difficoltà: MEDIO** — Combina formule di portanza, resistenza ed efficienza per ottenere il punto operativo ottimo dell'aliante.
+>
 > 🎯 **Obiettivi didattici**: imparare a (a) calcolare $E_{max}$ usando la formula del libro, (b) trovare $V^*$ e $C_L^*$, (c) calcolare distanza in planata da una quota data.
 
 ---
@@ -138,6 +139,7 @@ $$\boxed{\text{distanza} \approx 60 \text{ km}}$$
 
 **Angolo di planata** corrispondente:
 $$\tan(\gamma) = 1/E = 1/29{,}8 \approx 0{,}0336$$
+
 $$\gamma \approx 1{,}92°$$
 
 → angolo molto piccolo (meno di 2°). Coerente con un aliante in planata: cala dolcemente, quasi "scivola" verso terra.

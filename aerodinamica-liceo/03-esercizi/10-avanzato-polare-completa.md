@@ -1,6 +1,7 @@
 # Esercizio 10 — Polare completa con punti notevoli (Boeing 737-800)
 
 > 🔴 **Difficoltà: AVANZATO** — Costruzione punto per punto della polare di un velivolo, identificazione dei punti notevoli (massima efficienza, crociera, stallo).
+>
 > 🎯 **Obiettivi didattici**: imparare a (a) costruire la curva $C_D = f(C_L)$ punto per punto, (b) trovare $C_L^*$ ed $E_{max}$ analiticamente E graficamente, (c) identificare la posizione del punto di crociera reale e capire perché non coincide con $E_{max}$.
 
 ---

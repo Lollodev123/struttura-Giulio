@@ -1,6 +1,7 @@
 # Esercizio N — [Titolo descrittivo]
 
 > 🟢/🟡/🔴 **Difficoltà: BASE/MEDIO/AVANZATO**
+>
 > 🎯 **Obiettivi didattici**: imparare a (a) ..., (b) ..., (c) ...
 
 ---

@@ -70,9 +70,11 @@ markdown_extensions:
 
 extra_javascript:
   - assets/js/katex-init.js
+  - assets/js/quiz.js
   - https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js
   - https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js
   - https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js
 
 extra_css:
+  - assets/css/quiz.css
   - https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css

@@ -1,6 +1,7 @@
 # Esercizio 8 — Velocità di max efficienza e planata con vento (aliante DG-1000)
 
 > 🔴 **Difficoltà: AVANZATO** — Combina efficienza, velocità ottima e effetto del vento sulla planata.
+>
 > 🎯 **Obiettivi didattici**: imparare a (a) calcolare $V^*$ ed $E_{max}$, (b) capire come un vento contrario riduce la distanza al suolo, (c) ragionare in termini di "velocità ottimale di MacCready" — un classico del volo a vela.
 
 ---
