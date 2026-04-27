@@ -40,16 +40,27 @@ Pacchetto didattico di **Aerodinamica per Liceo Aeronautico** (2° e 3° anno it
 ## 📂 Struttura del repo
 
 ```
-00-formulario/      # Formulario unico + glossario IT/EN
-01-teoria/          # 9 lezioni (1 completa: profilo alare; 8 placeholder)
-02-quiz/            # Quiz base/medio/avanzato (placeholder)
-03-esercizi/        # 10 esercizi (1 completo: portanza Cessna; 9 placeholder)
-03-esercizi/soluzioni/   # Soluzioni delle varianti autovalutative
-.github/ISSUE_TEMPLATE/  # Template per domande studente e segnalazione errori
-assets/img/         # Diagrammi raster (futuri)
-README.md           # Indice navigabile con stato di completamento
-SETUP.md            # Guida push GitHub
+/                              # Root del repo
+  CLAUDE.md                    # Memoria del progetto (questo file)
+  mkdocs.yml                   # Config sito MkDocs Material
+  SETUP-CLAUDE-PROGETTO.md     # Guida setup Claude.ai Project per lo studente
+  .github/workflows/           # Deploy automatico sito su push a main
+  .gitignore
+
+/aerodinamica-liceo/           # Tutto il materiale didattico
+  00-formulario/               # Formulario unico + glossario IT/EN
+  01-teoria/                   # 9 lezioni
+  02-quiz/                     # Quiz base/medio/avanzato (placeholder)
+  03-esercizi/                 # 10 esercizi
+  03-esercizi/soluzioni/       # Soluzioni delle varianti autovalutative
+  .github/ISSUE_TEMPLATE/      # Solo errore-materiale (le domande vanno in chat)
+  assets/img/                  # Diagrammi (futuri)
+  assets/js/katex-init.js      # Render LaTeX sul sito
+  README.md, SETUP.md, CONTRIBUTING.md, LICENSE
 ```
+
+- **Repo pubblico** (deciso il 2026-04-27): https://github.com/Lollodev123/struttura-Giulio
+- **Sito live**: https://lollodev123.github.io/struttura-Giulio/ — deploy automatico via GitHub Actions a ogni push su `main`
 
 ---
 
@@ -83,7 +94,20 @@ Segui `03-esercizi/_template-esercizio.md`. Sezioni obbligatorie:
 ### Notazione matematica
 - LaTeX inline: `$L = \frac{1}{2}\rho V^2 S C_L$`
 - LaTeX display: `$$...$$`
-- GitHub renderizza nativamente da .md (sia browser che app mobile)
+- GitHub renderizza nativamente da .md; il sito MkDocs usa KaTeX (configurato).
+
+### Sezioni nascoste (`<details>`)
+Per le risposte di autoverifica e le varianti, **usa SEMPRE** `<details markdown="1">` (NON solo `<details>`). L'attributo `markdown="1"` è necessario perché MkDocs (con `md_in_html`) processi il Markdown dentro l'elemento. Senza, le liste numerate, le formule LaTeX e i grassetti collassano in un unico paragrafo. GitHub ignora l'attributo silenziosamente — funziona da entrambe le parti.
+
+```markdown
+<details markdown="1">
+<summary>👉 Risposte</summary>
+
+1. Prima risposta con $V^2$ e **grassetto**.
+2. Seconda risposta.
+
+</details>
+```
 
 ### Diagrammi
 - **Forme statiche** (profilo alare, polare): ASCII art con etichette
@@ -125,17 +149,27 @@ Per quote diverse dal livello mare, usa la tabella ISA in `00-formulario/formula
 4. Commit con messaggio descrittivo: `feat(teoria): lezione 2 - portanza`
 5. Push (se richiesto, o conferma prima)
 
-### Quando arriva una issue dallo studente
-1. Leggi la issue via GitHub MCP
-2. Identifica il file/passaggio coinvolto
-3. **Se è una domanda di chiarimento**: aggiungi una sezione "💡 Chiarimento" al file della lezione/esercizio (NON rispondere solo nell'issue: integra nel materiale per i futuri studenti)
-4. Commenta sull'issue con link al chiarimento aggiunto
-5. Chiudi la issue
+### Canali di interazione con lo studente
+Lo studente ha **due canali**, con scopi diversi:
+
+1. **Chat diretta su Claude.ai Project** (canale primario): per le **domande di comprensione** ("non capisco questo passaggio", "spiegami meglio X"). Il Project ha il connector GitHub al repo, quindi Claude.ai legge il materiale aggiornato. La conversazione resta nel Project — non passa da qui.
+2. **GitHub Issue con label `errore-materiale`** (canale secondario): solo per **segnalare errori** trovati nel materiale (refusi, calcoli sbagliati, link rotti). C'è un solo template: `.github/ISSUE_TEMPLATE/correzione-errore.md`.
+
+### Quando arriva una issue `errore-materiale`
+1. Leggi la issue (`gh issue view <n>`)
+2. Identifica file e passaggio
+3. **Correggi il file**, commit `fix(teoria/esercizi): ...` su un branch fix/
+4. Apri PR, mergia, commenta l'issue linkando il commit/PR e chiudila
+5. Se l'errore era concettualmente importante, aggiungi anche la voce in `CLAUDE.md` → "Errori che NON devi rifare"
+
+### Quando lo studente chiede di promuovere una chat a chiarimento permanente
+Se l'utente ti dice "*la chat di Giulio sull'angolo di attacco era utile, integriamola*", aggiungi una sezione `💡 Chiarimento` al file della lezione/esercizio interessato. Non c'è un trigger automatico: avviene solo quando il padre lo chiede esplicitamente.
 
 ### Convenzioni Git
 - Commit in italiano, formato conventional: `feat:`, `fix:`, `docs:`, `chore:`
-- Branch per modifiche grandi (>3 file): `feat/nome-breve`
-- Push sempre su `main` per cambi piccoli, PR per cambi strutturali
+- Branch per qualsiasi modifica: `feat/nome-breve`, `fix/nome-breve`
+- **Niente push diretti a `main`**: sempre PR (anche per fix piccoli). Default branch resta `main`; `develop` esiste come branch di lavoro ma in pratica si usano feature branch.
+- Dopo merge: il workflow `Deploy MkDocs site` deploya il sito automaticamente
 
 ---
 
@@ -163,7 +197,7 @@ Per quote diverse dal livello mare, usa la tabella ISA in `00-formulario/formula
 - ❌ Non aggiungere argomenti fuori scope (es. propulsione, avionica): il progetto è strettamente aerodinamica + cenni strutturali base
 - ❌ Non cambiare lo stile dei template senza confrontarti con l'utente
 - ❌ Non spingere oltre la matematica del liceo (no integrali, no Navier-Stokes)
-- ❌ Non rendere pubblico il repo senza esplicita richiesta (info sullo studente)
+- ❌ Non aggiungere informazioni personali dello studente nel repo (il repo è pubblico dal 2026-04-27)
 - ❌ Non droppare emoji a caso: quelli che ci sono nei template sono intenzionali e creano gerarchia visiva. Mantienili coerenti.
 
 ---
@@ -172,9 +206,10 @@ Per quote diverse dal livello mare, usa la tabella ISA in `00-formulario/formula
 
 - [x] Scaffold completo del repo
 - [x] Formulario + glossario
+- [x] Sito MkDocs Material live su GitHub Pages
 - [x] Lezione 1: Profilo alare
+- [x] Lezione 2: Portanza
 - [x] Esercizio 1: Portanza Cessna 172 + variante
-- [ ] Lezione 2: Portanza
 - [ ] Lezione 3: Resistenza aerodinamica
 - [ ] Lezione 4: Efficienza e polare
 - [ ] Lezione 5: Atmosfera Standard ISA

@@ -141,7 +141,7 @@ I profili **NACA serie 6** (es. NACA 64-212) sono progettati per mantenere il fl
 4. Qual è la differenza tra corda e apertura alare?
 5. Se il Cessna 172 ha corda 1,49 m e profilo NACA 2412, quanto vale lo spessore massimo dell'ala in centimetri?
 
-<details>
+<details markdown="1">
 <summary>👉 Risposte</summary>
 
 1. **5** = posizione della curvatura max = al **50%** della corda (5 decimi).

@@ -49,14 +49,13 @@ Questo repository raccoglie lezioni, quiz ed esercizi risolti su profilo alare, 
 
 ## ❓ Come fare una domanda
 
-Se non capisci un passaggio, **non rimuginare**: apri una **Issue** dal tab in alto.
+Se non capisci un passaggio, **non rimuginare**: chiedi direttamente a **Claude nel Project di studio**.
 
-1. Vai su **Issues → New issue**
-2. Scegli il template **"Domanda su una lezione/esercizio"**
-3. Scrivi: cosa stavi studiando, dove ti sei bloccato, cosa hai provato
-4. Risposta entro 24h con spiegazione aggiuntiva integrata nel materiale
+- Apri Claude.ai → entra nel Project "Aerodinamica — Giulio" (configurato sul Mac di papà).
+- Scrivi liberamente: *"non capisco il passo 4 dell'esercizio 1"*, *"perché la portanza dipende da V²?"*, *"creami un esercizio nuovo sulla velocità di stallo"*.
+- Claude risponde usando **questo repo** come contesto.
 
-Le tue domande migliorano il repo per le prossime volte.
+**Per segnalare un errore nel materiale** (refuso, calcolo sbagliato), apri una **Issue** dal tab in alto col template *"Errore nel materiale"*. Le issue servono solo per gli errori — le domande vanno in chat.
 
 ---
 

@@ -2,6 +2,8 @@
 
 🚧 **In arrivo**.
 
-Questa lezione sarà generata seguendo il [template lezione](./_template-lezione.md).
+Questa lezione sta arrivando. Mentre aspetti puoi:
 
-Per ora, vedi il [formulario](../00-formulario/formulario.md) per le formule chiave.
+- 💬 **Chiedere a Claude nel Project di studio**: prova con *"spiegami l'atmosfera standard ISA e perché la densità diminuisce con la quota"*.
+- 📐 Consultare il [formulario, sezione 7](../00-formulario/formulario.md#7-atmosfera-standard-isa--valori-chiave) — c'è già la tabella ISA pronta all'uso.
+- ⏪ Tornare a [Lezione 2 — Portanza](./02-portanza.md) per capire perché la densità è importante.
