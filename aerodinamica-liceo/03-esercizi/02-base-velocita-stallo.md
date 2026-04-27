@@ -25,22 +25,9 @@ Un **Piper PA-28-181 Archer** vola in atmosfera standard al livello del mare. I 
 
 ## 🖼️ Diagramma del problema
 
-```
-   Allo stallo, l'aereo mantiene equilibrio verticale appena
-   sopra la velocità minima:
-   
-          L_max = ½ ρ V_S² S C_L,max  ──→ uguagliata a W
-          
-                  ↑ L_max
-                  │
-              ●──────●  Piper PA-28
-                  │
-                  ↓
-                  W = m·g
-                  
-   Stallo: oltre questo angolo (~16°), C_L crolla → portanza
-   non basta più a sostenere il peso → l'aereo scende.
-```
+![Curva CL-alpha con angolo di stallo critico evidenziato](../assets/img/grafici/schema-stallo.svg)
+
+Allo stallo (~16° per profili tipici), il flusso si stacca dal dorso e $C_L$ crolla bruscamente. La portanza non basta più a sostenere il peso → l'aereo scende. La velocità di stallo $V_S$ è la velocità più bassa a cui il velivolo può ancora generare $L = W$ a $C_{L,max}$.
 
 ---
 

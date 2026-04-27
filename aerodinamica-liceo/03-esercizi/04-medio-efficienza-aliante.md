@@ -29,25 +29,9 @@ L'aliante si trova a **2 000 m** sopra il punto di atterraggio, in aria calma.
 
 ## 🖼️ Diagramma del problema
 
-```
-   Aliante in planata stabilizzata:
-   
-       2000 m ────●────                          
-                   ╲                              
-                    ╲ ←── traiettoria di planata    
-                     ╲   con angolo γ              
-                      ╲                            
-                       ╲                            ↑
-                        ╲                            │ 
-                         ╲                            │ quota
-                          ●                            │ 2000 m
-                                                      │
-       suolo ─────────────●──────────────────────────  ↓
-       
-       ←─────── distanza = E × quota persa ──────→
-       
-       Equilibrio: tan(γ) = 1/E → angolo piccolo se E grande
-```
+![Aliante in planata stabilizzata: distanza al suolo = E × quota persa](../assets/img/grafici/planata-aliante.svg)
+
+In planata stabilizzata, la traiettoria forma un angolo $\gamma$ con l'orizzontale, dove $\tan(\gamma) = 1/E$. Più $E$ è grande, più $\gamma$ è piccolo, e più lontano si arriva. La formula chiave: **distanza orizzontale = $E \times$ quota persa**.
 
 ---
 

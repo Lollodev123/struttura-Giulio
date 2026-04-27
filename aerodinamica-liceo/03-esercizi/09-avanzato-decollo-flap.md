@@ -30,24 +30,9 @@ Dati:
 
 ## 🖼️ Diagramma del problema
 
-```
-   Decollo A320:
-   
-        V_2 (decollo sicuro)
-            ↑
-            │     fase salita iniziale
-        V_R │     ╱ ────────── 
-       ─────┤   ╱
-            │ ╱
-   ↓ V_S    ●     ←── corsa di decollo
-   ────────●●────●───●──→
-                              acceleration
-   
-   Sequenza: 0 → V_R: corsa al suolo (rotazione)
-             V_R → V_2: salita iniziale (~35 ft AGL)
-             V_2: livello "decollo sicuro" — minima sicura per
-                  proseguire con singolo motore in caso di failure
-```
+![Sequenza decollo: V_S → V_R → V_2](../assets/img/grafici/sequenza-decollo.svg)
+
+Tre velocità chiave del decollo, legate da fattori di sicurezza fissi: $V_R = 1{,}1 \cdot V_S$ (rotazione, l'aereo solleva il muso), $V_2 = 1{,}2 \cdot V_S$ (decollo sicuro a 35 ft = 11 m AGL — la velocità minima per proseguire in salita anche con un motore in avaria).
 
 ---
 

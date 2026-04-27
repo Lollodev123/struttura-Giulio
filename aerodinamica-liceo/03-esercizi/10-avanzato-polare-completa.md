@@ -111,36 +111,18 @@ $$C_D^* = 0{,}025 + \dfrac{0{,}817^2}{26{,}70} = 0{,}025 + 0{,}0250 = 0{,}050$$
 
 In **autonomia massima** (es. ferry flight per riposizionare aerei), si vola a $C_L^*$. In **operazioni commerciali standard**, si compromette per la velocità.
 
-### Passo 5 — Polare in ASCII art
+### Passo 5 — La polare disegnata
 
-```
-   C_L
-    │
- 1,4│                    ●  ←── stallo
-    │                  ╱
- 1,2│                ●        
-    │              ╱
- 1,0│            ●           
-    │          ╱             
- 0,82●────────●  ←── E_max (C_L*=0,82, C_D=0,050)
-    │       ╱│  
- 0,6│      ●  │                   
-    │     ╱   │                   
- 0,5│   ●    │  ←── crociera (E=14,55)                
-    │  ╱     │                                 
- 0,4│ ●      │
-    │╱       │
- 0,3●        │
-    │        │
- 0,2●        │
-    │        │
- 0,1●        │
-    │        │
- 0,0●────────●─────────────── C_D
-   0,025  0,050  0,075  0,100
-   ↑                        
-   parassita C_D,0
-```
+Riportando i 10 punti calcolati nella tabella, otteniamo la polare del nostro Boeing 737. È la stessa figura mostrata nell'introduzione, ora "letta" punto per punto:
+
+![Polare del Boeing 737-800 con i 10 punti tabulati](../assets/img/grafici/polare-737.svg)
+
+**Cosa vedere nel grafico**:
+
+- I **10 cerchi azzurri** sono i punti della tabella sopra (a $C_L$ crescenti da 0,1 a 1,4)
+- L'**asintoto verticale** sinistro è il valore di parassita $C_{D,0} = 0{,}025$ — la polare non scende mai sotto questa soglia, perché c'è sempre un minimo di resistenza
+- La **retta tratteggiata rossa** (tangente all'origine) tocca la polare nel punto di max efficienza ($C_L^* = 0{,}82$)
+- La **stella arancione** è il punto operativo reale di crociera ($C_L = 0{,}5$, $E = 14{,}55$)
 
 > 💡 **Lettura grafica**: la polare sembra una "L corica" o "fluctuazione", aperta a destra. La parte sinistra (basso $C_D$, basso $C_L$) è il regime di alta velocità. La parte alta ($C_L > 0{,}82$) è il regime di alta portanza, prossimo allo stallo.
 

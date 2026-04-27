@@ -123,19 +123,11 @@ L'angolo di "all'indietro" del bordo d'attacco rispetto alla perpendicolare alla
 **Perché serve la freccia?** Per ritardare gli effetti dell'**onda d'urto** (Mach > 0,7). Una freccia di 30° riduce la velocità "vista" dal profilo lungo la corda → puoi volare più veloce prima di entrare in regime transonico.
 
 ### 6. Diedro
-L'angolo tra l'ala e il piano orizzontale (vista frontale).
+L'angolo tra l'ala e il piano orizzontale, **visto frontalmente** (cioè guardando l'aereo dal davanti).
 
-```
-       Vista da davanti:
-       
-              ╱╲   ← positive dihedral (stabilità)
-             ╱  ╲
-            ╱    ╲
-       ──── fusoliera ────
-       
-       Tipico: 1-7° per aerei convenzionali
-       Anhedral (negativo): caccia ad alte prestazioni
-```
+![Diedro positivo, zero, negativo: confronto visivo](../assets/img/grafici/diedro-confronto.svg)
+
+Tipico: **+1° a +7°** per aerei convenzionali (turismo, jet di linea). **Negativo (anhedral)** sui caccia ad alte prestazioni come l'F-104, Harrier, AV-8B.
 
 **Effetto**: quando l'aereo si inclina, l'ala più bassa "vede" più aria → più portanza → tende a riportare l'aereo dritto. Diedro positivo = **stabilità laterale**.
 
