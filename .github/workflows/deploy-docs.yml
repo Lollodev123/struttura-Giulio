@@ -23,7 +23,7 @@ jobs:
         with:
           python-version: "3.12"
       - name: Install dependencies
-        run: pip install mkdocs-material==9.5.49 pymdown-extensions==10.14
+        run: pip install mkdocs-material==9.5.49 pymdown-extensions==10.7 Pygments==2.17.2
       - name: Build site
         run: mkdocs build --strict
       - uses: actions/configure-pages@v5
