@@ -1,6 +1,7 @@
 # Esercizio 6 — Confronto profili NACA (asimmetrico vs simmetrico)
 
 > 🟡 **Difficoltà: MEDIO** — Confronta due profili NACA usando la curva $C_L$–$\alpha$ linearizzata.
+>
 > 🎯 **Obiettivi didattici**: imparare a (a) usare la pendenza della curva $C_L$–$\alpha$, (b) capire l'effetto della curvatura sul coefficiente di portanza a $\alpha = 0$, (c) decidere quale profilo conviene per quale missione.
 
 ---
@@ -99,6 +100,7 @@ $$C_L^B(\alpha) = 0{,}11 \times \alpha$$
 
 **Profilo A (2412)**:
 $$0{,}5 = 0{,}11 \times (\alpha + 2°) \Rightarrow \alpha + 2 = \dfrac{0{,}5}{0{,}11} = 4{,}55°$$
+
 $$\alpha^A = 2{,}55°$$
 
 **Profilo B (0012)**:

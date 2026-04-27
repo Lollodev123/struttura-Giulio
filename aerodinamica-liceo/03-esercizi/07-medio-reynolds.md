@@ -1,6 +1,7 @@
 # Esercizio 7 — Numero di Reynolds e regime di flusso
 
 > 🟡 **Difficoltà: MEDIO** — Calcolo di $Re$ per uno stesso velivolo in tre condizioni di volo diverse.
+>
 > 🎯 **Obiettivi didattici**: imparare a (a) calcolare $Re$ con la formula completa, (b) capire quanto $Re$ varia con quota e velocità, (c) identificare il regime (laminare/turbolento) corrispondente.
 
 ---

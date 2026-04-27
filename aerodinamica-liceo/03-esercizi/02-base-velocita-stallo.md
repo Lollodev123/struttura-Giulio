@@ -1,6 +1,7 @@
 # Esercizio 2 — Velocità di stallo (Piper PA-28 Archer)
 
 > 🟢 **Difficoltà: BASE** — Applicazione diretta della formula della velocità di stallo.
+>
 > 🎯 **Obiettivi didattici**: imparare a (a) calcolare $V_S$ a partire da $C_{L,max}$, (b) capire l'effetto dei flap sulla velocità di stallo, (c) verificare la coerenza con i dati del manuale di volo.
 
 ---

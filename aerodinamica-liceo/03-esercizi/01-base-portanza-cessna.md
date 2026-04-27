@@ -1,6 +1,7 @@
 # Esercizio 1 — Coefficiente di portanza in crociera (Cessna 172)
 
 > 🟢 **Difficoltà: BASE** — Applicazione diretta della formula della portanza.
+>
 > 🎯 **Obiettivi didattici**: imparare a (a) impostare l'equilibrio in volo livellato, (b) ricavare $C_L$ dalla formula della portanza, (c) verificare la plausibilità del risultato.
 
 ---
