@@ -72,6 +72,7 @@ extra_javascript:
   - assets/js/katex-init.js
   - assets/js/quiz.js
   - assets/js/banca-quiz.js
+  - assets/js/indice-esercizi.js
   - https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js
   - https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js
   - https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js
