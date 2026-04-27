@@ -13,7 +13,7 @@ Questo repository raccoglie lezioni, quiz ed esercizi risolti su profilo alare, 
 | [📐 Formulario](./00-formulario/formulario.md) | Tutte le formule in una pagina | Ripasso veloce, prima di un compito |
 | [📖 Glossario](./00-formulario/glossario.md) | Terminologia aeronautica IT/EN | Quando incontri un termine nuovo |
 | [📚 Teoria](./01-teoria/) | 9 lezioni complete | Studio sequenziale (1 → 9) |
-| [🧠 Quiz](./02-quiz/) | 40 domande con spiegazione | Dopo aver studiato la teoria |
+| [🧠 Quiz](./02-quiz/) | 40 domande con spiegazione ✅ | Dopo aver studiato la teoria |
 | [✏️ Esercizi](./03-esercizi/) | 10 problemi risolti passo-passo | Allenamento pratico — il cuore del repo |
 
 ---
