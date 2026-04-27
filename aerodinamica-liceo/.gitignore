@@ -1,0 +1,24 @@
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Build (per future MkDocs)
+site/
+.cache/
+
+# Python (se aggiungi script)
+__pycache__/
+*.pyc
+.venv/
+
+# File temp
+*.tmp
+*.bak
