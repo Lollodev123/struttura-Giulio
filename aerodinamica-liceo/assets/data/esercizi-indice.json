@@ -2,10 +2,10 @@
   "_meta": {
     "versione": "1.0",
     "data": "2026-04-27",
-    "totale": 26,
+    "totale": 31,
     "originali": 10,
     "alternativi": 15,
-    "stile_prof": 1
+    "stile_prof": 6
   },
   "esercizi": [
     { "id": 1, "titolo": "Coefficiente di portanza in crociera", "difficolta": "BASE", "argomento": "Portanza", "velivolo": "Cessna 172", "file": "01-base-portanza-cessna.md", "tipo": "originale" },
@@ -35,6 +35,11 @@
     { "id": 24, "titolo": "Effetto winglet su Boeing 737NG vs MAX", "difficolta": "AVANZATO", "argomento": "Resistenza", "velivolo": "Boeing 737", "file": "varianti/24-avanzato-winglet.md", "tipo": "alternativo" },
     { "id": 25, "titolo": "Atterraggio short-field Pilatus PC-6 (STOL)", "difficolta": "AVANZATO", "argomento": "Alta portanza", "velivolo": "Pilatus PC-6", "file": "varianti/25-avanzato-stol.md", "tipo": "alternativo" },
 
-    { "id": 26, "titolo": "Ala rettangolare con polare completa (stile prof)", "difficolta": "AVANZATO", "argomento": "Polare", "velivolo": "Ala generica", "file": "varianti/26-stile-prof-ala-freccia.md", "tipo": "stile_prof" }
+    { "id": 26, "titolo": "Ala rettangolare con polare completa (stile prof)", "difficolta": "AVANZATO", "argomento": "Polare", "velivolo": "Ala generica", "file": "varianti/26-stile-prof-ala-freccia.md", "tipo": "stile_prof" },
+    { "id": 27, "titolo": "Ala a freccia in crociera ad alta quota (stile prof)", "difficolta": "AVANZATO", "argomento": "Polare", "velivolo": "Jet generico", "file": "varianti/27-stile-prof-ala-freccia-jet.md", "tipo": "stile_prof" },
+    { "id": 28, "titolo": "Ala a freccia caccia leggero — dati anomali (stile prof)", "difficolta": "AVANZATO", "argomento": "Polare", "velivolo": "Caccia leggero", "file": "varianti/28-stile-prof-caccia-leggero.md", "tipo": "stile_prof" },
+    { "id": 29, "titolo": "Polare data come equazione: risultante forze (stile prof)", "difficolta": "AVANZATO", "argomento": "Forze risultanti", "velivolo": "Velivolo generico", "file": "varianti/29-stile-prof-polare-equazione.md", "tipo": "stile_prof" },
+    { "id": 30, "titolo": "Polare data come tabella: ricava C_R,0 e λ (stile prof)", "difficolta": "AVANZATO", "argomento": "Polare", "velivolo": "Business jet", "file": "varianti/30-stile-prof-polare-tabella.md", "tipo": "stile_prof" },
+    { "id": 31, "titolo": "Cambio assetto: due condizioni di volo (stile prof)", "difficolta": "AVANZATO", "argomento": "Polare", "velivolo": "Velivolo generico", "file": "varianti/31-stile-prof-cambio-assetto.md", "tipo": "stile_prof" }
   ]
 }

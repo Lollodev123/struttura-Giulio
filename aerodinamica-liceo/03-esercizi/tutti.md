@@ -30,6 +30,7 @@
 <option value="TUTTI">Tutti</option>
 <option value="originale">Originali (10)</option>
 <option value="alternativo">Alternativi (15)</option>
+<option value="stile_prof">Stile prof (6) 🔴</option>
 </select>
 </label>
 
