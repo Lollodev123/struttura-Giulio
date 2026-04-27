@@ -2,7 +2,7 @@
 
 > 🟡 **Difficoltà: MEDIO** — Combina formule di portanza, resistenza ed efficienza per ottenere il punto operativo ottimo dell'aliante.
 >
-> 🎯 **Obiettivi didattici**: imparare a (a) calcolare $E_{max}$ usando la formula del libro, (b) trovare $V^*$ e $C_L^*$, (c) calcolare distanza in planata da una quota data.
+> 🎯 **Obiettivi didattici**: imparare a (a) calcolare $E_{max}$ usando la formula del libro, (b) trovare $V^*$ e $C_p^*$, (c) calcolare distanza in planata da una quota data.
 
 ---
 
@@ -13,14 +13,14 @@ Un **aliante ASK-21** sta planando in atmosfera ISA al livello del mare. Dati:
 - Massa con due persone a bordo: $m = 600$ kg
 - Superficie alare: $S = 17{,}95$ m²
 - Allungamento alare: $\lambda = 16{,}6$
-- Resistenza parassita: $C_{D,0} = 0{,}014$
+- Resistenza parassita: $C_{R,0} = 0{,}014$
 - Fattore di Oswald: $e = 0{,}95$
 
 L'aliante si trova a **2 000 m** sopra il punto di atterraggio, in aria calma.
 
 **Determina**:
 
-1. Il coefficiente di portanza ottimale $C_L^*$ (per $E_{max}$)
+1. Il coefficiente di portanza ottimale $C_p^*$ (per $E_{max}$)
 2. L'efficienza massima $E_{max}$
 3. La velocità di max efficienza $V^*$ (in m/s e in nodi)
 4. La distanza orizzontale percorribile in planata fino al suolo
@@ -42,11 +42,11 @@ In planata stabilizzata, la traiettoria forma un angolo $\gamma$ con l'orizzonta
 | Massa | $m$ | 600 | kg |
 | Superficie alare | $S$ | 17,95 | m² |
 | Allungamento alare | $\lambda$ | 16,6 | adim. |
-| Resistenza parassita | $C_{D,0}$ | 0,014 | adim. |
+| Resistenza parassita | $C_{R,0}$ | 0,014 | adim. |
 | Fattore Oswald | $e$ | 0,95 | adim. |
 | Densità (livello mare ISA) | $\rho$ | 1,225 | kg/m³ |
 | Quota iniziale | $h$ | 2 000 | m |
-| **Da trovare** | $C_L^*$, $E_{max}$, $V^*$, distanza | ? | — |
+| **Da trovare** | $C_p^*$, $E_{max}$, $V^*$, distanza | ? | — |
 
 ---
 
@@ -55,9 +55,9 @@ In planata stabilizzata, la traiettoria forma un angolo $\gamma$ con l'orizzonta
 1. **Cosa mi sta chiedendo?** Punto di max efficienza e distanza di planata.
 2. **Quale fenomeno è coinvolto?** Equilibrio in planata + ricerca dell'ottimo aerodinamico.
 3. **Quali formule mi servono?**
-   - $C_L^* = \sqrt{\pi \lambda e \cdot C_{D,0}}$ (massima efficienza)
-   - $E_{max} = \frac{1}{2}\sqrt{\pi \lambda e / C_{D,0}}$
-   - $V^* = \sqrt{\dfrac{2W}{\rho S C_L^*}}$
+   - $C_p^* = \sqrt{\pi \lambda e \cdot C_{R,0}}$ (massima efficienza)
+   - $E_{max} = \frac{1}{2}\sqrt{\pi \lambda e / C_{R,0}}$
+   - $V^* = \sqrt{\dfrac{2Q}{\rho S C_p^*}}$
    - Distanza = $E_{max} \times $ quota persa
 
 4. **Dati e unità sono coerenti?** Sì, tutto SI.
@@ -69,20 +69,20 @@ In planata stabilizzata, la traiettoria forma un angolo $\gamma$ con l'orizzonta
 
 ### Passo 1 — Peso
 
-$$W = m \cdot g = 600 \times 9{,}81 = 5\,886 \text{ N}$$
+$$Q = m \cdot g = 600 \times 9{,}81 = 5\,886 \text{ N}$$
 
-### Passo 2 — Coefficiente $C_L^*$ ottimo
+### Passo 2 — Coefficiente $C_p^*$ ottimo
 
-$$C_L^* = \sqrt{\pi \lambda e \cdot C_{D,0}}$$
+$$C_p^* = \sqrt{\pi \lambda e \cdot C_{R,0}}$$
 
 Sostituisco:
-$$C_L^* = \sqrt{\pi \times 16{,}6 \times 0{,}95 \times 0{,}014} = \sqrt{0{,}694} \approx 0{,}833$$
+$$C_p^* = \sqrt{\pi \times 16{,}6 \times 0{,}95 \times 0{,}014} = \sqrt{0{,}694} \approx 0{,}833$$
 
-$$\boxed{C_L^* \approx 0{,}83}$$
+$$\boxed{C_p^* \approx 0{,}83}$$
 
 ### Passo 3 — Efficienza massima $E_{max}$
 
-$$E_{max} = \dfrac{1}{2}\sqrt{\dfrac{\pi \lambda e}{C_{D,0}}}$$
+$$E_{max} = \dfrac{1}{2}\sqrt{\dfrac{\pi \lambda e}{C_{R,0}}}$$
 
 Sostituisco:
 
@@ -98,7 +98,7 @@ $$\boxed{E_{max} \approx 29{,}8}$$
 
 ### Passo 4 — Velocità di max efficienza $V^*$
 
-$$V^* = \sqrt{\dfrac{2W}{\rho S C_L^*}}$$
+$$V^* = \sqrt{\dfrac{2Q}{\rho S C_p^*}}$$
 
 Sostituisco:
 
@@ -144,7 +144,7 @@ Stesso ASK-21 ma ora pesa **520 kg** (un solo pilota, niente passeggero). Calcol
 <summary>👉 Solo il risultato (prima provaci da solo!)</summary>
 
 - $W = 520 \times 9{,}81 = 5\,101$ N
-- $C_L^*$ resta lo stesso (dipende solo dalla geometria) = **0,83**
+- $C_p^*$ resta lo stesso (dipende solo dalla geometria) = **0,83**
 - $E_{max}$ resta lo stesso = **29,8** (sempre solo geometria!)
 - $V^* = \sqrt{2 \cdot 5101 / (1{,}225 \cdot 17{,}95 \cdot 0{,}833)} = \sqrt{557{,}3} \approx$ **23,6 m/s = 45,9 kt**
 - Distanza = stessa, $29{,}8 \times 2000 \approx 60$ km
@@ -157,7 +157,7 @@ Stesso ASK-21 ma ora pesa **520 kg** (un solo pilota, niente passeggero). Calcol
 
 ## 🎓 Cosa hai imparato
 
-- **$E_{max}$ e $C_L^*$ dipendono solo dalla geometria** (allungamento, parassita, Oswald), non dal peso.
+- **$E_{max}$ e $C_p^*$ dipendono solo dalla geometria** (allungamento, parassita, Oswald), non dal peso.
 - La **velocità ottima $V^*$ dipende dal peso** ($V^* \propto \sqrt{W}$): più leggero, più lento al massimo della efficienza.
 - **Distanza di planata** = $E \times $ quota, non dipende dal peso. È una formula da tenere a mente per situazioni reali (avaria motore).
 - Il **modello del liceo** (formula $E_{max}$) sottostima del 10% rispetto al valore reale del manuale, ma cattura tutti i parametri di progetto che contano.

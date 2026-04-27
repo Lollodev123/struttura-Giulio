@@ -10,7 +10,7 @@
 
 Confronta tre velivoli al loro MTOW:
 
-| Velivolo | MTOW (kg) | $S$ (m²) | $C_{L,max}$ atterraggio (con flap) |
+| Velivolo | MTOW (kg) | $S$ (m²) | $C_{p,max}$ atterraggio (con flap) |
 |---|---|---|---|
 | **Cessna 172** | 1 043 | 16,2 | 2,1 |
 | **ATR 72** | 22 500 | 61,0 | 2,5 |
@@ -27,7 +27,7 @@ Confronta tre velivoli al loro MTOW:
 
 ## 🖼️ Diagramma del problema
 
-I tre velivoli **occupano scale di dimensione e peso completamente diverse**. Eppure tutti applicano la stessa formula $V_S = \sqrt{2W/(\rho S C_{L,max})}$. La leva fondamentale che li differenzia è il **carico alare**.
+I tre velivoli **occupano scale di dimensione e peso completamente diverse**. Eppure tutti applicano la stessa formula $V_S = \sqrt{2W/(\rho S C_{p,max})}$. La leva fondamentale che li differenzia è il **carico alare**.
 
 ---
 
@@ -37,16 +37,16 @@ I tre velivoli **occupano scale di dimensione e peso completamente diverse**. Ep
 |---|---|---|---|
 | $m$ (kg) | 1 043 | 22 500 | 79 000 |
 | $S$ (m²) | 16,2 | 61,0 | 124,6 |
-| $C_{L,max}$ con flap | 2,1 | 2,5 | 2,8 |
+| $C_{p,max}$ con flap | 2,1 | 2,5 | 2,8 |
 | $\rho$ mare ISA | 1,225 | 1,225 | 1,225 |
 
 ---
 
 ## 🧠 Strategia
 
-1. $W = m \cdot g$
+1. $Q = m \cdot g$
 2. $W/S$ in N/m² e in kg/m² (= $m/S$)
-3. $V_S = \sqrt{2W/(\rho S C_{L,max})}$
+3. $V_S = \sqrt{2W/(\rho S C_{p,max})}$
 4. $V_{atterraggio} = 1{,}3 V_S$ (standard FAA per atterraggio sicuro)
 
 ---
@@ -141,7 +141,7 @@ Confronta con piste reali: piste regionali italiane (Trento 1067 m → solo Cess
 
 - Il **carico alare $W/S$** è il **parametro più importante** per definire la "personalità" di un velivolo: bassa $W/S$ = lento, agile, atterra ovunque; alta $W/S$ = veloce, pesante, richiede piste lunghe.
 - $V_S \propto \sqrt{W/S}$: decuplichi $W/S$ → triplichi $V_S$. Relazione fondamentale.
-- I **flap** servono ad alzare $C_{L,max}$ → ridurre $V_S$ a parità di $W/S$. Senza flap, il 737 atterrerebbe a ~200 kt → impossibile su qualsiasi pista commerciale.
+- I **flap** servono ad alzare $C_{p,max}$ → ridurre $V_S$ a parità di $W/S$. Senza flap, il 737 atterrerebbe a ~200 kt → impossibile su qualsiasi pista commerciale.
 - I **dati POH** (Pilot's Operating Handbook) si possono **ricostruire al 5%** con la matematica del liceo.
 
 ---

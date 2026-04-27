@@ -21,7 +21,7 @@ Il Reynolds determina **la natura stessa del flusso**:
 
 Da questa "natura" dipende **tutto** in aerodinamica:
 
-- Il coefficiente di resistenza ($C_D$ varia anche del 50% tra laminare e turbolento)
+- Il coefficiente di resistenza ($C_R$ varia anche del 50% tra laminare e turbolento)
 - Il punto di stallo (a $Re$ basso, lo stallo arriva prima)
 - L'aderenza del flusso al profilo
 - L'efficacia di flap e slat
@@ -74,7 +74,7 @@ Devi sempre chiarire qual è la lunghezza che usi, perché due Re calcolati con 
 |---|---|---|
 | **Laminare** | $< 5 \cdot 10^5$ | Strati ordinati. Bassa resistenza. Ma: il flusso si stacca facilmente → stallo precoce |
 | **Transizione** | $\sim 5 \cdot 10^5$ | Zona instabile, dove il flusso passa da laminare a turbolento. Punto di transizione si sposta avanti col $Re$ |
-| **Turbolento** | $> 5 \cdot 10^5$ | Vortici, mescolamento. Resistenza maggiore ma flusso *aderisce meglio* al profilo → stallo più "morbido", $C_{L,max}$ più alto |
+| **Turbolento** | $> 5 \cdot 10^5$ | Vortici, mescolamento. Resistenza maggiore ma flusso *aderisce meglio* al profilo → stallo più "morbido", $C_{p,max}$ più alto |
 
 **Paradosso utile**: il flusso turbolento ha **più resistenza** ma anche **più portanza** (perché stalla più tardi). I profili moderni cercano un compromesso.
 
@@ -124,7 +124,7 @@ Re ~6 milioni: pienamente **turbolento**, regime tipico per aviazione generale.
 > 4. Velivoli reali sono **sempre** in turbolento ($Re$ tra $10^6$ e $10^8$).
 > 5. **Lunghezza caratteristica** = corda dell'ala (per profili). Mai l'apertura.
 > 6. **Il modello in galleria** ha $Re$ molto più basso del velivolo reale — non è confrontabile direttamente.
-> 7. Turbolento = più resistenza MA stallo più morbido e $C_{L,max}$ maggiore.
+> 7. Turbolento = più resistenza MA stallo più morbido e $C_{p,max}$ maggiore.
 
 ---
 

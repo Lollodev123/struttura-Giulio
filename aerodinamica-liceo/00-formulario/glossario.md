@@ -14,17 +14,17 @@ Termini italiani con equivalente inglese (usato nei manuali) e definizione opera
 | **Dorso** | Upper surface | Superficie superiore del profilo |
 | **Ventre** | Lower surface | Superficie inferiore del profilo |
 | **Angolo di attacco** | Angle of attack ($\alpha$) | Angolo tra corda e velocità asintotica |
-| **Angolo di portanza nulla** | Zero-lift angle ($\alpha_0$) | $\alpha$ al quale $C_L = 0$ |
+| **Angolo di portanza nulla** | Zero-lift angle ($\alpha_0$) | $\alpha$ al quale $C_p = 0$ |
 | **Stallo** | Stall | Separazione del flusso che azzera la portanza |
 | **Portanza** | Lift | Forza perpendicolare alla velocità |
 | **Resistenza** | Drag | Forza parallela alla velocità (opposta al moto) |
 | **Spinta** | Thrust | Forza propulsiva del motore |
-| **Peso** | Weight | $W = m \cdot g$ |
+| **Peso** | Weight | $Q = m \cdot g$ |
 | **Sostentazione** | Sustentation | Spesso sinonimo di portanza in italiano (attenzione) |
-| **Coefficiente di portanza** | Lift coefficient ($C_L$) | Adimensionale, dipende da profilo e $\alpha$ |
-| **Coefficiente di resistenza** | Drag coefficient ($C_D$) | Adimensionale, totale (profilo + indotta) |
-| **Polare** | Drag polar | Grafico $C_L$ vs $C_D$ |
-| **Efficienza** | Lift-to-drag ratio | $E = C_L/C_D$ |
+| **Coefficiente di portanza** | Lift coefficient ($C_p$) | Adimensionale, dipende da profilo e $\alpha$ |
+| **Coefficiente di resistenza** | Drag coefficient ($C_R$) | Adimensionale, totale (profilo + indotta) |
+| **Polare** | Drag polar | Grafico $C_p$ vs $C_R$ |
+| **Efficienza** | Lift-to-drag ratio | $E = C_p/C_R$ |
 | **Allungamento alare** | Aspect ratio ($\lambda$ o $AR$) | $b^2/S$ |
 | **Apertura alare** | Wingspan ($b$) | Lunghezza dell'ala da tip a tip |
 | **Superficie alare** | Wing area ($S$) | Area in pianta dell'ala |

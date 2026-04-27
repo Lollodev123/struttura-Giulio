@@ -14,8 +14,8 @@ Dati:
 
 - Massa: $m = 78\,000$ kg
 - Superficie alare: $S = 122{,}6$ m²
-- $C_{L,max}$ ala pulita: 1,40
-- $C_{L,max}$ con flap CONF 1+F: 2,00
+- $C_{p,max}$ ala pulita: 1,40
+- $C_{p,max}$ con flap CONF 1+F: 2,00
 - $V_R$ (rotazione) = $1{,}1 \cdot V_S$
 - $V_2$ (velocità sicura decollo) = $1{,}2 \cdot V_S$
 
@@ -42,8 +42,8 @@ Tre velocità chiave del decollo, legate da fattori di sicurezza fissi: $V_R = 1
 |---|---|---|---|
 | Massa MTOW | $m$ | 78 000 | kg |
 | Superficie alare | $S$ | 122,6 | m² |
-| $C_{L,max}$ pulito | — | 1,40 | adim. |
-| $C_{L,max}$ flap T/O | $C_{L,max,TO}$ | 2,00 | adim. |
+| $C_{p,max}$ pulito | — | 1,40 | adim. |
+| $C_{p,max}$ flap T/O | $C_{p,max,TO}$ | 2,00 | adim. |
 | $\rho_0$ (mare ISA) | $\rho_0$ | 1,225 | kg/m³ |
 | $\rho$ a 4000 m (ISA) | $\rho_{4000}$ | 0,820 | kg/m³ |
 | **Da trovare** | $V_S$, $V_R$, $V_2$ a mare e a 4000 m | ? | — |
@@ -55,7 +55,7 @@ Tre velocità chiave del decollo, legate da fattori di sicurezza fissi: $V_R = 1
 1. **Cosa mi sta chiedendo?** Velocità chiave del decollo a livello mare e in quota.
 2. **Quale fenomeno?** Stallo aerodinamico + scelta delle velocità operative con margini di sicurezza.
 3. **Quali formule?**
-   - $V_S = \sqrt{2W/(\rho S C_{L,max})}$
+   - $V_S = \sqrt{2W/(\rho S C_{p,max})}$
    - $V_R = 1{,}1 \cdot V_S$
    - $V_2 = 1{,}2 \cdot V_S$
    - In quota: $V_S(h) = V_S(0) \cdot \sqrt{\rho_0/\rho(h)}$
@@ -69,11 +69,11 @@ Tre velocità chiave del decollo, legate da fattori di sicurezza fissi: $V_R = 1
 
 ### Passo 1 — Peso
 
-$$W = m \cdot g = 78\,000 \times 9{,}81 = 765\,180 \text{ N}$$
+$$Q = m \cdot g = 78\,000 \times 9{,}81 = 765\,180 \text{ N}$$
 
 ### Passo 2 — $V_S$ con flap di decollo, livello mare
 
-$$V_S = \sqrt{\dfrac{2W}{\rho_0 S C_{L,max,TO}}} = \sqrt{\dfrac{2 \times 765\,180}{1{,}225 \times 122{,}6 \times 2{,}00}}$$
+$$V_S = \sqrt{\dfrac{2Q}{\rho_0 S C_{p,max,TO}}} = \sqrt{\dfrac{2 \times 765\,180}{1{,}225 \times 122{,}6 \times 2{,}00}}$$
 
 Calcolo:
 
@@ -164,7 +164,7 @@ Stesso A320 ma con **massa ridotta** a 65 000 kg (volo a corto raggio, meno carb
 ## 🎓 Cosa hai imparato
 
 - **$V_S$, $V_R$, $V_2$**: tre velocità operative legate da fattori fissi (1, 1.1, 1.2). Conoscere la prima determina le altre.
-- **Flap nel decollo**: il "+0,6" in $C_{L,max}$ (da 1,4 pulito a 2,0 con flap T/O) riduce $V_S$ del 16%, riduce la corsa di decollo del 30%.
+- **Flap nel decollo**: il "+0,6" in $C_{p,max}$ (da 1,4 pulito a 2,0 con flap T/O) riduce $V_S$ del 16%, riduce la corsa di decollo del 30%.
 - **Effetto quota**: tutte le velocità aerodinamiche aumentano in quota come $1/\sqrt{\rho}$. A 4000 m, +22% rispetto al mare.
 - **"Hot and high"**: un problema reale per aeroporti d'alta quota. Soluzione: piste lunghe + decolli con peso ridotto + motori più potenti.
 - I numeri dei manuali Airbus si possono **ricostruire dal liceo** entro l'1-2% di errore.

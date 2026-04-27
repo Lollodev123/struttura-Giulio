@@ -2,7 +2,7 @@
 
 > 🟡 **Difficoltà: MEDIO** — Applicazione della formula di portanza in quota usando la tabella ISA.
 >
-> 🎯 **Obiettivi didattici**: imparare a (a) usare la tabella ISA per ricavare $\rho$, (b) calcolare $C_L$ a quote diverse, (c) confrontare il comportamento di un velivolo a livello mare e in crociera ad alta quota.
+> 🎯 **Obiettivi didattici**: imparare a (a) usare la tabella ISA per ricavare $\rho$, (b) calcolare $C_p$ a quote diverse, (c) confrontare il comportamento di un velivolo a livello mare e in crociera ad alta quota.
 
 ---
 
@@ -17,21 +17,21 @@ Un **Boeing 737-800** è in crociera livellata a **FL350** (Flight Level 350 = 1
 **Determina**:
 
 1. La densità $\rho$ alla quota di volo (interpolando dalla tabella ISA)
-2. Il coefficiente di portanza $C_L$ richiesto in crociera
-3. **Confronto**: se lo stesso velivolo volasse al livello mare a 230 m/s, quale $C_L$ servirebbe? Cosa significa fisicamente?
+2. Il coefficiente di portanza $C_p$ richiesto in crociera
+3. **Confronto**: se lo stesso velivolo volasse al livello mare a 230 m/s, quale $C_p$ servirebbe? Cosa significa fisicamente?
 
 ---
 
 ## 🖼️ Diagramma del problema
 
-In quota l'aria è rarefatta. La portanza richiesta è la stessa (uguale al peso), ma con $\rho$ ridotta serve compensare in **una** delle altre variabili: $V$, $S$ o $C_L$.
+In quota l'aria è rarefatta. La portanza richiesta è la stessa (uguale al peso), ma con $\rho$ ridotta serve compensare in **una** delle altre variabili: $V$, $S$ o $C_p$.
 
 | Quota | $\rho$ (kg/m³) | Conseguenza |
 |---|---|---|
 | Livello mare | **1,225** | Riferimento |
 | FL350 (10 670 m) | **~0,38** | Densità ~31% del mare |
 
-→ A parità di $V$ e $S$, in quota serve **$C_L$ maggiore** (~3 volte). In pratica il pilota gestisce questo aumentando l'angolo di attacco.
+→ A parità di $V$ e $S$, in quota serve **$C_p$ maggiore** (~3 volte). In pratica il pilota gestisce questo aumentando l'angolo di attacco.
 
 ---
 
@@ -44,17 +44,17 @@ In quota l'aria è rarefatta. La portanza richiesta è la stessa (uguale al peso
 | Velocità (TAS) | $V$ | 230 | m/s |
 | Quota | $h$ | 10 670 | m |
 | Allungamento | $\lambda$ | 10 | — |
-| **Da trovare** | $\rho(h)$, $C_L$ | ? | — |
+| **Da trovare** | $\rho(h)$, $C_p$ | ? | — |
 
 ---
 
 ## 🧠 Strategia di risoluzione
 
-1. **Cosa mi sta chiedendo?** $\rho$ in quota, $C_L$ in quota e $C_L$ al mare per confronto.
-2. **Quale fenomeno?** Equilibrio in volo livellato $L = W$, ma con $\rho$ ridotta.
+1. **Cosa mi sta chiedendo?** $\rho$ in quota, $C_p$ in quota e $C_p$ al mare per confronto.
+2. **Quale fenomeno?** Equilibrio in volo livellato $P = Q$, ma con $\rho$ ridotta.
 3. **Quali formule?**
    - Tabella ISA per $\rho$ (interpolazione lineare tra 10000 e 11000 m)
-   - $C_L = 2W/(\rho V^2 S)$
+   - $C_p = 2W/(\rho V^2 S)$
 
 4. **Dati e unità coerenti?** Sì, tutto SI.
 5. **Algebra**: applicare la stessa formula a due densità diverse, confrontare.
@@ -82,14 +82,14 @@ $$\boxed{\rho \approx 0{,}381 \text{ kg/m³}}$$
 
 ### Passo 2 — Peso
 
-$$W = m \cdot g = 70\,000 \times 9{,}81 = 686\,700 \text{ N}$$
+$$Q = m \cdot g = 70\,000 \times 9{,}81 = 686\,700 \text{ N}$$
 
-### Passo 3 — $C_L$ in crociera FL350
+### Passo 3 — $C_p$ in crociera FL350
 
-$$C_L = \dfrac{2W}{\rho V^2 S}$$
+$$C_p = \dfrac{2Q}{\rho V^2 S}$$
 
 Sostituisco:
-$$C_L = \dfrac{2 \times 686\,700}{0{,}381 \times 230^2 \times 124{,}6}$$
+$$C_p = \dfrac{2 \times 686\,700}{0{,}381 \times 230^2 \times 124{,}6}$$
 
 Calcolo a tappe:
 
@@ -99,13 +99,13 @@ Calcolo a tappe:
 - Denominatore: $20\,155 \times 124{,}6 = 2\,511\,313$
 - Rapporto: $1\,373\,400 / 2\,511\,313 = 0{,}547$
 
-$$\boxed{C_L \approx 0{,}55}$$
+$$\boxed{C_p \approx 0{,}55}$$
 
-### Passo 4 — Confronto: $C_L$ al livello mare a stessa V
+### Passo 4 — Confronto: $C_p$ al livello mare a stessa V
 
 Stesso peso, stessa $S$, stessa $V$, ma $\rho_0 = 1{,}225$:
 
-$$C_L^{mare} = \dfrac{1\,373\,400}{1{,}225 \times 52\,900 \times 124{,}6}$$
+$$C_p^{mare} = \dfrac{1\,373\,400}{1{,}225 \times 52\,900 \times 124{,}6}$$
 
 Calcolo:
 
@@ -113,20 +113,20 @@ Calcolo:
 - $64\,803 \times 124{,}6 = 8\,074\,447$
 - $1\,373\,400 / 8\,074\,447 = 0{,}170$
 
-$$C_L^{mare} \approx 0{,}17$$
+$$C_p^{mare} \approx 0{,}17$$
 
 ### Passo 5 — Lettura del confronto
 
-| Quota | $\rho$ (kg/m³) | $C_L$ richiesto |
+| Quota | $\rho$ (kg/m³) | $C_p$ richiesto |
 |---|---|---|
 | Livello mare | 1,225 | 0,17 |
 | FL350 (10 670 m) | 0,381 | 0,55 |
 
-**Rapporto** $C_L^{quota}/C_L^{mare} = 0{,}55/0{,}17 = 3{,}24 \approx \rho_0/\rho = 1{,}225/0{,}381 = 3{,}21$ ✓
+**Rapporto** $C_p^{quota}/C_p^{mare} = 0{,}55/0{,}17 = 3{,}24 \approx \rho_0/\rho = 1{,}225/0{,}381 = 3{,}21$ ✓
 
-→ **A parità di V e di geometria, $C_L \propto 1/\rho$**. Sopra di 10 km il velivolo lavora con un $C_L$ **3 volte maggiore** che al livello mare.
+→ **A parità di V e di geometria, $C_p \propto 1/\rho$**. Sopra di 10 km il velivolo lavora con un $C_p$ **3 volte maggiore** che al livello mare.
 
-> 💡 **Significato fisico**: l'aria è "rarefatta" → ogni m² di ala riceve meno massa d'aria al secondo → per generare la stessa portanza, l'ala deve "lavorare di più" (angolo di attacco maggiore, ovvero $C_L$ maggiore). Il pilota lo gestisce automaticamente con il pitch del velivolo.
+> 💡 **Significato fisico**: l'aria è "rarefatta" → ogni m² di ala riceve meno massa d'aria al secondo → per generare la stessa portanza, l'ala deve "lavorare di più" (angolo di attacco maggiore, ovvero $C_p$ maggiore). Il pilota lo gestisce automaticamente con il pitch del velivolo.
 
 ---
 
@@ -134,30 +134,30 @@ $$C_L^{mare} \approx 0{,}17$$
 
 Dal [formulario, sezione 9](../00-formulario/formulario.md#9-coefficienti-tipici-ordine-di-grandezza):
 
-- "Crociera, jet di linea" → $C_L \in [0{,}4;\, 0{,}6]$.
+- "Crociera, jet di linea" → $C_p \in [0{,}4;\, 0{,}6]$.
 
-Il nostro $C_L = 0{,}55$ rientra perfettamente. ✅
+Il nostro $C_p = 0{,}55$ rientra perfettamente. ✅
 
-Il $C_L = 0{,}17$ al livello mare (con la stessa V) sarebbe **bassissimo** per un 737 — significherebbe che l'aereo sta volando "troppo veloce per il suo peso" e potrebbe addirittura scendere senza voler ridurre quota. In realtà al livello mare il 737 vola a velocità minori per restare in $C_L$ ragionevole.
+Il $C_p = 0{,}17$ al livello mare (con la stessa V) sarebbe **bassissimo** per un 737 — significherebbe che l'aereo sta volando "troppo veloce per il suo peso" e potrebbe addirittura scendere senza voler ridurre quota. In realtà al livello mare il 737 vola a velocità minori per restare in $C_p$ ragionevole.
 
 ---
 
 ## 🔄 Variante per autovalutazione
 
-Stesso 737 in crociera FL350, ma a **peso più basso** (50 000 kg, fine volo dopo aver consumato carburante). **Ricalcola $C_L$**.
+Stesso 737 in crociera FL350, ma a **peso più basso** (50 000 kg, fine volo dopo aver consumato carburante). **Ricalcola $C_p$**.
 
 <details markdown="1">
 <summary>👉 Solo il risultato (prima provaci da solo!)</summary>
 
 $W = 50000 \times 9{,}81 = 490\,500$ N
 
-$C_L = 2 \cdot 490500 / (0{,}381 \cdot 230^2 \cdot 124{,}6) = 981000 / 2511313 \approx 0{,}391$
+$C_p = 2 \cdot 490500 / (0{,}381 \cdot 230^2 \cdot 124{,}6) = 981000 / 2511313 \approx 0{,}391$
 
-→ Con peso ridotto del 28,6%, anche $C_L$ scende del 28,6% (è proporzionale a $W$). Coerente.
+→ Con peso ridotto del 28,6%, anche $C_p$ scende del 28,6% (è proporzionale a $W$). Coerente.
 
 **Implicazione operativa**: a fine volo (quando l'aereo è leggero), il pilota può:
 
-- Salire di quota (FL370, FL390): la $\rho$ scende ma il $C_L$ richiesto è già basso
+- Salire di quota (FL370, FL390): la $\rho$ scende ma il $C_p$ richiesto è già basso
 - Risparmiare carburante grazie a parassita ridotta
 
 Si chiama "step climb" — il jet sale gradualmente man mano che brucia carburante.
@@ -169,8 +169,8 @@ Si chiama "step climb" — il jet sale gradualmente man mano che brucia carburan
 ## 🎓 Cosa hai imparato
 
 - **Tabella ISA è imprescindibile**: per qualsiasi calcolo in quota, $\rho \neq \rho_0$.
-- **A parità di V e geometria, $C_L \propto 1/\rho$**: in alta quota il velivolo lavora con $C_L$ molto maggiore.
-- **Il jet di linea vola alto perché**: la parassita (proporzionale a $\rho$) scende → meno consumo carburante. Anche se l'indotta è maggiore (alti $C_L$), il bilancio è positivo per voli lunghi.
+- **A parità di V e geometria, $C_p \propto 1/\rho$**: in alta quota il velivolo lavora con $C_p$ molto maggiore.
+- **Il jet di linea vola alto perché**: la parassita (proporzionale a $\rho$) scende → meno consumo carburante. Anche se l'indotta è maggiore (alti $C_p$), il bilancio è positivo per voli lunghi.
 - **Lo "step climb"** sfrutta il calo di peso per salire progressivamente — un pilota commerciale lo richiede al controllo del traffico aereo a metà rotta.
 
 ---

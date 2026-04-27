@@ -31,12 +31,12 @@
 **2. Un caccia ha λ ≈ 3, un aliante λ ≈ 25. La differenza si traduce nel fatto che il caccia ha:**
 
 <button class="quiz-opt" data-opt="a">A. Resistenza parassita molto maggiore</button>
-<button class="quiz-opt" data-opt="b">B. Resistenza indotta molto maggiore (a parità di C_L)</button>
+<button class="quiz-opt" data-opt="b">B. Resistenza indotta molto maggiore (a parità di C_p)</button>
 <button class="quiz-opt" data-opt="c">C. Velocità di stallo molto inferiore</button>
 <button class="quiz-opt" data-opt="d">D. Efficienza massima molto maggiore</button>
 
 <div class="quiz-explanation" markdown="1">
-**Risposta corretta: B** — $C_{D,i} \propto 1/\lambda$. Caccia con $\lambda=3$ vs aliante con $\lambda=25$: indotta del caccia è **~8 volte** quella dell'aliante a parità di $C_L$.
+**Risposta corretta: B** — $C_{R,i} \propto 1/\lambda$. Caccia con $\lambda=3$ vs aliante con $\lambda=25$: indotta del caccia è **~8 volte** quella dell'aliante a parità di $C_p$.
 </div>
 <button class="quiz-retry">↻ Riprova</button>
 
@@ -116,7 +116,7 @@
 <button class="quiz-opt" data-opt="d">D. Si attivano automaticamente allo stallo</button>
 
 <div class="quiz-explanation" markdown="1">
-**Risposta corretta: B** — Caratteristica unica dei Fowler: scivolano indietro lungo binari. **Massimo aumento di $C_{L,max}$** disponibile (+1,0+). Usati su tutti i jet di linea.
+**Risposta corretta: B** — Caratteristica unica dei Fowler: scivolano indietro lungo binari. **Massimo aumento di $C_{p,max}$** disponibile (+1,0+). Usati su tutti i jet di linea.
 </div>
 <button class="quiz-retry">↻ Riprova</button>
 

@@ -16,9 +16,9 @@ Dati 787:
 
 - Superficie alare: $S = 360{,}5$ m²
 - Allungamento: $\lambda = 11$
-- $C_{D,0} = 0{,}023$, $e = 0{,}87$
-- $C_L^* = \sqrt{\pi \lambda e \cdot C_{D,0}} \approx 0{,}845$
-- $E_{max} = 0{,}5 \sqrt{\pi \lambda e/C_{D,0}} \approx 18{,}5$
+- $C_{R,0} = 0{,}023$, $e = 0{,}87$
+- $C_p^* = \sqrt{\pi \lambda e \cdot C_{R,0}} \approx 0{,}845$
+- $E_{max} = 0{,}5 \sqrt{\pi \lambda e/C_{R,0}} \approx 18{,}5$
 - $\rho$ a 11 278 m ≈ 0,358 kg/m³
 
 **Determina**:
@@ -81,7 +81,7 @@ $$\text{distanza}_{calma} = E_{max} \times h = 18{,}5 \times 11\,278 = 208\,643 
 
 ### Passo 3 — Velocità ottima del 787 a peso 220 t e FL370
 
-$$V^* = \sqrt{\dfrac{2W}{\rho S C_L^*}} = \sqrt{\dfrac{2 \times 220\,000 \times 9{,}81}{0{,}358 \times 360{,}5 \times 0{,}845}}$$
+$$V^* = \sqrt{\dfrac{2Q}{\rho S C_p^*}} = \sqrt{\dfrac{2 \times 220\,000 \times 9{,}81}{0{,}358 \times 360{,}5 \times 0{,}845}}$$
 
 Calcolo:
 

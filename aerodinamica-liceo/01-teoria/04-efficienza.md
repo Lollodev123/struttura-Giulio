@@ -1,6 +1,6 @@
 # Lezione 4 — Efficienza aerodinamica e polare
 
-> **Obiettivo**: alla fine di questa lezione sai cos'è $E = C_L/C_D$, perché esiste un valore massimo $E_{max}$, come leggere la polare di un velivolo, e come calcolare la distanza in planata di un aliante.
+> **Obiettivo**: alla fine di questa lezione sai cos'è $E = C_p/C_R$, perché esiste un valore massimo $E_{max}$, come leggere la polare di un velivolo, e come calcolare la distanza in planata di un aliante.
 
 ---
 
@@ -8,7 +8,7 @@
 
 L'**efficienza aerodinamica** $E$ è il rapporto tra portanza e resistenza: misura **quanti newton di portanza ottieni per ogni newton di resistenza pagato**. Più alta è $E$, più il velivolo "vola economico".
 
-$$E = \frac{L}{D} = \frac{C_L}{C_D}$$
+$$E = \frac{L}{D} = \frac{C_p}{C_R}$$
 
 ---
 
@@ -54,25 +54,25 @@ $$\boxed{\text{distanza orizzontale} = E \times \text{quota persa}}$$
 
 ## 📊 La polare di velivolo — l'identikit aerodinamico
 
-La **polare** è il grafico $C_L$ vs $C_D$. Ogni punto rappresenta una specifica condizione di volo (quindi specifica $\alpha$, velocità, etc.).
+La **polare** è il grafico $C_p$ vs $C_R$. Ogni punto rappresenta una specifica condizione di volo (quindi specifica $\alpha$, velocità, etc.).
 
 ![Polare con tangente per E_max e punti notevoli](../assets/img/grafici/polare-tangente-emax.svg)
 
-**Lettura**: la **tangente alla polare passante per l'origine** (retta tratteggiata rossa) tocca la curva nel punto di **massima efficienza** $E_{max}$. È il punto da cui la pendenza $C_L/C_D$ è massima.
+**Lettura**: la **tangente alla polare passante per l'origine** (retta tratteggiata rossa) tocca la curva nel punto di **massima efficienza** $E_{max}$. È il punto da cui la pendenza $C_p/C_R$ è massima.
 
-> 💡 **Trucco grafico**: per trovare $E_{max}$ su una polare, traccia una retta dall'origine e ruotala verso la curva. Quando "tocca" la curva (tangenza), quello è il punto di efficienza massima. Il $C_L$ corrispondente si chiama $C_L^*$.
+> 💡 **Trucco grafico**: per trovare $E_{max}$ su una polare, traccia una retta dall'origine e ruotala verso la curva. Quando "tocca" la curva (tangenza), quello è il punto di efficienza massima. Il $C_p$ corrispondente si chiama $C_p^*$.
 
 ---
 
 ## 🔢 Calcolo di $E_{max}$ — formula del liceo
 
-Dalla lezione precedente, $C_D = C_{D,0} + \dfrac{C_L^2}{\pi \lambda e}$. L'efficienza è $E = C_L/C_D$. Massimizzare $E$ rispetto a $C_L$ porta a:
+Dalla lezione precedente, $C_R = C_{R,0} + \dfrac{C_p^2}{\pi \lambda e}$. L'efficienza è $E = C_p/C_R$. Massimizzare $E$ rispetto a $C_p$ porta a:
 
-$$C_L^* = \sqrt{\pi \lambda e \cdot C_{D,0}}$$
+$$C_p^* = \sqrt{\pi \lambda e \cdot C_{R,0}}$$
 
-$$\boxed{E_{max} = \frac{1}{2} \sqrt{\frac{\pi \lambda e}{C_{D,0}}}}$$
+$$\boxed{E_{max} = \frac{1}{2} \sqrt{\frac{\pi \lambda e}{C_{R,0}}}}$$
 
-A questo punto **resistenza parassita = resistenza indotta** (entrambe valgono $C_{D,0}$). Il $C_D$ totale è $2 \, C_{D,0}$.
+A questo punto **resistenza parassita = resistenza indotta** (entrambe valgono $C_{R,0}$). Il $C_R$ totale è $2 \, C_{R,0}$.
 
 > ⚠️ **Niente derivate per il liceo** — ma la formula $E_{max}$ è da tenere a mente, è di una semplicità impressionante: dipende solo da **allungamento alare**, **fattore di Oswald**, e **resistenza parassita**.
 
@@ -81,21 +81,21 @@ A questo punto **resistenza parassita = resistenza indotta** (entrambe valgono $
 ## ✈️ Calcoli su velivoli reali
 
 ### Cessna 172
-- $\lambda = 7{,}5$, $e = 0{,}8$, $C_{D,0} = 0{,}028$
-- $C_L^* = \sqrt{\pi \cdot 7{,}5 \cdot 0{,}8 \cdot 0{,}028} = \sqrt{0{,}528} \approx 0{,}73$
+- $\lambda = 7{,}5$, $e = 0{,}8$, $C_{R,0} = 0{,}028$
+- $C_p^* = \sqrt{\pi \cdot 7{,}5 \cdot 0{,}8 \cdot 0{,}028} = \sqrt{0{,}528} \approx 0{,}73$
 - $E_{max} = \frac{1}{2}\sqrt{\dfrac{\pi \cdot 7{,}5 \cdot 0{,}8}{0{,}028}} = \frac{1}{2}\sqrt{673} \approx 12{,}96$
 
 → massima efficienza ~13. Il manuale di volo del Cessna 172 dichiara $E_{max}$ effettivo ~10 (la formula sovrastima perché trascura interferenze e attrito a bassa Re). **Velocità di max efficienza** ≈ 65 kt.
 
 ### Aliante ASK-21
-- $\lambda = 23$, $e = 0{,}9$, $C_{D,0} = 0{,}015$
-- $C_L^* = \sqrt{\pi \cdot 23 \cdot 0{,}9 \cdot 0{,}015} = \sqrt{0{,}975} \approx 0{,}99$
+- $\lambda = 23$, $e = 0{,}9$, $C_{R,0} = 0{,}015$
+- $C_p^* = \sqrt{\pi \cdot 23 \cdot 0{,}9 \cdot 0{,}015} = \sqrt{0{,}975} \approx 0{,}99$
 - $E_{max} = \frac{1}{2}\sqrt{\dfrac{\pi \cdot 23 \cdot 0{,}9}{0{,}015}} = \frac{1}{2}\sqrt{4335} \approx 33$
 
 → efficienza massima ~33. **Distanza in planata da 1000 m: 33 km**. Velocità di max efficienza ≈ 50 kt.
 
 ### Boeing 737 (in caso di doppia avaria motori — ipotesi rara ma analizzabile)
-- $\lambda = 9$, $e = 0{,}85$, $C_{D,0} = 0{,}025$
+- $\lambda = 9$, $e = 0{,}85$, $C_{R,0} = 0{,}025$
 - $E_{max} \approx \frac{1}{2}\sqrt{\dfrac{\pi \cdot 9 \cdot 0{,}85}{0{,}025}} = \frac{1}{2}\sqrt{961} \approx 15{,}5$
 
 → a livello mare, dichiarato ~17 (il modello ideale sottostima questa volta). **Da 10 000 m, 737 può planare ~170 km** in caso di doppia avaria. Esempio reale: il *Gimli Glider* (Air Canada 143, 1983), un Boeing 767 rimasto senza carburante a 12 000 m, planò 100+ km e atterrò su una pista abbandonata.
@@ -104,11 +104,11 @@ A questo punto **resistenza parassita = resistenza indotta** (entrambe valgono $
 
 ## 📐 Velocità di massima efficienza ($V^*$)
 
-A $C_L^*$ corrisponde una specifica velocità di volo:
+A $C_p^*$ corrisponde una specifica velocità di volo:
 
-$$V^* = \sqrt{\dfrac{2 W}{\rho S C_L^*}}$$
+$$V^* = \sqrt{\dfrac{2 W}{\rho S C_p^*}}$$
 
-(stessa formula della $V_S$ ma con $C_L^*$ invece di $C_{L,max}$).
+(stessa formula della $V_S$ ma con $C_p^*$ invece di $C_{p,max}$).
 
 **Per il Cessna 172** in crociera al livello mare:
 $V^* = \sqrt{\dfrac{2 \cdot 10\,232}{1{,}225 \cdot 16{,}2 \cdot 0{,}73}} \approx \sqrt{1\,413} \approx 37{,}6$ m/s ≈ **73 kt**.
@@ -119,10 +119,10 @@ $V^* = \sqrt{\dfrac{2 \cdot 10\,232}{1{,}225 \cdot 16{,}2 \cdot 0{,}73}} \approx
 
 ## 🎯 Box "Da ricordare per l'interrogazione"
 
-> 1. **$E = C_L/C_D = L/D$** — efficienza è un **rapporto adimensionale**, non una forza.
+> 1. **$E = C_p/C_R = L/D$** — efficienza è un **rapporto adimensionale**, non una forza.
 > 2. **In planata: distanza = $E \times$ quota persa**. È la formula più utile della lezione.
 > 3. **Velocità di max efficienza ≠ velocità di crociera**. Quasi sempre la prima è più bassa (~70 kt per Cessna, ~50 kt per aliante).
-> 4. **$E_{max} = \frac{1}{2}\sqrt{\pi \lambda e / C_{D,0}}$** — dipende SOLO da geometria alare (λ), distribuzione portanza (e), e parassita.
+> 4. **$E_{max} = \frac{1}{2}\sqrt{\pi \lambda e / C_{R,0}}$** — dipende SOLO da geometria alare (λ), distribuzione portanza (e), e parassita.
 > 5. **A $E_{max}$**, parassita = indotta. Significa: minore parassita o maggiore allungamento → efficienza maggiore.
 > 6. **Polari diverse = velivoli diversi**: confronta i grafici per capire l'identità aerodinamica.
 
@@ -148,7 +148,7 @@ $V^* = \sqrt{\dfrac{2 \cdot 10\,232}{1{,}225 \cdot 16{,}2 \cdot 0{,}73}} \approx
 2. Un Cessna 172 ha $E_{max} \approx 10$. In caso di avaria motore a 600 m sopra l'aeroporto, può raggiungere una pista a 7 km di distanza? E a 5 km?
 3. Tra due velivoli identici tranne l'allungamento alare ($\lambda_A = 8$, $\lambda_B = 16$), quale ha efficienza massima più alta? Di che fattore, approssimativamente?
 4. Perché il pilota di Gimli Glider (B767 senza carburante) ha pianificato di volare a circa **220 kt**, non alla velocità di crociera del 767 (~480 kt)?
-5. Per un Cessna 172 con $C_L^* = 0{,}73$ in volo livellato al livello mare, calcola la velocità di massima efficienza in nodi.
+5. Per un Cessna 172 con $C_p^* = 0{,}73$ in volo livellato al livello mare, calcola la velocità di massima efficienza in nodi.
 
 <details markdown="1">
 <summary>👉 Risposte</summary>
@@ -161,7 +161,7 @@ $V^* = \sqrt{\dfrac{2 \cdot 10\,232}{1{,}225 \cdot 16{,}2 \cdot 0{,}73}} \approx
 
 4. Perché 480 kt è la velocità di **crociera** (alta), in cui parassita domina e $E$ è inferiore al massimo. La velocità di **massima efficienza** del 767 è circa 220-240 kt (a peso medio). Volando a $V^*$, il pilota ha massimizzato la distanza percorribile per ogni metro di quota persa — esattamente quello che serviva per arrivare a Gimli da 12 000 m senza propulsione.
 
-5. $V^* = \sqrt{\dfrac{2W}{\rho S C_L^*}} = \sqrt{\dfrac{2 \cdot 10232}{1{,}225 \cdot 16{,}2 \cdot 0{,}73}} = \sqrt{1413} \approx 37{,}6$ m/s. Conversione: $37{,}6 / 0{,}5144 \approx 73$ kt. **Risposta: ~73 kt**, ben sotto i 122 kt di crociera. Il manuale POH del Cessna 172 dichiara $V_{best\,glide}$ = **68 kt** (a peso medio), molto vicino al nostro calcolo.
+5. $V^* = \sqrt{\dfrac{2Q}{\rho S C_p^*}} = \sqrt{\dfrac{2 \cdot 10232}{1{,}225 \cdot 16{,}2 \cdot 0{,}73}} = \sqrt{1413} \approx 37{,}6$ m/s. Conversione: $37{,}6 / 0{,}5144 \approx 73$ kt. **Risposta: ~73 kt**, ben sotto i 122 kt di crociera. Il manuale POH del Cessna 172 dichiara $V_{best\,glide}$ = **68 kt** (a peso medio), molto vicino al nostro calcolo.
 
 </details>
 

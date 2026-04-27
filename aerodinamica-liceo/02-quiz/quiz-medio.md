@@ -20,7 +20,7 @@
 <button class="quiz-opt" data-opt="d">D. Stallo + viscosa + di pressione</button>
 
 <div class="quiz-explanation" markdown="1">
-**Risposta corretta: B** — $C_D = C_{D,0} + C_{D,i}$. La parassita esiste anche senza portanza; l'indotta è il prezzo della portanza. Vedi [Lezione 3](../01-teoria/03-resistenza.md).
+**Risposta corretta: B** — $C_R = C_{R,0} + C_{R,i}$. La parassita esiste anche senza portanza; l'indotta è il prezzo della portanza. Vedi [Lezione 3](../01-teoria/03-resistenza.md).
 </div>
 <button class="quiz-retry">↻ Riprova</button>
 
@@ -30,13 +30,13 @@
 
 **2. La resistenza indotta cresce proporzionalmente a:**
 
-<button class="quiz-opt" data-opt="a">A. C_L</button>
+<button class="quiz-opt" data-opt="a">A. C_p</button>
 <button class="quiz-opt" data-opt="b">B. C_L²</button>
 <button class="quiz-opt" data-opt="c">C. V</button>
 <button class="quiz-opt" data-opt="d">D. V²</button>
 
 <div class="quiz-explanation" markdown="1">
-**Risposta corretta: B** — $C_{D,i} = C_L^2/(\pi \lambda e)$. Cresce col **quadrato** di $C_L$.
+**Risposta corretta: B** — $C_{R,i} = C_p^2/(\pi \lambda e)$. Cresce col **quadrato** di $C_p$.
 </div>
 <button class="quiz-retry">↻ Riprova</button>
 
@@ -49,10 +49,10 @@
 <button class="quiz-opt" data-opt="a">A. Aumentare la velocità massima</button>
 <button class="quiz-opt" data-opt="b">B. Ridurre la resistenza parassita</button>
 <button class="quiz-opt" data-opt="c">C. Ridurre la resistenza indotta tramite alto allungamento alare</button>
-<button class="quiz-opt" data-opt="d">D. Aumentare il C_L,max</button>
+<button class="quiz-opt" data-opt="d">D. Aumentare il C_p,max</button>
 
 <div class="quiz-explanation" markdown="1">
-**Risposta corretta: C** — Allungamento $\lambda$ alto → $C_{D,i}$ basso → efficienza massima alta. Principio cardine degli alianti.
+**Risposta corretta: C** — Allungamento $\lambda$ alto → $C_{R,i}$ basso → efficienza massima alta. Principio cardine degli alianti.
 </div>
 <button class="quiz-retry">↻ Riprova</button>
 
@@ -63,12 +63,12 @@
 **4. L'efficienza aerodinamica E è definita come:**
 
 <button class="quiz-opt" data-opt="a">A. L/W</button>
-<button class="quiz-opt" data-opt="b">B. C_L/C_D</button>
+<button class="quiz-opt" data-opt="b">B. C_p/C_R</button>
 <button class="quiz-opt" data-opt="c">C. L · D</button>
-<button class="quiz-opt" data-opt="d">D. C_D/C_L</button>
+<button class="quiz-opt" data-opt="d">D. C_R/C_p</button>
 
 <div class="quiz-explanation" markdown="1">
-**Risposta corretta: B** — $E = C_L/C_D = L/D$, rapporto adimensionale tra portanza e resistenza.
+**Risposta corretta: B** — $E = C_p/C_R = L/D$, rapporto adimensionale tra portanza e resistenza.
 </div>
 <button class="quiz-retry">↻ Riprova</button>
 
@@ -97,10 +97,10 @@
 <button class="quiz-opt" data-opt="a">A. Solo dal peso</button>
 <button class="quiz-opt" data-opt="b">B. Solo dalla velocità</button>
 <button class="quiz-opt" data-opt="c">C. Allungamento, fattore di Oswald, e resistenza parassita</button>
-<button class="quiz-opt" data-opt="d">D. Solo dal C_L,max</button>
+<button class="quiz-opt" data-opt="d">D. Solo dal C_p,max</button>
 
 <div class="quiz-explanation" markdown="1">
-**Risposta corretta: C** — $E_{max} = \frac{1}{2}\sqrt{\pi \lambda e / C_{D,0}}$. **Non** dipende dal peso! È un parametro puramente geometrico/aerodinamico.
+**Risposta corretta: C** — $E_{max} = \frac{1}{2}\sqrt{\pi \lambda e / C_{R,0}}$. **Non** dipende dal peso! È un parametro puramente geometrico/aerodinamico.
 </div>
 <button class="quiz-retry">↻ Riprova</button>
 
@@ -116,7 +116,7 @@
 <button class="quiz-opt" data-opt="d">D. Parassita = zero</button>
 
 <div class="quiz-explanation" markdown="1">
-**Risposta corretta: C** — A massima efficienza, le due componenti sono **uguali**. Risultato matematico molto elegante: $C_{D,0} = C_{L^*}^2/(\pi\lambda e)$.
+**Risposta corretta: C** — A massima efficienza, le due componenti sono **uguali**. Risultato matematico molto elegante: $C_{R,0} = C_{L^*}^2/(\pi\lambda e)$.
 </div>
 <button class="quiz-retry">↻ Riprova</button>
 
@@ -180,7 +180,7 @@
 <button class="quiz-opt" data-opt="d">D. Dipende solo dal peso</button>
 
 <div class="quiz-explanation" markdown="1">
-**Risposta corretta: B** — $V_S = \sqrt{2W/(\rho S C_{L,max})}$: $\rho$ scende → $V_S$ sale. Per questo gli aeroporti d'alta quota (La Paz 4000 m) hanno piste più lunghe.
+**Risposta corretta: B** — $V_S = \sqrt{2W/(\rho S C_{p,max})}$: $\rho$ scende → $V_S$ sale. Per questo gli aeroporti d'alta quota (La Paz 4000 m) hanno piste più lunghe.
 </div>
 <button class="quiz-retry">↻ Riprova</button>
 

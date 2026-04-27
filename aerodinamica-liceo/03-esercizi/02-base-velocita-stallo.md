@@ -2,7 +2,7 @@
 
 > 🟢 **Difficoltà: BASE** — Applicazione diretta della formula della velocità di stallo.
 >
-> 🎯 **Obiettivi didattici**: imparare a (a) calcolare $V_S$ a partire da $C_{L,max}$, (b) capire l'effetto dei flap sulla velocità di stallo, (c) verificare la coerenza con i dati del manuale di volo.
+> 🎯 **Obiettivi didattici**: imparare a (a) calcolare $V_S$ a partire da $C_{p,max}$, (b) capire l'effetto dei flap sulla velocità di stallo, (c) verificare la coerenza con i dati del manuale di volo.
 
 ---
 
@@ -12,7 +12,7 @@ Un **Piper PA-28-181 Archer** vola in atmosfera standard al livello del mare. I 
 
 - Massa massima al decollo (MTOW): $m = 1\,157$ kg
 - Superficie alare: $S = 15{,}8$ m²
-- Coefficiente di portanza massimo, **ala pulita** (senza flap): $C_{L,max} = 1{,}5$
+- Coefficiente di portanza massimo, **ala pulita** (senza flap): $C_{p,max} = 1{,}5$
 - Coefficiente di portanza massimo, **flap pieni** (40°): $C_{L,max,flap} = 2{,}1$
 
 **Determina**:
@@ -27,7 +27,7 @@ Un **Piper PA-28-181 Archer** vola in atmosfera standard al livello del mare. I 
 
 ![Curva CL-alpha con angolo di stallo critico evidenziato](../assets/img/grafici/schema-stallo.svg)
 
-Allo stallo (~16° per profili tipici), il flusso si stacca dal dorso e $C_L$ crolla bruscamente. La portanza non basta più a sostenere il peso → l'aereo scende. La velocità di stallo $V_S$ è la velocità più bassa a cui il velivolo può ancora generare $L = W$ a $C_{L,max}$.
+Allo stallo (~16° per profili tipici), il flusso si stacca dal dorso e $C_p$ crolla bruscamente. La portanza non basta più a sostenere il peso → l'aereo scende. La velocità di stallo $V_S$ è la velocità più bassa a cui il velivolo può ancora generare $P = Q$ a $C_{p,max}$.
 
 ---
 
@@ -37,8 +37,8 @@ Allo stallo (~16° per profili tipici), il flusso si stacca dal dorso e $C_L$ cr
 |---|---|---|---|
 | Massa | $m$ | 1 157 | kg |
 | Superficie alare | $S$ | 15,8 | m² |
-| $C_{L,max}$ ala pulita | $C_{L,max}$ | 1,5 | adim. |
-| $C_{L,max}$ flap pieni | $C_{L,max,flap}$ | 2,1 | adim. |
+| $C_{p,max}$ ala pulita | $C_{p,max}$ | 1,5 | adim. |
+| $C_{p,max}$ flap pieni | $C_{L,max,flap}$ | 2,1 | adim. |
 | Densità aria (livello mare ISA) | $\rho$ | 1,225 | kg/m³ |
 | Accelerazione gravità | $g$ | 9,81 | m/s² |
 | **Da trovare** | $V_S$, $V_{S,0}$ | ? | m/s e kt |
@@ -48,26 +48,26 @@ Allo stallo (~16° per profili tipici), il flusso si stacca dal dorso e $C_L$ cr
 ## 🧠 Strategia di risoluzione
 
 1. **Cosa mi sta chiedendo?** Due velocità di stallo (con e senza flap), e il rapporto tra le due.
-2. **Quale fenomeno è coinvolto?** Lo stallo: il punto in cui l'ala genera la massima portanza possibile, oltre il quale crolla. Per restare in volo livellato a $C_{L,max}$, occorre che $L_{max} = W$.
+2. **Quale fenomeno è coinvolto?** Lo stallo: il punto in cui l'ala genera la massima portanza possibile, oltre il quale crolla. Per restare in volo livellato a $C_{p,max}$, occorre che $L_{max} = W$.
 3. **Quali formule mi servono?**
-   - Equilibrio verticale: $L = W$
-   - Portanza: $L = \frac{1}{2}\rho V^2 S C_L$
-   - Allo stallo: $L_{max} = \frac{1}{2}\rho V_S^2 S C_{L,max}$
-   - Da cui: $V_S = \sqrt{\dfrac{2 W}{\rho S C_{L,max}}}$
+   - Equilibrio verticale: $P = Q$
+   - Portanza: $P = \frac{1}{2}\rho V^2 S C_p$
+   - Allo stallo: $L_{max} = \frac{1}{2}\rho V_S^2 S C_{p,max}$
+   - Da cui: $V_S = \sqrt{\dfrac{2 W}{\rho S C_{p,max}}}$
 
 4. **Dati e unità sono coerenti?** Sì, tutti SI. Il risultato sarà in m/s; converto in nodi alla fine.
-5. **Algebra**: stessa formula due volte, con $C_{L,max}$ diverso. Confronto i risultati.
+5. **Algebra**: stessa formula due volte, con $C_{p,max}$ diverso. Confronto i risultati.
 
 ---
 
 ## ✏️ Risoluzione passo-passo
 
 ### Passo 1 — Calcolare il peso del velivolo
-$$W = m \cdot g = 1\,157 \times 9{,}81 = 11\,350{,}17 \text{ N}$$
+$$Q = m \cdot g = 1\,157 \times 9{,}81 = 11\,350{,}17 \text{ N}$$
 
 ### Passo 2 — Velocità di stallo con ala pulita
 Applicando la formula:
-$$V_S = \sqrt{\dfrac{2 W}{\rho S C_{L,max}}}$$
+$$V_S = \sqrt{\dfrac{2 W}{\rho S C_{p,max}}}$$
 
 Sostituisco:
 $$V_S = \sqrt{\dfrac{2 \times 11\,350{,}17}{1{,}225 \times 15{,}8 \times 1{,}5}}$$
@@ -82,7 +82,7 @@ Calcolo a tappe:
 $$\boxed{V_S \approx 28{,}0 \text{ m/s} = 54{,}4 \text{ kt}}$$
 
 ### Passo 3 — Velocità di stallo con flap pieni
-Stessa formula, ma con $C_{L,max} = 2{,}1$:
+Stessa formula, ma con $C_{p,max} = 2{,}1$:
 $$V_{S,0} = \sqrt{\dfrac{2 \times 11\,350{,}17}{1{,}225 \times 15{,}8 \times 2{,}1}}$$
 
 Calcolo:
@@ -100,7 +100,7 @@ $$\text{Riduzione} = \dfrac{4{,}4}{28{,}0} \times 100 \approx 15{,}7\%$$
 
 I flap fanno scendere $V_S$ del **~16%**.
 
-> 💡 Trucco rapido: $V_S \propto 1/\sqrt{C_{L,max}}$, quindi il rapporto è $\sqrt{1{,}5/2{,}1} = \sqrt{0{,}714} = 0{,}845$. Coerente.
+> 💡 Trucco rapido: $V_S \propto 1/\sqrt{C_{p,max}}$, quindi il rapporto è $\sqrt{1{,}5/2{,}1} = \sqrt{0{,}714} = 0{,}845$. Coerente.
 
 ---
 
@@ -115,7 +115,7 @@ Il manuale POH (Pilot's Operating Handbook) del Piper PA-28-181 Archer dichiara:
 
 Differenza < 2% → modello eccellente. La piccola differenza è dovuta a:
 
-- $C_{L,max}$ effettivo dipende da Reynolds e finitura superficiale
+- $C_{p,max}$ effettivo dipende da Reynolds e finitura superficiale
 - Il manuale considera condizioni reali (non ISA pura)
 
 **Il risultato è coerente con la realtà operativa del velivolo**.
@@ -141,8 +141,8 @@ $V_S(2000\,m) = \sqrt{\dfrac{2 \times 11350}{1{,}007 \times 15{,}8 \times 1{,}5}
 
 ## 🎓 Cosa hai imparato
 
-- La **velocità di stallo** dipende da $W$, $\rho$, $S$, $C_{L,max}$ — tutti e quattro.
-- I **flap** servono a **ridurre $V_S$** per atterrare in sicurezza: aumentano $C_{L,max}$ → $V_S$ scende come $1/\sqrt{C_{L,max}}$.
+- La **velocità di stallo** dipende da $W$, $\rho$, $S$, $C_{p,max}$ — tutti e quattro.
+- I **flap** servono a **ridurre $V_S$** per atterrare in sicurezza: aumentano $C_{p,max}$ → $V_S$ scende come $1/\sqrt{C_{p,max}}$.
 - A parità di velivolo e configurazione, **$V_S$ aumenta in quota** perché $\rho$ scende.
 - Il calcolo da formulario coincide entro il 2% con il dato del manuale di volo → **fidati delle formule che hai imparato**.
 

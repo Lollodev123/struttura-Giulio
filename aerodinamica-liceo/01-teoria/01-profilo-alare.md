@@ -33,7 +33,7 @@ Il profilo blu è il **NACA 2412** del Cessna 172. La linea tratteggiata rossa �
 | **Bordo d'attacco** | Punto/regione anteriore, di solito arrotondato | Determina come l'aria "incontra" il profilo |
 | **Bordo d'uscita** | Punto posteriore, sempre tagliente | Determina come il flusso si stacca dal profilo |
 | **Corda (c)** | Segmento rettilineo da bordo d'attacco a bordo d'uscita | È la "lunghezza" del profilo, riferimento per tutto |
-| **Spessore (t)** | Distanza max tra dorso e ventre | Influenza resistenza e $C_{L,max}$ |
+| **Spessore (t)** | Distanza max tra dorso e ventre | Influenza resistenza e $C_{p,max}$ |
 | **Linea media** | Linea equidistante tra dorso e ventre | Se è retta = profilo simmetrico |
 | **Freccia max (curvatura, $f$)** | Distanza max tra linea media e corda | Determina la portanza ad $\alpha = 0$ |
 
@@ -60,7 +60,7 @@ NACA (oggi NASA) ha catalogato migliaia di profili negli anni '30–'40 con un s
 
 ### Profili NACA a 5 cifre — `NACA LPSXX`
 
-Più sofisticati, ottimizzati per $C_L$ specifici. Esempio: **NACA 23012** (Beechcraft Bonanza). Le cifre codificano $C_L$ di progetto, posizione curvatura, e spessore. Non serve impararli a memoria — serve saperli **riconoscere** e cercarli nel catalogo.
+Più sofisticati, ottimizzati per $C_p$ specifici. Esempio: **NACA 23012** (Beechcraft Bonanza). Le cifre codificano $C_p$ di progetto, posizione curvatura, e spessore. Non serve impararli a memoria — serve saperli **riconoscere** e cercarli nel catalogo.
 
 > 💡 **Trucco**: se vedi **5 cifre** che iniziano con un numero da 1 a 5, è un NACA 5-cifre. Se vedi **4 cifre**, è un 4-cifre.
 

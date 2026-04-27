@@ -1,14 +1,14 @@
 # Soluzione — Variante Esercizio 9
 
-**Variante**: stesso A320 con configurazione decollo (CONF 1+F, $C_{L,max} = 2{,}00$, $S = 122{,}6$ m²), ma a peso ridotto $m = 65\,000$ kg invece di 78 000 kg (volo a corto raggio, meno carburante e meno passeggeri).
+**Variante**: stesso A320 con configurazione decollo (CONF 1+F, $C_{p,max} = 2{,}00$, $S = 122{,}6$ m²), ma a peso ridotto $m = 65\,000$ kg invece di 78 000 kg (volo a corto raggio, meno carburante e meno passeggeri).
 
 ### Passo 1 — Peso
 
-$$W = m \cdot g = 65\,000 \times 9{,}81 = 637\,650 \text{ N}$$
+$$Q = m \cdot g = 65\,000 \times 9{,}81 = 637\,650 \text{ N}$$
 
 ### Passo 2 — $V_S$ a livello mare
 
-$$V_S = \sqrt{\dfrac{2W}{\rho_0 S C_{L,max,TO}}} = \sqrt{\dfrac{2 \times 637\,650}{1{,}225 \times 122{,}6 \times 2{,}00}}$$
+$$V_S = \sqrt{\dfrac{2Q}{\rho_0 S C_{p,max,TO}}} = \sqrt{\dfrac{2 \times 637\,650}{1{,}225 \times 122{,}6 \times 2{,}00}}$$
 
 Calcolo:
 

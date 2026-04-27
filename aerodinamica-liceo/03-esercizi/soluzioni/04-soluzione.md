@@ -4,11 +4,11 @@
 
 ### Passo 1 — Peso
 
-$$W = m \cdot g = 520 \times 9{,}81 = 5\,101{,}2 \text{ N}$$
+$$Q = m \cdot g = 520 \times 9{,}81 = 5\,101{,}2 \text{ N}$$
 
-### Passo 2 — $C_L^*$ ed $E_{max}$ (invariati)
+### Passo 2 — $C_p^*$ ed $E_{max}$ (invariati)
 
-$$C_L^* = \sqrt{\pi \times 16{,}6 \times 0{,}95 \times 0{,}014} = 0{,}833$$
+$$C_p^* = \sqrt{\pi \times 16{,}6 \times 0{,}95 \times 0{,}014} = 0{,}833$$
 
 $$E_{max} = \dfrac{1}{2}\sqrt{\dfrac{\pi \times 16{,}6 \times 0{,}95}{0{,}014}} \approx 29{,}75$$
 
@@ -16,7 +16,7 @@ $$E_{max} = \dfrac{1}{2}\sqrt{\dfrac{\pi \times 16{,}6 \times 0{,}95}{0{,}014}} 
 
 ### Passo 3 — Nuova velocità $V^*$
 
-$$V^* = \sqrt{\dfrac{2W}{\rho S C_L^*}} = \sqrt{\dfrac{2 \times 5\,101{,}2}{1{,}225 \times 17{,}95 \times 0{,}833}}$$
+$$V^* = \sqrt{\dfrac{2Q}{\rho S C_p^*}} = \sqrt{\dfrac{2 \times 5\,101{,}2}{1{,}225 \times 17{,}95 \times 0{,}833}}$$
 
 Calcolo:
 

@@ -34,7 +34,7 @@ con $\gamma = 1{,}4$ (gas perfetto biatomico), $R = 287$ J/(kg·K), $T$ in kelvi
 In aerodinamica subsonica, il flusso d'aria sull'ala accelera SEMPRE oltre la velocità del velivolo (a causa della curvatura). A un certo $M_{velivolo}$, il flusso locale sull'ala raggiunge $M = 1$ → si forma un'**onda d'urto**.
 
 - $M_{cr}$ = numero di Mach del velivolo a cui PRIMA volta il flusso locale arriva a $M = 1$
-- $M_{DD}$ = "drag divergence Mach", ~0,02 sopra $M_{cr}$, dove $C_D$ esplode (+50%)
+- $M_{DD}$ = "drag divergence Mach", ~0,02 sopra $M_{cr}$, dove $C_R$ esplode (+50%)
 
 Per profili subsonici tipici (NACA 23012, profili Boeing): $M_{cr} \approx 0{,}72-0{,}78$.
 
@@ -81,9 +81,9 @@ $$M_{Concorde} = \dfrac{600}{295{,}0} \approx 2{,}03$$
 
 Il profilo del 737 (NACA 230xx famiglia, modificato per high-Mach) ha $M_{cr} \approx 0{,}74$ con angolo di attacco di crociera. A Mach 0,78 il velivolo è a **+5% sopra il Mach critico** → si forma un'onda d'urto sul dorso dell'ala, ma debole.
 
-$M_{DD}$ del 737 (drag divergence) ≈ 0,82-0,84. **Sopra di questo, $C_D$ esplode**:
+$M_{DD}$ del 737 (drag divergence) ≈ 0,82-0,84. **Sopra di questo, $C_R$ esplode**:
 
-| $M$ del 737 | $C_D$ relativo | Note |
+| $M$ del 737 | $C_R$ relativo | Note |
 |---|---|---|
 | 0,70 | 1,00 | Subsonico pulito |
 | 0,76 | 1,05 | Crociera economica |
@@ -94,7 +94,7 @@ $M_{DD}$ del 737 (drag divergence) ≈ 0,82-0,84. **Sopra di questo, $C_D$ esplo
 
 **Perché Boeing limita il 737 a M_MO = 0,82?**
 
-- Sopra M = 0,82, $C_D$ aumenta del 30-40% → consumo carburante esplode
+- Sopra M = 0,82, $C_R$ aumenta del 30-40% → consumo carburante esplode
 - Vibrazioni Mach buffet (l'onda d'urto oscilla)
 - Stress sulla struttura
 - Comfort passeggeri

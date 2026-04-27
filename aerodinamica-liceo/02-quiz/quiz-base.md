@@ -62,10 +62,10 @@
 
 **4. La formula della portanza è:**
 
-<button class="quiz-opt" data-opt="a">A. L = ρ V S C_L</button>
-<button class="quiz-opt" data-opt="b">B. L = ½ ρ V² S C_L</button>
-<button class="quiz-opt" data-opt="c">C. L = ρ V² S C_L</button>
-<button class="quiz-opt" data-opt="d">D. L = ½ ρ V S C_L</button>
+<button class="quiz-opt" data-opt="a">A. L = ρ V S C_p</button>
+<button class="quiz-opt" data-opt="b">B. L = ½ ρ V² S C_p</button>
+<button class="quiz-opt" data-opt="c">C. L = ρ V² S C_p</button>
+<button class="quiz-opt" data-opt="d">D. L = ½ ρ V S C_p</button>
 
 <div class="quiz-explanation" markdown="1">
 **Risposta corretta: B** — Mai dimenticare il fattore **½** (sta nella pressione dinamica $q = \frac{1}{2}\rho V^2$) e il **quadrato** della velocità. Vedi [Lezione 2](../01-teoria/02-portanza.md).
@@ -76,7 +76,7 @@
 
 <div class="quiz-q" data-correct="b" markdown="1">
 
-**5. Se raddoppi la velocità del velivolo, mantenendo C_L e ρ costanti, la portanza:**
+**5. Se raddoppi la velocità del velivolo, mantenendo C_p e ρ costanti, la portanza:**
 
 <button class="quiz-opt" data-opt="a">A. Raddoppia</button>
 <button class="quiz-opt" data-opt="b">B. Quadruplica</button>
@@ -84,7 +84,7 @@
 <button class="quiz-opt" data-opt="d">D. Si dimezza</button>
 
 <div class="quiz-explanation" markdown="1">
-**Risposta corretta: B** — $L \propto V^2$, quindi raddoppi V → $L \times 4$. Errore classico: pensare che raddoppi.
+**Risposta corretta: B** — $P \propto V^2$, quindi raddoppi V → $L \times 4$. Errore classico: pensare che raddoppi.
 </div>
 <button class="quiz-retry">↻ Riprova</button>
 
@@ -95,9 +95,9 @@
 **6. In volo livellato a velocità costante, quale relazione vale?**
 
 <button class="quiz-opt" data-opt="a">A. L > W e T > D</button>
-<button class="quiz-opt" data-opt="b">B. L = W e T = D</button>
+<button class="quiz-opt" data-opt="b">B. P = Q e T = D</button>
 <button class="quiz-opt" data-opt="c">C. L < W e T = D</button>
-<button class="quiz-opt" data-opt="d">D. L = W e T > D</button>
+<button class="quiz-opt" data-opt="d">D. P = Q e T > D</button>
 
 <div class="quiz-explanation" markdown="1">
 **Risposta corretta: B** — Equilibrio in volo livellato: forze a coppie (verticale e orizzontale). Vedi [Esercizio 1](../03-esercizi/01-base-portanza-cessna.md).
@@ -209,7 +209,7 @@
 <button class="quiz-opt" data-opt="a">A. Il fattore ρ (densità)</button>
 <button class="quiz-opt" data-opt="b">B. Il fattore S (superficie alare)</button>
 <button class="quiz-opt" data-opt="c">C. Il fattore ½</button>
-<button class="quiz-opt" data-opt="d">D. Il fattore C_L</button>
+<button class="quiz-opt" data-opt="d">D. Il fattore C_p</button>
 
 <div class="quiz-explanation" markdown="1">
 **Risposta corretta: C** — Il fattore **½** è l'errore più comune, sta dentro il termine di pressione dinamica $\frac{1}{2}\rho V^2$. Mai dimenticarlo.
@@ -220,7 +220,7 @@
 
 <div class="quiz-q" data-correct="c" markdown="1">
 
-**14. Per un Cessna 172 (massa 1043 kg) in volo livellato, il peso W è approssimativamente:**
+**14. Per un Cessna 172 (massa 1043 kg) in volo livellato, il peso Q è approssimativamente:**
 
 <button class="quiz-opt" data-opt="a">A. 1043 N</button>
 <button class="quiz-opt" data-opt="b">B. 5215 N</button>
@@ -228,7 +228,7 @@
 <button class="quiz-opt" data-opt="d">D. 20464 N</button>
 
 <div class="quiz-explanation" markdown="1">
-**Risposta corretta: C** — $W = m \cdot g = 1043 \times 9{,}81 = 10\,231{,}83$ N. L'opzione A confonde **kg con N** (errore di unità grave).
+**Risposta corretta: C** — $Q = m \cdot g = 1043 \times 9{,}81 = 10\,231{,}83$ N. L'opzione A confonde **kg con N** (errore di unità grave).
 </div>
 <button class="quiz-retry">↻ Riprova</button>
 
@@ -236,7 +236,7 @@
 
 <div class="quiz-q" data-correct="c" markdown="1">
 
-**15. Allo stallo di un profilo, cosa succede al C_L?**
+**15. Allo stallo di un profilo, cosa succede al C_p?**
 
 <button class="quiz-opt" data-opt="a">A. Continua a crescere indefinitamente</button>
 <button class="quiz-opt" data-opt="b">B. Resta costante</button>
@@ -244,7 +244,7 @@
 <button class="quiz-opt" data-opt="d">D. Diventa negativo</button>
 
 <div class="quiz-explanation" markdown="1">
-**Risposta corretta: C** — Allo stallo, il flusso si separa dal dorso → $C_L$ scende drasticamente. È il motivo per cui lo stallo è pericoloso: la portanza non basta più a sostenere il peso.
+**Risposta corretta: C** — Allo stallo, il flusso si separa dal dorso → $C_p$ scende drasticamente. È il motivo per cui lo stallo è pericoloso: la portanza non basta più a sostenere il peso.
 </div>
 <button class="quiz-retry">↻ Riprova</button>
 

@@ -79,7 +79,7 @@ Apri l'esercizio. **Non guardare la soluzione**. Leggi il problema 2 volte, scri
 - **Unità SI** primarie (m, s, N, Pa, kg/m³). Conversioni a nodi/piedi/libbre quando rilevante.
 - **Densità ISA** al livello del mare: ρ₀ = 1,225 kg/m³.
 - **Accelerazione di gravità**: g = 9,81 m/s².
-- Le formule usano notazione LaTeX renderizzata da GitHub: $L = \frac{1}{2}\rho V^2 S C_L$
+- Le formule usano notazione LaTeX renderizzata da GitHub: $P = \frac{1}{2}\rho V^2 S C_p$
 - I diagrammi sono in Mermaid o ASCII art (visibili direttamente su GitHub).
 
 ---

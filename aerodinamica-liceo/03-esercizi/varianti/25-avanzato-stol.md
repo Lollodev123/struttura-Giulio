@@ -14,8 +14,8 @@ Dati operativi:
 
 - Massa atterraggio (tipica): $m = 2\,000$ kg
 - Superficie alare: $S = 30{,}15$ m² (ENORME per un velivolo di 2 t — carico alare bassissimo)
-- $C_{L,max}$ pulita: 1,75
-- $C_{L,max}$ con **flap pieni + slat fissi** (configurazione full STOL): **3,2** (incredibile per un velivolo non di linea!)
+- $C_{p,max}$ pulita: 1,75
+- $C_{p,max}$ con **flap pieni + slat fissi** (configurazione full STOL): **3,2** (incredibile per un velivolo non di linea!)
 - Velocità approccio = $1{,}3 V_S$
 
 **Determina**:
@@ -32,7 +32,7 @@ Dati operativi:
 
 ![Curva CL-α confronto pulito/flap/flap+slat](../../assets/img/grafici/curva-cl-flap-slat.svg)
 
-Il PC-6 con **flap pieni + slat fissi** raggiunge $C_{L,max} = 3{,}2$, valore comparabile a quello di un airliner con flap pieni + slat estesi. Ma il PC-6 è **5 volte più piccolo** di un 737 — risultato: $V_S$ ridicolmente bassa.
+Il PC-6 con **flap pieni + slat fissi** raggiunge $C_{p,max} = 3{,}2$, valore comparabile a quello di un airliner con flap pieni + slat estesi. Ma il PC-6 è **5 volte più piccolo** di un 737 — risultato: $V_S$ ridicolmente bassa.
 
 ---
 
@@ -42,8 +42,8 @@ Il PC-6 con **flap pieni + slat fissi** raggiunge $C_{L,max} = 3{,}2$, valore co
 |---|---|
 | Massa | 2 000 kg |
 | $S$ | 30,15 m² |
-| $C_{L,max}$ pulita | 1,75 |
-| $C_{L,max}$ STOL | 3,20 |
+| $C_{p,max}$ pulita | 1,75 |
+| $C_{p,max}$ STOL | 3,20 |
 | $\rho$ mare ISA | 1,225 kg/m³ |
 
 ---
@@ -51,7 +51,7 @@ Il PC-6 con **flap pieni + slat fissi** raggiunge $C_{L,max} = 3{,}2$, valore co
 ## 🧠 Strategia
 
 1. $W/S = m/S$ (in kg/m²)
-2. $V_S = \sqrt{2W/(\rho S C_{L,max})}$ per le 2 configurazioni
+2. $V_S = \sqrt{2W/(\rho S C_{p,max})}$ per le 2 configurazioni
 3. $V_{appr} = 1{,}3 V_S$ con flap STOL
 4. Distanza pista = $V_{appr}^2 / (2 a)$, $a = 4$ m/s²
 
@@ -67,7 +67,7 @@ $$W/S = m/S = 2\,000/30{,}15 = 66{,}3 \text{ kg/m}^2$$
 
 ### Passo 2 — Peso
 
-$$W = 2\,000 \times 9{,}81 = 19\,620 \text{ N}$$
+$$Q = 2\,000 \times 9{,}81 = 19\,620 \text{ N}$$
 
 ### Passo 3 — $V_S$ pulita
 
@@ -105,12 +105,12 @@ In condizioni IDEALI, il PC-6 può atterrare in **60-100 m** (manuale dichiara 6
 | Massa | 1 043 kg | 2 000 kg | × 1,9 |
 | Superficie | 16,2 m² | 30,15 m² | × 1,86 |
 | Carico alare | 64 kg/m² | 66 kg/m² | quasi uguale |
-| $C_{L,max}$ atterraggio | 2,1 (flap 30°) | **3,2** (STOL) | × 1,52 |
+| $C_{p,max}$ atterraggio | 2,1 (flap 30°) | **3,2** (STOL) | × 1,52 |
 | $V_S$ atterraggio | 43 kt | **35 kt** | -19% |
 | $V_{appr}$ | 56 kt | 46 kt | -18% |
 | Pista atterraggio | ~210 m | **~105 m** | **× 0,5** |
 
-→ Il PC-6 atterra in **metà pista** del Cessna 172, nonostante sia **2× più pesante**! Tutto grazie a $C_{L,max}$ STOL.
+→ Il PC-6 atterra in **metà pista** del Cessna 172, nonostante sia **2× più pesante**! Tutto grazie a $C_{p,max}$ STOL.
 
 ---
 
@@ -156,7 +156,7 @@ b. $V_{appr} = 1{,}3 \cdot 43{,}3 = $ **56,3 kt = 29,0 m/s**
 
 c. Pista = $29^2/8 \cdot 1{,}5 = 841/8 \cdot 1{,}5 = $ **158 m** (vs 105 m a livello mare)
 
-d. **SÌ, ancora STOL** (158 m è eccellente per quota 4000 m). Per confronto, un Cessna 172 a 4000 m richiederebbe ~350 m di pista. Il PC-6 mantiene la sua superiorità STOL anche in alta quota grazie al motore turbo (perde meno potenza del Cessna a benzina) e all'$C_{L,max}$ enorme.
+d. **SÌ, ancora STOL** (158 m è eccellente per quota 4000 m). Per confronto, un Cessna 172 a 4000 m richiederebbe ~350 m di pista. Il PC-6 mantiene la sua superiorità STOL anche in alta quota grazie al motore turbo (perde meno potenza del Cessna a benzina) e all'$C_{p,max}$ enorme.
 
 </details>
 
@@ -164,7 +164,7 @@ d. **SÌ, ancora STOL** (158 m è eccellente per quota 4000 m). Per confronto, u
 
 ## 🎓 Cosa hai imparato
 
-- I **velivoli STOL** combinano **3 fattori**: bassa carico alare ($W/S$ ~60-70 kg/m²), alto $C_{L,max}$ (~3 con flap+slat), motore potente (>500 CV per 2 t).
+- I **velivoli STOL** combinano **3 fattori**: bassa carico alare ($W/S$ ~60-70 kg/m²), alto $C_{p,max}$ (~3 con flap+slat), motore potente (>500 CV per 2 t).
 - $V_S$ STOL del PC-6 = **35 kt** = mezza velocità di un commuter regionale.
 - Distanza pista = $V_{appr}^2/(2a)$ scende rapidamente con $V$ ridotta — pista < 150 m possibile.
 - Il PC-6 atterra **dove un Cessna 172 non potrebbe mai**: ghiacciai, sentieri, brevi spiazzi.
