@@ -35,7 +35,7 @@ $$\text{formula}$$
 1.
 2.
 
-<details><summary>👉 Risposte</summary>
+<details markdown="1"><summary>👉 Risposte</summary>
 </details>
 
 ## ➡️ Prossimo passo

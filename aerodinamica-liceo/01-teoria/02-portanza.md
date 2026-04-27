@@ -188,7 +188,7 @@ Caccia da combattimento, $S \approx 50$ m², massa ~16 000 kg, velocità di croc
 4. In volo livellato un Boeing 737 di 70 t a 10 000 m a 450 kt: scrivi l'equazione di equilibrio e dimmi quale incognita ti serve per trovare $C_L$.
 5. Lo stallo dipende dalla velocità o dall'angolo di attacco? E perché allora il manuale di volo dà una "velocità di stallo" specifica?
 
-<details>
+<details markdown="1">
 <summary>👉 Risposte</summary>
 
 1. La portanza **quadruplica** ($\times 4$). Dipende da $V^2$: $V \to 2V$ implica $V^2 \to 4V^2$, quindi $L \to 4L$.

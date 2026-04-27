@@ -126,7 +126,7 @@ Il nostro $C_L \approx 0{,}26$ rientra **perfettamente** in questo intervallo, p
 Stesso Cessna, stesso peso, stessa superficie. Ma ora vola a **140 kt** invece di 122 kt.
 **Calcola il nuovo $C_L$ richiesto.**
 
-<details>
+<details markdown="1">
 <summary>👉 Solo il risultato (prima provaci da solo!)</summary>
 
 $V = 140 \times 0{,}5144 = 72{,}02$ m/s

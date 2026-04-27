@@ -36,7 +36,7 @@ $$\text{calcolo}$$
 ## 🔄 Variante per autovalutazione
 [Stesso problema con un dato cambiato]
 
-<details><summary>👉 Solo il risultato</summary>
+<details markdown="1"><summary>👉 Solo il risultato</summary>
 [risposta]
 </details>
 

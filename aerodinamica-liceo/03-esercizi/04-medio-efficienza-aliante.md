@@ -2,4 +2,8 @@
 
 > 🟡 MEDIO 🚧 **In arrivo**.
 
-Questo esercizio sarà generato seguendo il [template esercizio](./_template-esercizio.md).
+Mentre aspetti questo esercizio:
+
+- 💬 **Chiedi a Claude nel Project di studio**: *"creami un esercizio sull'efficienza massima dell'aliante ASK-21"*.
+- ✏️ Allenati con [Esercizio 1 — Cessna 172](./01-base-portanza-cessna.md).
+- 📐 [Formulario, sezione 2](../00-formulario/formulario.md#2-efficienza-aerodinamica) — formula efficienza.
