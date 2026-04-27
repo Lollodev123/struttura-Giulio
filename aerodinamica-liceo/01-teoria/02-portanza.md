@@ -83,19 +83,7 @@ In una riga: $L = q \cdot S \cdot C_L$ → "pressione dinamica × superficie × 
 
 ### La curva $C_L$–$\alpha$
 
-```
-   C_L
-    │
- 1,5│              ╱╲   ←─── stallo (~16°)
-    │            ╱    ╲___
- 1,0│         ╱             ╲___
-    │      ╱
- 0,5│   ╱
-    │ ╱
- 0,0│●─────────────────────────── α (gradi)
-    │   5°    10°   15°   20°
-   -0,5
-```
+![Curva del coefficiente di portanza in funzione dell'angolo di attacco](../assets/img/grafici/curva-cl-alpha.svg)
 
 - **Tratto lineare** (~0° a ~12°): $C_L$ cresce proporzionalmente ad $\alpha$. Il pilota tira la cloche → muso su → $\alpha$ sale → $C_L$ sale → portanza sale.
 - **Curvatura finale** (~12° a 16°): il flusso sul dorso comincia a separarsi.

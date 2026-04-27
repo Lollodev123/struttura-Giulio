@@ -68,20 +68,9 @@ $$\boxed{\text{distanza orizzontale} = E \times \text{quota persa}}$$
 
 La **polare** è il grafico $C_L$ vs $C_D$. Ogni punto rappresenta una specifica condizione di volo (quindi specifica $\alpha$, velocità, etc.).
 
-```
-   C_L
-    │                      
- 1,5│              ╱╲   ←─── stallo
-    │            ╱   ╲___
- 1,0│         ╱           ●  ←── massima C_L (atterraggio)
-    │      ╱
- 0,5│  ●─── tangente passa qui  ←── E_max (planata ottima)
-    │ ╱
- 0,0●────────────────────────── C_D
-    │   0,02  0,04   0,06
-```
+![Polare con tangente per E_max e punti notevoli](../assets/img/grafici/polare-tangente-emax.svg)
 
-**Lettura**: la **tangente alla polare passante per l'origine** tocca la curva nel punto di **massima efficienza** $E_{max}$. È il punto da cui la pendenza $C_L/C_D$ è massima.
+**Lettura**: la **tangente alla polare passante per l'origine** (retta tratteggiata rossa) tocca la curva nel punto di **massima efficienza** $E_{max}$. È il punto da cui la pendenza $C_L/C_D$ è massima.
 
 > 💡 **Trucco grafico**: per trovare $E_{max}$ su una polare, traccia una retta dall'origine e ruotala verso la curva. Quando "tocca" la curva (tangenza), quello è il punto di efficienza massima. Il $C_L$ corrispondente si chiama $C_L^*$.
 

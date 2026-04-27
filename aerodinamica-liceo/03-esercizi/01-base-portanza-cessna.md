@@ -20,24 +20,9 @@ Un **Cessna 172 Skyhawk** vola in **crociera livellata** al livello del mare in 
 
 ## 🖼️ Diagramma del problema
 
-```
-              L (portanza, ↑)
-              ↑
-              │
-         ┌────┴────┐
-    ─→ T │ Cessna  │ D ←─
-         │   172   │
-         └────┬────┘
-              │
-              ↓
-              W (peso, ↓ = m·g)
+![Sistema delle 4 forze sul velivolo in volo livellato](../assets/img/grafici/forze-volo-livellato.svg)
 
-    Volo livellato a velocità costante:
-       L = W   (equilibrio verticale)
-       T = D   (equilibrio orizzontale)
-```
-
-Il velivolo è in equilibrio sotto **quattro forze**: portanza $L$ (verso l'alto), peso $W$ (verso il basso), spinta $T$ (in avanti), resistenza $D$ (all'indietro). In **volo livellato a velocità costante**, queste forze si bilanciano a coppie.
+Il velivolo è in equilibrio sotto **quattro forze**: portanza $L$ (verso l'alto, in rosso), peso $W$ (verso il basso, in verde), spinta $T$ (in avanti, in arancione), resistenza $D$ (all'indietro, in viola). In **volo livellato a velocità costante**, queste forze si bilanciano a coppie.
 
 ---
 

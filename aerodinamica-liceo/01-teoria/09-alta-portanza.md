@@ -132,26 +132,9 @@ Versione **non mobile**: un'apertura permanente al bordo d'attacco. Storica, ogg
 
 ## 📊 Effetto cumulativo — la curva $C_L$-$\alpha$ con flap
 
-```
-   C_L
-    │              ╱╲                    ←── flap pieni + slat (3,0)
- 3,0│            ╱   ╲___
-    │          ╱
- 2,0│       ╱╲                          ←── flap + slat (2,4)
-    │     ╱   ╲___
-    │   ╱
- 1,5│ ╱╲                                ←── flap soli (1,8)
-    │ ╲___
- 1,0│ ╱╲                                ←── ala "pulita" (1,3)
-    │ ╲___
- 0,0●─────────────────────────────────── α (gradi)
-    │   5°    10°   15°   20°   25°
-       
-       └─ stallo si sposta verso α più alti con slat
-       └─ C_L,max cresce con flap
-```
+![Curva CL-alpha confronto: ala pulita, con flap, con flap+slat](../assets/img/grafici/curva-cl-flap-slat.svg)
 
-**Lettura**: flap aumentano il $C_L$ a ogni $\alpha$ (sposta la curva in alto), slat estendono $\alpha$ di stallo (sposta la curva a destra). Insieme, multiplicano l'effetto.
+**Lettura**: flap aumentano il $C_L$ a ogni $\alpha$ (sposta la curva in alto, da blu a verde a rosso), slat estendono $\alpha$ di stallo (sposta il picco a destra: da 16° pulito a 22° con slat). Insieme, **multiplicano l'effetto**: $C_{L,max}$ raddoppia, da 1,4 (pulito) a 2,8 (flap+slat).
 
 ---
 

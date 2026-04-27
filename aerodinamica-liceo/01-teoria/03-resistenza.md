@@ -92,23 +92,11 @@ Mettendo insieme parassita e indotta, la **polare** del velivolo è:
 
 $$C_D = C_{D,0} + \frac{C_L^2}{\pi \lambda e}$$
 
-```
-   C_D
-    │      ╱── totale (somma)
-    │   ╱╱
-    │ ╱╱
-    │╱╱        ┌── indotta (cresce con C_L²)
-    │╱      ╱──
-    │     ╱
-────┼──── ───────── parassita C_D,0 (costante)
-    │
-    └────────────────── C_L
-       0    0,5   1,0
-```
+![Decomposizione della resistenza totale in parassita (costante) e indotta (cresce col quadrato di C_L)](../assets/img/grafici/polare-decomposta.svg)
 
 A **basso $C_L$** (alta velocità): parassita domina, indotta trascurabile.
 Ad **alto $C_L$** (bassa velocità, atterraggio): indotta esplode, parassita poco rilevante.
-**Nel mezzo**: punto di minima resistenza totale → la velocità più "economica" del velivolo.
+**Nel mezzo**, dove le due curve si intersecano (linea verticale rossa), c'è il punto di **massima efficienza** $E_{max}$ — la velocità più "economica" del velivolo.
 
 ---
 
