@@ -202,20 +202,35 @@ Se l'utente ti dice "*la chat di Giulio sull'angolo di attacco era utile, integr
 
 ---
 
-## ✅ Status corrente (aggiorna man mano)
+## ✅ Status corrente — 2026-04-27 (tutto completato)
 
 - [x] Scaffold completo del repo
 - [x] Formulario + glossario
-- [x] Sito MkDocs Material live su GitHub Pages
+- [x] Sito MkDocs Material live su GitHub Pages (https://lollodev123.github.io/struttura-Giulio/)
 - [x] Lezione 1: Profilo alare
 - [x] Lezione 2: Portanza
-- [x] Esercizio 1: Portanza Cessna 172 + variante
-- [ ] Lezione 3: Resistenza aerodinamica
-- [ ] Lezione 4: Efficienza e polare
-- [ ] Lezione 5: Atmosfera Standard ISA
-- [ ] Lezione 6: Numero di Reynolds
-- [ ] Lezione 7: Geometria alare
-- [ ] Lezione 8: Momento e centraggio
-- [ ] Lezione 9: Dispositivi di alta portanza
-- [ ] Esercizi 2-10
-- [ ] 3 quiz (base/medio/avanzato) con soluzioni
+- [x] Lezione 3: Resistenza aerodinamica
+- [x] Lezione 4: Efficienza e polare
+- [x] Lezione 5: Atmosfera Standard ISA
+- [x] Lezione 6: Numero di Reynolds
+- [x] Lezione 7: Geometria alare
+- [x] Lezione 8: Momento e centraggio
+- [x] Lezione 9: Dispositivi di alta portanza
+- [x] Esercizio 1: Portanza Cessna 172
+- [x] Esercizio 2: Velocità di stallo Piper PA-28
+- [x] Esercizio 3: Resistenza in crociera ATR 72
+- [x] Esercizio 4: Efficienza massima ASK-21
+- [x] Esercizio 5: Portanza in quota Boeing 737
+- [x] Esercizio 6: Confronto profili NACA
+- [x] Esercizio 7: Reynolds e regime
+- [x] Esercizio 8: Planata con vento DG-1000
+- [x] Esercizio 9: Decollo con flap A320
+- [x] Esercizio 10: Polare completa Boeing 737
+- [x] Quiz BASE (15 domande)
+- [x] Quiz MEDIO (15 domande)
+- [x] Quiz AVANZATO (10 domande)
+- [x] Soluzioni quiz con spiegazioni dettagliate
+- [x] SETUP-CLAUDE-PROGETTO.md per Claude.ai Project di Giulio
+- [x] Issue template `errore-materiale` con label dedicata
+
+**Manutenzione futura**: nuove lezioni/esercizi/correzioni vanno su feature branch + PR. Il workflow MkDocs deploya automaticamente al merge su main.
