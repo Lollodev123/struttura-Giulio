@@ -26,16 +26,7 @@ cioè *la portanza eguaglia il peso*. Da qui parte tutto: se il pilota vuole sal
 
 C'è un mito da sfatare: **NON è vero** che "l'aria sopra deve percorrere più strada nello stesso tempo, quindi va più veloce". È falso storicamente e fisicamente. La portanza ha due spiegazioni complementari, entrambe corrette:
 
-```
-                       ↓ pressione bassa (sopra)
-              ───────────────
-            ╱                 ╲___        →   FORZA = portanza
-           ╱   profilo alare       ╲___
-   ──────●────────────────────────────●──→  flusso V
-           ╲___                   ╱
-               ────────────────
-                       ↑ pressione alta (sotto)
-```
+![Schema della portanza: pressioni di Bernoulli + downwash di Newton](../assets/img/grafici/schema-bernoulli-newton.svg)
 
 ### Vista 1 — Pressione (Bernoulli)
 Il profilo, per la sua **forma curva** e per l'**angolo di attacco**, costringe l'aria sopra ad accelerare e quella sotto a rallentare. Velocità maggiore sopra → **pressione minore sopra**. La differenza di pressione tra ventre e dorso, integrata su tutta la superficie alare, dà una forza netta diretta verso l'alto: la portanza.
@@ -97,17 +88,7 @@ In una riga: $L = q \cdot S \cdot C_L$ → "pressione dinamica × superficie × 
 
 Quando l'aereo vola dritto e a quota costante, le quattro forze sono in equilibrio:
 
-```
-                    L (portanza)
-                       ↑
-                       │
-        ←──────●──────→
-       D                T
-   (resistenza)      (spinta)
-                       │
-                       ↓
-                    W = m·g (peso)
-```
+![Sistema delle 4 forze sul velivolo](../assets/img/grafici/forze-volo-livellato.svg)
 
 $$L = W \qquad T = D$$
 

@@ -59,17 +59,14 @@ Devi sempre chiarire qual è la lunghezza che usi, perché due Re calcolati con 
 
 ## 🌊 Le 3 "zone" del Reynolds — laminare, transizione, turbolento
 
-```
-            Re = 10⁴       10⁵       10⁶       10⁷
-                 │          │          │          │
-Tipo flusso:    LAMINARE  TRANSIZIONE  TURBOLENTO
-                                                
-Esempi reali:    insetti  modello     Cessna     liner
-                          galleria    in volo    in volo
-                                                
-Aerodinamica:   semplice  caotica    "normale"  ottima
-                ma fragile (Re critico)
-```
+**Le 3 zone di Reynolds**, con esempi reali:
+
+| Re tipico | Regime | Esempi reali |
+|---|---|---|
+| $10^4$ | **Laminare** | Insetti, aeromodelli piccoli |
+| $10^5$ | **Transizione** | Modello in galleria del vento, ali piccole |
+| $10^6$ | **Turbolento** | Cessna, ATR in volo |
+| $10^7$ | **Turbolento sviluppato** | Liner in crociera (737, A320) |
 
 **Soglie indicative** (per profilo alare):
 

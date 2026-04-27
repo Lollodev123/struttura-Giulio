@@ -76,19 +76,7 @@ Il rapporto tra corda all'estremità ($c_t$) e corda alla radice ($c_r$):
 
 $$\tau = \frac{c_t}{c_r}$$
 
-```
-   radice                    estremità
-     │                            │
-     ↓                            ↓
-   ┌───────┐                ┌──┐
-   │       │                │  │
-   │       │────────────────│  │
-   │       │                │  │
-   └───────┘                └──┘
-       c_r                    c_t
-       
-       Rastremazione τ = c_t / c_r
-```
+Vedi la figura più sotto ([Geometrie alari](#5-freccia-sweep-lambda)) per il confronto visivo tra ala rettangolare ($\tau=1$), trapezoidale ($\tau\approx 0{,}4$) e delta ($\tau \to 0$).
 
 - $\tau = 1$ → ala **rettangolare** (Cessna 172 — facile da costruire ma non ottimale aerodinamicamente)
 - $\tau \approx 0{,}3$–$0{,}5$ → ala **trapezoidale** (la più diffusa)
@@ -99,19 +87,9 @@ L'ala **ellittica** ($\tau$ variabile) è la migliore aerodinamicamente: distrib
 ### 5. Freccia (sweep, $\Lambda$)
 L'angolo di "all'indietro" del bordo d'attacco rispetto alla perpendicolare alla fusoliera.
 
-```
-                   freccia Λ
-                        │
-                        ↓
-                       ╱
-                     ╱
-                   ╱
-       ─────────●─────  bordo d'attacco
-                       
-       Λ = 0° (Cessna): bordo d'attacco perpendicolare
-       Λ ≈ 25-35° (jet di linea): "swept wing"
-       Λ ≈ 40-60° (caccia supersonici)
-```
+![Confronto ali con freccia 0°, 25°, 53° (Cessna, Boeing 737, Eurofighter)](../assets/img/grafici/freccia-sweep.svg)
+
+Range tipici: **Λ = 0°** per aviazione generale; **Λ ≈ 25-35°** per jet di linea (swept wing); **Λ ≈ 40-60°** per caccia supersonici.
 
 | Velivolo | Freccia $\Lambda$ |
 |---|---|

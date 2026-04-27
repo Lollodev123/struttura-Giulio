@@ -794,6 +794,382 @@ def schema_stallo():
     save(fig, "schema-stallo")
 
 
+# ─── 16. NACA 4-cifre nomenclatura (Lezione 1) ─────────────────
+def naca_codice():
+    fig, ax = plt.subplots(figsize=(9, 4))
+    # Grandi cifre del codice
+    ax.text(0.5, 0.7, "NACA   2", fontsize=42, fontweight="bold", ha="right", color="#1976d2")
+    ax.text(0.6, 0.7, "4", fontsize=42, fontweight="bold", ha="left", color="#43a047")
+    ax.text(0.85, 0.7, "12", fontsize=42, fontweight="bold", ha="left", color="#d32f2f")
+    # Frecce e annotazioni
+    ax.annotate("Curvatura max\n= 2% della corda", xy=(0.50, 0.65), xytext=(0.10, 0.20),
+                fontsize=11, color="#0d47a1", fontweight="bold",
+                arrowprops=dict(arrowstyle="->", color="#0d47a1", lw=1.5),
+                bbox=BBOX_LABEL, ha="center")
+    ax.annotate("Posizione curvatura max\n= 4 decimi = 40% della corda",
+                xy=(0.65, 0.65), xytext=(0.50, 0.20),
+                fontsize=11, color="#1b5e20", fontweight="bold",
+                arrowprops=dict(arrowstyle="->", color="#1b5e20", lw=1.5),
+                bbox=BBOX_LABEL, ha="center")
+    ax.annotate("Spessore max\n= 12% della corda", xy=(0.93, 0.65), xytext=(0.92, 0.20),
+                fontsize=11, color="#b71c1c", fontweight="bold",
+                arrowprops=dict(arrowstyle="->", color="#b71c1c", lw=1.5),
+                bbox=BBOX_LABEL, ha="center")
+    ax.set_xlim(0, 1.05)
+    ax.set_ylim(0, 1)
+    ax.axis("off")
+    ax.set_title("Codice NACA 4-cifre — esempio: NACA 2412 (Cessna 172)",
+                 fontsize=13, fontweight="bold")
+    save(fig, "naca-4-cifre")
+
+
+# ─── 17. Bernoulli + Newton — schema portanza (Lezione 2) ─────
+def schema_portanza_bernoulli_newton():
+    fig, ax = plt.subplots(figsize=(10, 5))
+    # Profilo NACA 2412 (riuso)
+    x = np.linspace(0, 1, 200)
+    m, p, t = 0.04, 0.4, 0.14
+    yc = np.where(x < p, m / p ** 2 * (2 * p * x - x ** 2),
+                  m / (1 - p) ** 2 * ((1 - 2 * p) + 2 * p * x - x ** 2))
+    yt = 5 * t * (0.2969 * np.sqrt(x) - 0.1260 * x - 0.3516 * x ** 2 +
+                  0.2843 * x ** 3 - 0.1015 * x ** 4)
+    ax.fill_between(x, yc + yt, yc - yt, color="#bbdefb", alpha=0.8,
+                    edgecolor="#1976d2", linewidth=2.2, zorder=3)
+
+    # Frecce flusso che entra
+    for y in [0.18, 0.10, -0.10, -0.18]:
+        ax.annotate("", xy=(0.0, y), xytext=(-0.25, y),
+                    arrowprops=dict(arrowstyle="->", color="#666", lw=1.5))
+    ax.text(-0.28, 0, "flusso V\n(aria)", fontsize=11, color="#444",
+            ha="right", fontweight="bold")
+
+    # Frecce pressione bassa (sopra) - vanno via dall'ala (suzione)
+    for x_arr in [0.25, 0.45, 0.65]:
+        y_arr = yc[int(x_arr*200)] + yt[int(x_arr*200)] + 0.02
+        ax.annotate("", xy=(x_arr, y_arr + 0.18), xytext=(x_arr, y_arr),
+                    arrowprops=dict(arrowstyle="->", color="#d32f2f", lw=2))
+    # Etichetta pressione bassa SOPRA le frecce, a destra (no overlap con PORTANZA)
+    ax.text(0.85, 0.30, "PRESSIONE BASSA (sopra)\n→ aria 'tira su' l'ala",
+            fontsize=10, color="#b71c1c", fontweight="bold", ha="left",
+            bbox=BBOX_LABEL)
+
+    # Frecce pressione alta (sotto) - spingono l'ala verso l'alto
+    for x_arr in [0.30, 0.55, 0.75]:
+        y_arr = yc[int(x_arr*200)] - yt[int(x_arr*200)] - 0.02
+        ax.annotate("", xy=(x_arr, y_arr + 0.04), xytext=(x_arr, y_arr - 0.12),
+                    arrowprops=dict(arrowstyle="->", color="#43a047", lw=2))
+    ax.text(0.85, -0.30, "PRESSIONE ALTA (sotto)\n→ aria 'spinge su' l'ala",
+            fontsize=10, color="#1b5e20", fontweight="bold", ha="left",
+            bbox=BBOX_LABEL)
+
+    # Freccia downwash (Newton) — più in basso a destra per non sovrapporre
+    ax.annotate("", xy=(1.35, -0.45), xytext=(1.05, 0),
+                arrowprops=dict(arrowstyle="->", color="#fb8c00", lw=2.5))
+    ax.text(1.45, -0.50, "downwash\n(aria deviata\n verso il basso)",
+            fontsize=10, color="#e65100", fontweight="bold",
+            bbox=BBOX_LABEL, va="top", ha="left")
+
+    # Risultato netto: portanza grossa, in posizione separata
+    ax.annotate("", xy=(0.40, 0.55), xytext=(0.40, 0.15),
+                arrowprops=dict(arrowstyle="->", color="#7b1fa2", lw=4))
+    ax.text(-0.25, 0.50, "PORTANZA L\n(forza NETTA\nverso l'alto)",
+            fontsize=11, color="#4a148c", fontweight="bold", ha="left",
+            bbox=BBOX_LABEL)
+
+    ax.set_xlim(-0.45, 2.10)
+    ax.set_ylim(-0.85, 0.70)
+    ax.set_aspect("equal")
+    ax.axis("off")
+    ax.set_title("Come nasce la portanza — Bernoulli (pressioni) + Newton (downwash)",
+                 fontsize=13, fontweight="bold")
+    save(fig, "schema-bernoulli-newton")
+
+
+# ─── 18. Freccia/Sweep — confronto angoli (Lezione 7) ─────────
+def freccia_sweep():
+    fig, axes = plt.subplots(1, 3, figsize=(13, 4.5))
+    cases = [
+        ("Λ = 0°\n(Cessna)", 0, "#1976d2"),
+        ("Λ = 25°\n(Boeing 737)", 25, "#43a047"),
+        ("Λ = 53°\n(Eurofighter)", 53, "#d32f2f"),
+    ]
+    for ax, (title, sweep_deg, color) in zip(axes, cases):
+        sweep = np.deg2rad(sweep_deg)
+        # Fusoliera centrale (orizzontale, muso a sinistra)
+        ax.add_patch(mp.Rectangle((-1.5, -0.12), 3.0, 0.24,
+                                    facecolor="#444", zorder=3))
+        ax.plot([-1.5, -2.0, -1.5], [-0.12, 0, 0.12], color="#444")
+        ax.fill([-1.5, -2.0, -1.5], [-0.12, 0, 0.12], color="#444")
+        # Ala superiore: bordo d'attacco da (-0.5, 0) inclinato di sweep
+        b_half = 1.7
+        x_le_root = -0.5
+        x_te_root = 0.7
+        # Punta avanzata indietro per sweep
+        x_le_tip = x_le_root + b_half * np.tan(sweep)
+        x_te_tip = x_te_root + b_half * np.tan(sweep)
+        ala = [(x_le_root, 0.12), (x_te_root, 0.12),
+               (x_te_tip, b_half), (x_le_tip, b_half)]
+        ax.add_patch(mp.Polygon(ala, closed=True, facecolor=color, alpha=0.4,
+                                 edgecolor=color, linewidth=2, zorder=2))
+        # Mirror sotto
+        ala2 = [(p[0], -p[1]) for p in ala]
+        ax.add_patch(mp.Polygon(ala2, closed=True, facecolor=color, alpha=0.4,
+                                 edgecolor=color, linewidth=2, zorder=2))
+        # Linea perpendicolare di riferimento (per visualizzare l'angolo)
+        ax.plot([x_le_root, x_le_root], [0, b_half], "--", color="#888", lw=1)
+        # Arco angolo se non zero
+        if sweep_deg > 0:
+            arc = mp.Arc((x_le_root, 0), 1.0, 1.0, angle=0,
+                          theta1=90 - sweep_deg, theta2=90,
+                          color="#7b1fa2", lw=2)
+            ax.add_patch(arc)
+            ax.text(x_le_root + 0.2, 0.6, f"{sweep_deg}°", fontsize=12,
+                    color="#6a1b9a", fontweight="bold", bbox=BBOX_LABEL)
+        ax.set_xlim(-2.3, 2.5)
+        ax.set_ylim(-b_half - 0.4, b_half + 0.4)
+        ax.set_aspect("equal")
+        ax.set_title(title, fontsize=12, color=color, fontweight="bold")
+        ax.axis("off")
+    fig.suptitle("Freccia (sweep) Λ — angolo del bordo d'attacco rispetto alla perpendicolare",
+                 fontsize=13, fontweight="bold", y=1.0)
+    plt.tight_layout()
+    save(fig, "freccia-sweep")
+
+
+# ─── 19. Stabilità statica — CG davanti vs dietro al CP (L8) ──
+def stabilita_cg():
+    fig, axes = plt.subplots(1, 2, figsize=(13, 4.5))
+
+    for ax, titolo, x_cg, x_cp, color, esito in [
+        (axes[0], "STABILE: CG davanti al CP", -0.4, 0.0, "#43a047",
+         "Raffica → muso su → momento di richiamo → torna giù\n✓ aereo torna da solo all'equilibrio"),
+        (axes[1], "INSTABILE: CG dietro al CP", 0.4, 0.0, "#d32f2f",
+         "Raffica → muso su → momento amplifica → stallo\n✗ aereo diverge, serve fly-by-wire"),
+    ]:
+        # Fusoliera
+        ax.add_patch(mp.FancyBboxPatch((-1.5, -0.15), 3.0, 0.3,
+                                         boxstyle="round,pad=0.02",
+                                         facecolor="#bbdefb",
+                                         edgecolor="#1976d2", linewidth=2))
+        # Cono muso
+        ax.plot([-1.5, -2.0, -1.5], [-0.15, 0, 0.15], color="#1976d2", linewidth=2)
+        ax.fill([-1.5, -2.0, -1.5], [-0.15, 0, 0.15], color="#bbdefb")
+        # Coda
+        ax.add_patch(mp.Polygon([(1.5, 0), (1.9, 0.4), (1.9, -0.4)],
+                                 closed=True, facecolor="#bbdefb",
+                                 edgecolor="#1976d2", linewidth=1.5))
+
+        # CG (peso giù)
+        ax.scatter([x_cg], [0], color="#388e3c", s=200, zorder=5,
+                   edgecolors="black", linewidths=1.5, marker="o")
+        ax.annotate("", xy=(x_cg, -0.55), xytext=(x_cg, -0.05),
+                    arrowprops=dict(arrowstyle="->", color="#388e3c", lw=2.5))
+        ax.text(x_cg, -0.7, f"CG\n(peso W)", ha="center", fontsize=10,
+                color="#1b5e20", fontweight="bold", bbox=BBOX_LABEL)
+
+        # CP (portanza su)
+        ax.scatter([x_cp], [0], color="#d32f2f", s=200, zorder=5,
+                   edgecolors="black", linewidths=1.5, marker="^")
+        ax.annotate("", xy=(x_cp, 0.55), xytext=(x_cp, 0.05),
+                    arrowprops=dict(arrowstyle="->", color="#d32f2f", lw=2.5))
+        ax.text(x_cp, 0.65, f"CP\n(portanza L)", ha="center", fontsize=10,
+                color="#b71c1c", fontweight="bold", bbox=BBOX_LABEL)
+
+        ax.set_xlim(-2.3, 2.3)
+        ax.set_ylim(-1.3, 1.0)
+        ax.set_aspect("equal")
+        ax.set_title(titolo, fontsize=12, color=color, fontweight="bold")
+        ax.text(0, -1.15, esito, ha="center", fontsize=9, color="#444",
+                style="italic", bbox=BBOX_LABEL)
+        ax.axis("off")
+
+    fig.suptitle("Stabilità statica longitudinale — la posizione relativa di CG e CP",
+                 fontsize=13, fontweight="bold", y=1.0)
+    plt.tight_layout()
+    save(fig, "stabilita-cg")
+
+
+# ─── 20. Busta di centraggio (W&B envelope) — Cessna 172 (L8) ──
+def busta_centraggio():
+    fig, ax = plt.subplots(figsize=(11, 3.5))
+    # Asse percentuale MAC
+    ax.set_xlim(0, 100)
+    ax.set_ylim(-1, 2)
+    # Busta verde (range ammissibile 15-36% MAC)
+    ax.add_patch(mp.Rectangle((15, 0.2), 21, 0.6,
+                                facecolor="#a5d6a7", edgecolor="#2e7d32",
+                                linewidth=2, zorder=2))
+    ax.text(25.5, 0.5, "BUSTA AMMISSIBILE\n(15% – 36% MAC)",
+            ha="center", va="center", fontsize=11, color="#1b5e20",
+            fontweight="bold")
+
+    # Zona pericolo prima del 15%
+    ax.add_patch(mp.Rectangle((0, 0.2), 15, 0.6, facecolor="#ffcdd2",
+                                edgecolor="#c62828", linewidth=1, alpha=0.6, zorder=1))
+    ax.text(7.5, 0.5, "STABILE\nMA INERTE", ha="center", va="center",
+            fontsize=9, color="#b71c1c")
+    # Zona pericolo dopo 36%
+    ax.add_patch(mp.Rectangle((36, 0.2), 64, 0.6, facecolor="#ffcdd2",
+                                edgecolor="#c62828", linewidth=1, alpha=0.6, zorder=1))
+    ax.text(68, 0.5, "INSTABILE / STALLO NON RECUPERABILE",
+            ha="center", va="center", fontsize=10, color="#b71c1c", fontweight="bold")
+
+    # AC al 25%
+    ax.axvline(25, color="#7b1fa2", linestyle="--", linewidth=2, alpha=0.7)
+    ax.annotate("Centro aerodinamico\n(AC = 25% MAC)", xy=(25, 0.85),
+                xytext=(25, 1.5), fontsize=10, color="#6a1b9a",
+                arrowprops=dict(arrowstyle="->", color="#6a1b9a", lw=1.5),
+                ha="center", bbox=BBOX_LABEL)
+
+    # Ticks
+    for x in [0, 15, 25, 36, 50, 75, 100]:
+        ax.plot([x, x], [0.18, 0.13], color="black", lw=1)
+        ax.text(x, 0.05, f"{x}%", ha="center", fontsize=9)
+
+    ax.text(50, -0.5, "Posizione del CG (% MAC dal bordo d'attacco)",
+            ha="center", fontsize=11, fontweight="bold")
+
+    ax.axis("off")
+    ax.set_title("Busta di centraggio del Cessna 172",
+                 fontsize=13, fontweight="bold")
+    save(fig, "busta-centraggio")
+
+
+# ─── 21. 4 tipi di flap (Lezione 9) ────────────────────────────
+def flap_tipi():
+    fig, axes = plt.subplots(2, 2, figsize=(11, 6.5))
+    types = [
+        ("1. Plain (semplice)", "+0,3 in $C_{L,max}$\nCessna 172, ultraleggeri", "plain"),
+        ("2. Slotted (a fessura)", "+0,5–0,7 in $C_{L,max}$\nGA moderna, regionali", "slotted"),
+        ("3. Fowler (estensibile)", "+1,0–1,2 in $C_{L,max}$\n+15-25% superficie\nBoeing 737, A320", "fowler"),
+        ("4. Multi-flap", "+1,2+ in $C_{L,max}$\n+30% superficie\nBoeing 747, A380", "multi"),
+    ]
+    for ax, (title, note, kind) in zip(axes.flat, types):
+        # Profilo ala base (semplificato, senza flap)
+        x = np.linspace(0, 0.7, 100)
+        m, p, t = 0.02, 0.4, 0.10
+        yc = np.where(x < p, m / p ** 2 * (2 * p * x - x ** 2),
+                      m / (1 - p) ** 2 * ((1 - 2 * p) + 2 * p * x - x ** 2))
+        yt = 5 * t * (0.2969 * np.sqrt(np.maximum(x, 1e-6)) - 0.1260 * x - 0.3516 * x ** 2 +
+                      0.2843 * x ** 3 - 0.1015 * x ** 4)
+        ax.fill_between(x, yc + yt, yc - yt, color="#bbdefb", edgecolor="#1976d2", linewidth=1.5)
+        # Flap dipende dal tipo
+        if kind == "plain":
+            # Aletta che ruota verso il basso a 30°
+            x_hinge = 0.7
+            y_hinge_up = yc[-1] + yt[-1]
+            y_hinge_dn = yc[-1] - yt[-1]
+            angle = np.deg2rad(-30)
+            flap_len = 0.25
+            x_flap_end = x_hinge + flap_len * np.cos(angle)
+            y_flap_end = (y_hinge_up + y_hinge_dn) / 2 + flap_len * np.sin(angle)
+            ax.fill([x_hinge, x_flap_end + 0.02, x_flap_end - 0.02, x_hinge],
+                    [y_hinge_up, y_flap_end + 0.015, y_flap_end - 0.015, y_hinge_dn],
+                    color="#fb8c00", edgecolor="#e65100", linewidth=1.5)
+        elif kind == "slotted":
+            # Flap separato da fessura
+            x_hinge = 0.7
+            angle = np.deg2rad(-25)
+            flap_len = 0.27
+            slot_dx, slot_dy = 0.04, -0.025
+            x_pivot = x_hinge + slot_dx
+            y_pivot = -0.02 + slot_dy
+            x_flap_end = x_pivot + flap_len * np.cos(angle)
+            y_flap_end = y_pivot + flap_len * np.sin(angle)
+            ax.fill([x_pivot - 0.01, x_flap_end + 0.02, x_flap_end - 0.01, x_pivot - 0.04],
+                    [y_pivot + 0.02, y_flap_end + 0.015, y_flap_end - 0.015, y_pivot - 0.02],
+                    color="#fb8c00", edgecolor="#e65100", linewidth=1.5)
+            # Fessura indicata con freccia
+            ax.annotate("fessura", xy=(x_hinge + 0.02, -0.005), xytext=(0.5, 0.22),
+                        fontsize=9, color="#444",
+                        arrowprops=dict(arrowstyle="->", color="#444", lw=1))
+        elif kind == "fowler":
+            # Flap traslato indietro + abbassato
+            x_pivot = 0.85
+            angle = np.deg2rad(-25)
+            flap_len = 0.30
+            x_flap_end = x_pivot + flap_len * np.cos(angle)
+            y_flap_end = -0.05 + flap_len * np.sin(angle)
+            ax.fill([x_pivot - 0.03, x_flap_end + 0.02, x_flap_end - 0.01, x_pivot - 0.06],
+                    [-0.02, y_flap_end + 0.015, y_flap_end - 0.015, -0.05],
+                    color="#fb8c00", edgecolor="#e65100", linewidth=1.5)
+            # Freccia "scivolato indietro"
+            ax.annotate("scivola\nindietro", xy=(x_pivot - 0.03, 0), xytext=(0.55, 0.18),
+                        fontsize=9, color="#444",
+                        arrowprops=dict(arrowstyle="->", color="#444", lw=1))
+        elif kind == "multi":
+            # 3 flap consecutivi a fessure
+            colors_f = ["#fb8c00", "#f57c00", "#e65100"]
+            for i, c in enumerate(colors_f):
+                x_pivot = 0.74 + i * 0.07
+                angle = np.deg2rad(-15 - i * 5)
+                flap_len = 0.18
+                x_end = x_pivot + flap_len * np.cos(angle)
+                y_end = -0.05 + flap_len * np.sin(angle) - i * 0.03
+                ax.fill([x_pivot - 0.02, x_end + 0.015, x_end - 0.01, x_pivot - 0.04],
+                        [-0.01 - i*0.03, y_end + 0.015, y_end - 0.01, -0.04 - i*0.03],
+                        color=c, edgecolor="#bf360c", linewidth=1.2)
+
+        ax.set_xlim(-0.05, 1.25)
+        ax.set_ylim(-0.35, 0.30)
+        ax.set_aspect("equal")
+        ax.set_title(title, fontsize=11, fontweight="bold", color="#0d47a1")
+        ax.text(0.6, -0.30, note, ha="center", fontsize=9, color="#444",
+                style="italic", bbox=BBOX_LABEL)
+        ax.axis("off")
+
+    fig.suptitle("I 4 tipi di flap — dal più semplice al più sofisticato",
+                 fontsize=14, fontweight="bold", y=1.0)
+    plt.tight_layout()
+    save(fig, "flap-tipi")
+
+
+# ─── 22. Slat con fessura (Lezione 9) ──────────────────────────
+def slat_fessura():
+    fig, axes = plt.subplots(1, 2, figsize=(11, 4))
+
+    for ax, (titolo, esteso) in zip(axes, [("Ala normale (slat retratta)", False),
+                                              ("Slat estesa: fessura sul bordo d'attacco", True)]):
+        # Profilo principale
+        x = np.linspace(0.05, 0.75, 100)
+        m, p, t = 0.02, 0.4, 0.12
+        yc = np.where(x < p, m / p ** 2 * (2 * p * x - x ** 2),
+                      m / (1 - p) ** 2 * ((1 - 2 * p) + 2 * p * x - x ** 2))
+        yt = 5 * t * (0.2969 * np.sqrt(x) - 0.1260 * x - 0.3516 * x ** 2 +
+                      0.2843 * x ** 3 - 0.1015 * x ** 4)
+        ax.fill_between(x, yc + yt, yc - yt, color="#bbdefb",
+                        edgecolor="#1976d2", linewidth=2)
+
+        if esteso:
+            # Slat: piccola superficie staccata avanti dell'ala principale
+            xs = np.linspace(-0.05, 0.10, 40)
+            yc_s = m / p ** 2 * (2 * p * xs - xs ** 2)
+            yt_s = 5 * t * (0.2969 * np.sqrt(np.maximum(xs - (-0.05), 1e-6)) -
+                            0.1260 * (xs - (-0.05)) - 0.3516 * (xs - (-0.05)) ** 2)
+            ax.fill_between(xs, yc_s + yt_s + 0.005, yc_s - yt_s + 0.005,
+                            color="#c8e6c9", edgecolor="#43a047", linewidth=1.5)
+            # Etichetta fessura
+            ax.annotate("Fessura\n(aria 'energizza'\n strato limite sopra)",
+                        xy=(0.07, 0.04), xytext=(0.45, 0.20),
+                        fontsize=9, color="#444",
+                        arrowprops=dict(arrowstyle="->", color="#444", lw=1.2),
+                        bbox=BBOX_LABEL)
+            # Frecce di flusso che attraversano la fessura
+            ax.annotate("", xy=(0.10, 0.05), xytext=(0.05, -0.03),
+                        arrowprops=dict(arrowstyle="->", color="#fb8c00", lw=2))
+
+        ax.set_xlim(-0.15, 0.85)
+        ax.set_ylim(-0.20, 0.35)
+        ax.set_aspect("equal")
+        ax.set_title(titolo, fontsize=11, fontweight="bold")
+        ax.axis("off")
+
+    fig.suptitle("Slat al bordo d'attacco — ritarda lo stallo da ~16° a ~22°",
+                 fontsize=13, fontweight="bold", y=1.0)
+    plt.tight_layout()
+    save(fig, "slat-fessura")
+
+
 if __name__ == "__main__":
     print("Generazione SVG...")
     curva_cl_alpha()
@@ -811,4 +1187,11 @@ if __name__ == "__main__":
     planata_con_vento()
     sequenza_decollo()
     schema_stallo()
+    naca_codice()
+    schema_portanza_bernoulli_newton()
+    freccia_sweep()
+    stabilita_cg()
+    busta_centraggio()
+    flap_tipi()
+    slat_fessura()
     print("Fatto!")

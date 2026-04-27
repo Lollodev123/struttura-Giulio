@@ -34,68 +34,30 @@ Senza flap, **non ci sarebbero aeroporti urbani**.
 
 ## 📐 I 4 tipi di flap — dal più semplice al più sofisticato
 
-### 1. Flap semplice (plain flap)
-La parte posteriore dell'ala ruota verso il basso, come un'aletta.
+![I 4 tipi di flap: plain, slotted, Fowler, multi-flap](../assets/img/grafici/flap-tipi.svg)
 
-```
-   ──────────────╲    ←── flap esteso
-                  ╲___
-   
-   Effetto: aumenta curvatura → +20% C_L,max
-   Aerei: ultraleggeri, primi modelli (anni '30)
-```
+### 1. Flap semplice (plain flap) — Cessna 172
+La parte posteriore dell'ala ruota verso il basso, come un'aletta.
 
 - Aumento di $C_{L,max}$: ~$+0{,}3$ (da 1,2 a 1,5)
 - Aumento di $C_D$: significativo (resistenza extra)
 - **Cessna 172 → flap semplici a 3 posizioni** (10°, 20°, 30°)
 
-### 2. Flap a doppia/tripla fessura (slotted flap)
+### 2. Flap a doppia/tripla fessura (slotted flap) — GA moderna
 Quando il flap si abbassa, **lascia una fessura** tra ala e flap. L'aria ad alta pressione del ventre passa attraverso, energizzando lo strato limite sul dorso del flap → **ritarda lo stallo**.
-
-```
-   ──────────────  ← apertura della fessura
-                ╲___
-                    ────  ← flap con fessura
-   
-   Effetto: +50-70% C_L,max
-   Aerei: aviazione generale moderna, regionali
-```
 
 - Aumento di $C_{L,max}$: ~$+0{,}6$–$0{,}8$
 - $C_D$ moderato
 
-### 3. Flap Fowler (extended)
+### 3. Flap Fowler (extended) — Boeing 737, Airbus A320
 Il flap **scivola indietro** lungo binari prima di abbassarsi → **aumenta sia la superficie alare $S$ che la curvatura**.
-
-```
-   ──────────────              ──────────  ← flap retratto
-                  ─────────
-   
-   ↓ in atterraggio:
-   
-   ───────                                ←── ala
-                  ─────────────────────  ←── flap esteso, scivolato indietro
-   
-   Effetto: +80-100% C_L,max e aumento S del 15-25%
-   Aerei: jet di linea (737, A320, 777)
-```
 
 - Aumento di $C_{L,max}$: ~$+1{,}0$–$1{,}2$ (da 1,4 a 2,4-2,6)
 - **Aumenta anche $S$** → effetto cumulativo sulla portanza
 - Sistema meccanico complesso (binari, attuatori), pesante
 
-### 4. Sistema multi-flap (Fowler + multi-slot)
+### 4. Sistema multi-flap (Fowler + multi-slot) — Boeing 747, A380
 Combinazione di Fowler con due o tre flap consecutivi, ciascuno con la sua fessura. Massima sofisticazione.
-
-```
-   ───────                                     
-              ────                            
-                   ────                       
-                        ────                  ← 3 flap a fessura tipo Fowler
-   
-   Effetto: +120% C_L,max, S +30%
-   Aerei: 747, A380, alcuni AV (V-22, c-17)
-```
 
 - $C_{L,max}$ può raggiungere **2,8–3,5** in atterraggio
 - Sistema mostruosamente complesso: A380 ha 6 superfici mobili per lato
@@ -109,15 +71,7 @@ Mentre i flap stanno **al bordo d'uscita**, slat e slot stanno **al bordo d'atta
 ### Slat
 Una superficie mobile che si estende **avanti e in basso**, creando una fessura sopra il bordo d'attacco. **Energizza lo strato limite** sul dorso → l'ala può lavorare a $\alpha$ molto maggiori senza stallare.
 
-```
-   ●───────  ←── ala normale
-   
-   ↓ con slat estesa:
-   
-       ●─────  ←── slat avanti
-        ↓ fessura
-   ●───────   ←── ala
-```
+![Slat al bordo d'attacco con fessura — confronto ala normale vs slat estesa](../assets/img/grafici/slat-fessura.svg)
 
 **Effetto principale**: aumenta l'angolo di stallo $\alpha_{stallo}$ da ~16° a ~22-25°.
 
