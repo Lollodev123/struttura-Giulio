@@ -72,7 +72,7 @@ def smooth_stall(a, alpha_stall, cl_max, slope=0.11, alpha_zero=-2):
     return cl
 
 
-# ─── 1. Curva C_L vs α (Lezione 2) ─────────────────────────────
+# ─── 1. Curva C_p vs α (Lezione 2) ─────────────────────────────
 def curva_cl_alpha():
     fig, ax = plt.subplots(figsize=(9, 5.5))
     a = np.linspace(-4, 22, 500)
@@ -91,7 +91,7 @@ def curva_cl_alpha():
 
     # Tratto lineare evidenziato
     ax.axvspan(0, 12, color="#1976d2", alpha=0.06, zorder=1)
-    ax.text(6, -0.5, "Tratto lineare\n$C_L = 0{,}11(α + 2°)$",
+    ax.text(6, -0.5, "Tratto lineare\n$C_p = 0{,}11(α + 2°)$",
             color="#0d47a1", fontsize=10, ha="center", bbox=BBOX_LABEL)
 
     # alpha_zero
@@ -103,8 +103,8 @@ def curva_cl_alpha():
                 bbox=BBOX_LABEL, ha="left")
 
     ax.set_xlabel("Angolo di attacco α (gradi)")
-    ax.set_ylabel("Coefficiente di portanza $C_L$")
-    ax.set_title("Curva $C_L$–α di un profilo NACA 2412")
+    ax.set_ylabel("Coefficiente di portanza $C_p$")
+    ax.set_title("Curva $C_p$–α di un profilo NACA 2412")
     ax.set_xlim(-5, 22)
     ax.set_ylim(-1, 2.0)
     ax.grid(True, alpha=0.3)
@@ -123,22 +123,22 @@ def polare_decomposta():
     ax.plot(cl, np.full_like(cl, cd_0), "--", color="#fb8c00", linewidth=2,
             label=f"Parassita $C_{{D,0}}$ = {cd_0} (costante)")
     ax.plot(cl, cd_indotta, "--", color="#43a047", linewidth=2,
-            label=r"Indotta $C_L^2 / (\pi \lambda e)$")
+            label=r"Indotta $C_p^2 / (\pi \lambda e)$")
     ax.plot(cl, cd_totale, color="#1976d2", linewidth=3,
-            label="Totale $C_D$ = parassita + indotta")
+            label="Totale $C_R$ = parassita + indotta")
 
     cl_star = np.sqrt(pi_lambda_e * cd_0)
     ax.axvline(cl_star, color="#d32f2f", linestyle=":", linewidth=2, alpha=0.8)
     ax.scatter([cl_star], [2 * cd_0], color="#d32f2f", s=100, zorder=5,
                edgecolors="black", linewidths=1.2)
-    ax.annotate(f"$E_{{max}}$\n$C_L^*$ = {cl_star:.2f}\nparassita = indotta",
+    ax.annotate(f"$E_{{max}}$\n$C_p^*$ = {cl_star:.2f}\nparassita = indotta",
                 xy=(cl_star, 2 * cd_0), xytext=(1.05, 0.04),
                 fontsize=10, color="#d32f2f", fontweight="bold",
                 arrowprops=dict(arrowstyle="->", color="#d32f2f", lw=1.5),
                 bbox=BBOX_LABEL, ha="left")
 
-    ax.set_xlabel("Coefficiente di portanza $C_L$")
-    ax.set_ylabel("Coefficiente di resistenza $C_D$")
+    ax.set_xlabel("Coefficiente di portanza $C_p$")
+    ax.set_ylabel("Coefficiente di resistenza $C_R$")
     ax.set_title("Decomposizione della resistenza: parassita + indotta")
     ax.set_xlim(0, 1.45)
     ax.set_ylim(0, 0.105)
@@ -159,7 +159,7 @@ def polare_con_tangente():
     cd_star = 2 * cd_0
     e_max = cl_star / cd_star
 
-    ax.plot(cd, cl, color="#1976d2", linewidth=2.8, label="Polare $C_L(C_D)$")
+    ax.plot(cd, cl, color="#1976d2", linewidth=2.8, label="Polare $C_p(C_R)$")
 
     cd_line = np.linspace(0, 0.13, 50)
     ax.plot(cd_line, e_max * cd_line, "--", color="#d32f2f", linewidth=2,
@@ -168,7 +168,7 @@ def polare_con_tangente():
     # Punto E_max
     ax.scatter([cd_star], [cl_star], color="#d32f2f", s=120, zorder=5,
                edgecolors="black", linewidths=1.2)
-    ax.annotate(f"$E_{{max}}$ = {e_max:.1f}\n$C_L^*$ = {cl_star:.2f}",
+    ax.annotate(f"$E_{{max}}$ = {e_max:.1f}\n$C_p^*$ = {cl_star:.2f}",
                 xy=(cd_star, cl_star), xytext=(0.085, 1.3),
                 fontsize=11, color="#d32f2f", fontweight="bold",
                 arrowprops=dict(arrowstyle="->", color="#d32f2f", lw=1.5),
@@ -178,7 +178,7 @@ def polare_con_tangente():
     cd_cr = cd_0 + 0.5 ** 2 / pi_lambda_e
     ax.scatter([cd_cr], [0.5], color="#43a047", s=100, zorder=5,
                edgecolors="black", linewidths=1.2)
-    ax.annotate("Crociera\n($C_L \\approx 0{,}5$)",
+    ax.annotate("Crociera\n($C_p \\approx 0{,}5$)",
                 xy=(cd_cr, 0.5), xytext=(0.08, 0.30),
                 fontsize=10, color="#2e7d32",
                 arrowprops=dict(arrowstyle="->", color="#2e7d32", lw=1.2),
@@ -193,8 +193,8 @@ def polare_con_tangente():
                 arrowprops=dict(arrowstyle="->", color="#e65100", lw=1.2),
                 bbox=BBOX_LABEL, ha="left")
 
-    ax.set_xlabel("Coefficiente di resistenza $C_D$")
-    ax.set_ylabel("Coefficiente di portanza $C_L$")
+    ax.set_xlabel("Coefficiente di resistenza $C_R$")
+    ax.set_ylabel("Coefficiente di portanza $C_p$")
     ax.set_title("Polare di velivolo con punto di massima efficienza")
     ax.set_xlim(0, 0.17)
     ax.set_ylim(0, 1.7)
@@ -223,8 +223,8 @@ def curva_cl_flap_slat():
     ax.axhline(0, color="black", linewidth=0.6)
     ax.axvline(0, color="black", linewidth=0.6)
     ax.set_xlabel("Angolo di attacco α (gradi)")
-    ax.set_ylabel("Coefficiente di portanza $C_L$")
-    ax.set_title("Effetto di flap e slat sulla curva $C_L$–α")
+    ax.set_ylabel("Coefficiente di portanza $C_p$")
+    ax.set_title("Effetto di flap e slat sulla curva $C_p$–α")
     ax.set_xlim(-6, 28)
     ax.set_ylim(-0.5, 3.4)
     ax.legend(loc="upper left", fontsize=10)
@@ -244,7 +244,7 @@ def polare_737_punti():
     cd_punti = cd_0 + cl_punti ** 2 / pi_lambda_e
 
     ax.plot(cd_smooth, cl_smooth, color="#1976d2", linewidth=2.5,
-            label="Polare $C_D = C_{D,0} + C_L^2/(πλe)$")
+            label="Polare $C_R = C_{D,0} + C_p^2/(πλe)$")
     ax.scatter(cd_punti, cl_punti, color="#1976d2", s=70, zorder=5,
                edgecolors="black", linewidths=1.2)
 
@@ -257,8 +257,8 @@ def polare_737_punti():
 
     # Annotazioni dei punti notevoli — POSIZIONATE BENE A DESTRA
     annotations = [
-        (0.5, "Crociera reale\n$C_L = 0{,}5$, $E = 14{,}5$", "#fb8c00", 0.075, 0.30),
-        (0.82, f"$E_{{max}}$ = {e_max:.1f}\n$C_L^*$ = 0,82", "#d32f2f", 0.085, 0.95),
+        (0.5, "Crociera reale\n$C_p = 0{,}5$, $E = 14{,}5$", "#fb8c00", 0.075, 0.30),
+        (0.82, f"$E_{{max}}$ = {e_max:.1f}\n$C_p^*$ = 0,82", "#d32f2f", 0.085, 0.95),
         (1.4, f"Stallo\n$C_{{L,max}}$ = 1,4", "#7b1fa2", 0.13, 1.55),
     ]
     for cl_v, label, color, tx, ty in annotations:
@@ -277,8 +277,8 @@ def polare_737_punti():
     ax.text(cd_0 + 0.001, 0.05, "$C_{D,0}$ = 0,025\n(asintoto)",
             fontsize=9, color="#666", style="italic")
 
-    ax.set_xlabel("Coefficiente di resistenza $C_D$")
-    ax.set_ylabel("Coefficiente di portanza $C_L$")
+    ax.set_xlabel("Coefficiente di resistenza $C_R$")
+    ax.set_ylabel("Coefficiente di portanza $C_p$")
     ax.set_title("Polare del Boeing 737-800 (modello del liceo)")
     ax.set_xlim(0, 0.17)
     ax.set_ylim(0, 1.75)
@@ -351,16 +351,16 @@ def schema_forze():
     head = dict(head_width=0.08, head_length=0.10, length_includes_head=True)
     # Portanza ↑
     ax.arrow(0, 0.2, 0, arrow_len, fc="#d32f2f", ec="#d32f2f", linewidth=3, **head)
-    ax.text(0.08, 0.7, "L (portanza)", fontsize=13, color="#b71c1c", fontweight="bold")
+    ax.text(0.08, 0.7, "P (portanza)", fontsize=13, color="#b71c1c", fontweight="bold")
     # Peso ↓
     ax.arrow(0, -0.2, 0, -arrow_len, fc="#388e3c", ec="#388e3c", linewidth=3, **head)
-    ax.text(0.08, -0.7, "W = m·g (peso)", fontsize=13, color="#1b5e20", fontweight="bold")
+    ax.text(0.08, -0.7, "Q = m·g (peso)", fontsize=13, color="#1b5e20", fontweight="bold")
     # Spinta →
     ax.arrow(0.5, 0, arrow_len, 0, fc="#fb8c00", ec="#fb8c00", linewidth=3, **head)
     ax.text(0.7, 0.10, "T (spinta)", fontsize=13, color="#e65100", fontweight="bold")
     # Resistenza ←
     ax.arrow(-0.5, 0, -arrow_len, 0, fc="#7b1fa2", ec="#7b1fa2", linewidth=3, **head)
-    ax.text(-1.4, 0.10, "D (resistenza)", fontsize=13, color="#4a148c", fontweight="bold")
+    ax.text(-1.4, 0.10, "R (resistenza)", fontsize=13, color="#4a148c", fontweight="bold")
 
     ax.text(0, -1.6, "Volo livellato a velocità costante:",
             ha="center", fontsize=12, fontweight="bold")
@@ -444,7 +444,7 @@ def confronto_profili_naca():
     ax.annotate("", xy=(a_show, cl_2412_show), xytext=(a_show, cl_0012_show),
                 arrowprops=dict(arrowstyle="<->", color="#7b1fa2", lw=1.8))
     ax.text(a_show + 0.5, (cl_2412_show + cl_0012_show) / 2,
-            "$ΔC_L = 0{,}22$\n(costante)", fontsize=10, color="#6a1b9a",
+            "$ΔC_p = 0{,}22$\n(costante)", fontsize=10, color="#6a1b9a",
             bbox=BBOX_LABEL)
 
     # Picchi
@@ -454,7 +454,7 @@ def confronto_profili_naca():
     ax.axhline(0, color="black", linewidth=0.6)
     ax.axvline(0, color="black", linewidth=0.6)
     ax.set_xlabel("Angolo di attacco α (gradi)")
-    ax.set_ylabel("Coefficiente di portanza $C_L$")
+    ax.set_ylabel("Coefficiente di portanza $C_p$")
     ax.set_title("Confronto profili NACA: 2412 (asimmetrico) vs 0012 (simmetrico)")
     ax.set_xlim(-5, 22)
     ax.set_ylim(-0.85, 1.85)
@@ -786,8 +786,8 @@ def schema_stallo():
     ax.axhline(0, color="black", linewidth=0.6)
     ax.axvline(0, color="black", linewidth=0.6)
     ax.set_xlabel("Angolo di attacco α (gradi)")
-    ax.set_ylabel("Coefficiente di portanza $C_L$")
-    ax.set_title("Lo stallo: punto critico oltre cui $C_L$ crolla")
+    ax.set_ylabel("Coefficiente di portanza $C_p$")
+    ax.set_title("Lo stallo: punto critico oltre cui $C_p$ crolla")
     ax.set_xlim(-1, 22)
     ax.set_ylim(0, 2.0)
     ax.grid(True, alpha=0.3)
