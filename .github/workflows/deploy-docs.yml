@@ -25,7 +25,6 @@ jobs:
       - name: Install dependencies
         run: pip install mkdocs-material==9.5.49 pymdown-extensions==10.14
       - name: Build site
-        working-directory: aerodinamica-liceo
         run: mkdocs build --strict
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
