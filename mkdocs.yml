@@ -47,6 +47,11 @@ theme:
 markdown_extensions:
   - pymdownx.arithmatex:
       generic: true
+  - pymdownx.highlight:
+      use_pygments: true
+      auto_title: false
+      anchor_linenums: false
+      pygments_lang_class: true
   - pymdownx.superfences:
       custom_fences:
         - name: mermaid
