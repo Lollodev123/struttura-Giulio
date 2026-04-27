@@ -27,26 +27,9 @@ Un **ATR 72-600** (turboelica regionale) è in crociera livellata a **7 000 m** 
 
 ## 🖼️ Diagramma del problema
 
-```
-   Crociera livellata, quota costante:
-   
-                    ↑ L (= W)
-                    │
-         ←────●─────────●──→ T (= D)
-              D                              
-                    │
-                    ↓
-                    W = m·g
-                    
-   Equazioni di equilibrio:
-       L = W                (verticale)
-       T = D                (orizzontale)
-       
-   Resistenza decomposta:
-       C_D = C_D,0 + C_D,i
-              ↑       ↑
-         parassita   indotta = C_L²/(π λ e)
-```
+![Sistema delle 4 forze sul velivolo in volo livellato](../assets/img/grafici/forze-volo-livellato.svg)
+
+Crociera livellata: $L = W$ (verticale) e $T = D$ (orizzontale). La resistenza si decompone in **parassita** $C_{D,0}$ (costante, dovuta a forma + attrito + interferenza) + **indotta** $C_{D,i} = C_L^2/(\pi \lambda e)$ (cresce col quadrato della portanza).
 
 ---
 

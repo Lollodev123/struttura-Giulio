@@ -29,20 +29,9 @@ Dati DG-1000:
 
 ## 🖼️ Diagramma del problema
 
-```
-              ●  inizio: 1500 m AGL                
-               ╲                                    
-                ╲ ←── traiettoria nell'aria         
-   vento ←──    ╲    (V* rispetto all'aria)         
-   20 kt          ╲                                  
-                  ╲                                  
-                   ╲                                  
-                    ●  arrivo                         
-                                                       
-   Ground speed = V_air - V_wind (contro)              
-   Distanza terreno = E × h × (V_ground/V_air)         
-                       └── fattore di riduzione ──┘   
-```
+![Planata con vento contrario: la distanza al suolo si riduce](../assets/img/grafici/planata-con-vento.svg)
+
+Con vento contrario di 20 kt, l'aliante mantiene $V^* = 26{,}9$ m/s **rispetto all'aria**, ma la sua **velocità al suolo** è ridotta: $V_{ground} = V^* - V_{wind} = 16{,}6$ m/s. La distanza al suolo realmente percorsa scende del **38%** rispetto al caso senza vento.
 
 ---
 

@@ -24,23 +24,14 @@ Un **Boeing 737-800** è in crociera livellata a **FL350** (Flight Level 350 = 1
 
 ## 🖼️ Diagramma del problema
 
-```
-   Crociera FL350 (10 670 m), aria rarefatta:
-   
-   ρ(0) = 1,225 kg/m³ ────────●──────  livello mare
-                              │
-                              │ ↑ portanza richiesta = peso
-                              │ │   identica alle due quote
-                              │ │
-                              │ │   MA densità ≠
-                              │ │
-                              │ │
-   ρ(10670) ≈ 0,38 kg/m³ ─────●────── FL350
-                              ↓
-                              W = m·g
-   
-   Conseguenza: a parità di V e S, in quota serve C_L MAGGIORE.
-```
+In quota l'aria è rarefatta. La portanza richiesta è la stessa (uguale al peso), ma con $\rho$ ridotta serve compensare in **una** delle altre variabili: $V$, $S$ o $C_L$.
+
+| Quota | $\rho$ (kg/m³) | Conseguenza |
+|---|---|---|
+| Livello mare | **1,225** | Riferimento |
+| FL350 (10 670 m) | **~0,38** | Densità ~31% del mare |
+
+→ A parità di $V$ e $S$, in quota serve **$C_L$ maggiore** (~3 volte). In pratica il pilota gestisce questo aumentando l'angolo di attacco.
 
 ---
 

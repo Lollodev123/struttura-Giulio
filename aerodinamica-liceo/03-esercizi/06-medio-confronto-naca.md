@@ -25,29 +25,9 @@ Confronta due profili NACA in **regime lineare** (lontano dallo stallo, $\alpha 
 
 ## 🖼️ Diagramma del problema
 
-```
-   C_L
-    │
- 1,5│   ╱──────╲       ←── stallo
-    │  ╱        ╲___
-    │ ╱
- 1,0│╱──── 2412 (asimm)
-    │
-    │     ╱──── 0012 (simm)
- 0,5│   ╱
-    │ ╱
- 0,0│●──────●─────────── α
-    │ ↑    ↑
-   α₀=-2°  α₀=0°
-    │
-   -0,5
-   
-   In regime lineare:
-       Profilo A (2412):  C_L = 0,11 (α + 2°)
-       Profilo B (0012):  C_L = 0,11 (α - 0°)
-   
-   Differenza: A "parte avanti" di 2° rispetto a B → genera già C_L = 0,22 a α = 0°.
-```
+![Confronto curva CL-alpha tra NACA 2412 (asimmetrico) e NACA 0012 (simmetrico)](../assets/img/grafici/confronto-profili-naca.svg)
+
+In regime lineare le due rette sono parallele (stessa pendenza $a = 0{,}11$/°), ma il **profilo asimmetrico parte 2° avanti**: a $\alpha = 0°$ genera già $C_L = 0{,}22$, mentre il simmetrico è a zero. La differenza $\Delta C_L = 0{,}22$ rimane **costante** a tutti gli $\alpha$ del regime lineare. Lo stallo arriva a 16° per il 2412 (con $C_{L,max} = 1{,}55$) e 14° per il 0012 (con $C_{L,max} = 1{,}40$).
 
 ---
 

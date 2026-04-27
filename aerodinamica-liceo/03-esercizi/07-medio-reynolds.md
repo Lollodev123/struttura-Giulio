@@ -28,18 +28,21 @@ Per ogni caso, calcola $Re$ e classifica il regime (laminare/transizione/turbole
 
 ## 🖼️ Diagramma del problema
 
-```
-   Re = ρ V c / μ
-   
-   Caso (a): mare ─ V alta ──→ Re grande
-   Caso (b): quota ─ ρ scende ──→ Re scende
-   Caso (c): mare ─ V bassa ──→ Re scende
-   
-   Soglie:
-       Re < 5·10⁵ → LAMINARE
-       Re ≈ 5·10⁵ → transizione
-       Re > 5·10⁵ → TURBOLENTO
-```
+$$Re = \dfrac{\rho V c}{\mu}$$
+
+| Caso | Variazione rispetto a (a) | Effetto su Re |
+|---|---|---|
+| (a) Crociera mare, V alta | — | Re grande |
+| (b) Quota, V invariata | $\rho$ scende | Re scende |
+| (c) Mare, V bassa | $V$ scende | Re scende |
+
+**Soglie del regime di flusso** (per profilo alare tipico):
+
+| Re | Regime |
+|---|---|
+| $< 5 \cdot 10^5$ | **Laminare** (strati ordinati) |
+| $\approx 5 \cdot 10^5$ | Transizione (instabile) |
+| $> 5 \cdot 10^5$ | **Turbolento** (vortici, mescolamento) |
 
 ---
 
