@@ -127,6 +127,7 @@ Il **profilo A (NACA 2412 asimmetrico)** è preferibile per il Cessna in crocier
 3. **$\alpha_{stallo}$ leggermente maggiore** (16° vs 14°) → margine di sicurezza.
 
 **Profilo B (simmetrico)** è preferibile per:
+
 - **Stabilizzatori e timoni di coda**: serve generare portanza in entrambi i sensi (cabrata e picchiata).
 - **Acrobatica**: il profilo simmetrico vola identico a testa in giù.
 - **Caccia in volo invertito**: nessuna penalità di portanza in volo capovolto.

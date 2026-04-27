@@ -19,10 +19,12 @@ $$V_S = \sqrt{\frac{2 W}{\rho \cdot S \cdot C_{L,max}}}$$
 Per **atterrare in sicurezza** servono velocità basse: una pista standard è 1500–3000 m, e a 250 kt non frenerebbe nessun aereo. Ma ridurre la velocità troppo significa entrare in stallo.
 
 **L'unico modo per ridurre $V_S$**, a parità di peso e densità (quindi stessa pista, stesso giorno):
+
 - Aumentare $S$ (la superficie alare) → **flap Fowler** lo fanno scivolando indietro
 - Aumentare $C_{L,max}$ → **flap, slat, slot** lo fanno aumentando la curvatura del profilo e ritardando lo stallo
 
 Esempio: Boeing 737 al peso massimo di atterraggio.
+
 - **Senza flap**: $C_{L,max} \approx 1{,}3$ → $V_S \approx 95$ m/s = 185 kt — pista enorme, frenata impossibile
 - **Flap pieni (40°)**: $C_{L,max} \approx 2{,}8$ → $V_S \approx 65$ m/s = 126 kt — atterrabile
 

@@ -115,6 +115,7 @@ $$C_D = C_{D,0} + C_{D,i} = 0{,}025 + 0{,}012 = 0{,}037$$
 $$D = q \cdot S \cdot C_D = 5\,782 \times 61 \times 0{,}037$$
 
 Calcolo:
+
 - $5\,782 \times 61 = 352\,702$
 - $352\,702 \times 0{,}037 = 13\,050{,}0$
 
@@ -150,6 +151,7 @@ Stesso ATR 72, stesso peso e quota, ma in **discesa con motori al minimo a 110 m
 <summary>👉 Solo il risultato (prima provaci da solo!)</summary>
 
 A 110 m/s:
+
 - $q = \frac{1}{2} \cdot 0{,}590 \cdot 110^2 = 3\,570$ Pa
 - $C_L = 215\,820 / (3\,570 \cdot 61) = 215\,820 / 217\,770 \approx 0{,}991$
 - $C_{D,i} = 0{,}991^2 / (32{,}04) = 0{,}0306$

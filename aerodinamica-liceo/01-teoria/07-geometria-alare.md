@@ -65,6 +65,7 @@ $$\lambda = \frac{b^2}{S}$$
 | Aliante DG-1000 | $20^2/16{,}7 \approx 24$ |
 
 **$\lambda$ è la leva più potente per controllare**:
+
 - Resistenza indotta ($C_{D,i} \propto 1/\lambda$ — vedi Lezione 3)
 - Efficienza massima ($E_{max} \propto \sqrt{\lambda}$ — Lezione 4)
 

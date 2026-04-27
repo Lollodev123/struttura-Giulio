@@ -63,6 +63,7 @@ $$L = \frac{1}{2} \rho V^2 S C_L$$
 
 ### Come pensare alla formula
 Ogni termine ha un significato fisico — non è solo algebra:
+
 - **$\frac{1}{2}\rho V^2$** = pressione dinamica $q$. È la "forza per unità di superficie" che il vento esercita su qualsiasi cosa che attraversa.
 - **$S$** = quanta ala hai. Più ala intercetta l'aria, più portanza generi.
 - **$C_L$** = quanto sei *bravo* a trasformare quella pressione in portanza. Dipende dal profilo, dall'angolo di attacco, dai flap.

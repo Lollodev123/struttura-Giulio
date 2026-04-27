@@ -11,6 +11,7 @@
 Un **Cessna 172** vola in tre condizioni diverse. Calcola il numero di Reynolds basato sulla **corda media** dell'ala in ciascun caso.
 
 Dati comuni:
+
 - Corda media: $c = 1{,}49$ m
 - Viscosità dinamica aria a 15°C: $\mu = 1{,}78 \times 10^{-5}$ Pa·s
 - Quota: livello mare ISA per i casi (a) e (c); 3000 m per il (b)
@@ -72,6 +73,7 @@ Per ogni caso, ricavo $\rho$ e $V$ in m/s:
 $$Re_a = \dfrac{\rho \cdot V \cdot c}{\mu} = \dfrac{1{,}225 \times 62{,}76 \times 1{,}49}{1{,}78 \times 10^{-5}}$$
 
 Numeratore:
+
 - $1{,}225 \times 62{,}76 = 76{,}88$
 - $76{,}88 \times 1{,}49 = 114{,}55$
 
@@ -87,6 +89,7 @@ Stessa V e c, ma $\rho = 0{,}909$ kg/m³:
 $$Re_b = \dfrac{0{,}909 \times 62{,}76 \times 1{,}49}{1{,}78 \times 10^{-5}}$$
 
 Numeratore:
+
 - $0{,}909 \times 62{,}76 = 57{,}05$
 - $57{,}05 \times 1{,}49 = 85{,}01$
 
@@ -104,6 +107,7 @@ $\rho = 1{,}225$, $V = 30{,}86$ m/s, $c = 1{,}49$ m:
 $$Re_c = \dfrac{1{,}225 \times 30{,}86 \times 1{,}49}{1{,}78 \times 10^{-5}}$$
 
 Numeratore:
+
 - $1{,}225 \times 30{,}86 = 37{,}80$
 - $37{,}80 \times 1{,}49 = 56{,}33$
 

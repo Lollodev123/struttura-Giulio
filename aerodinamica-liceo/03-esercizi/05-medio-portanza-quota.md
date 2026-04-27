@@ -99,6 +99,7 @@ Sostituisco:
 $$C_L = \dfrac{2 \times 686\,700}{0{,}381 \times 230^2 \times 124{,}6}$$
 
 Calcolo a tappe:
+
 - Numeratore: $2 \times 686\,700 = 1\,373\,400$
 - $230^2 = 52\,900$
 - $0{,}381 \times 52\,900 = 20\,155$
@@ -114,6 +115,7 @@ Stesso peso, stessa $S$, stessa $V$, ma $\rho_0 = 1{,}225$:
 $$C_L^{mare} = \dfrac{1\,373\,400}{1{,}225 \times 52\,900 \times 124{,}6}$$
 
 Calcolo:
+
 - $1{,}225 \times 52\,900 = 64\,803$
 - $64\,803 \times 124{,}6 = 8\,074\,447$
 - $1\,373\,400 / 8\,074\,447 = 0{,}170$
@@ -138,6 +140,7 @@ $$C_L^{mare} \approx 0{,}17$$
 ## ✅ Verifica di plausibilità
 
 Dal [formulario, sezione 9](../00-formulario/formulario.md#9-coefficienti-tipici-ordine-di-grandezza):
+
 - "Crociera, jet di linea" → $C_L \in [0{,}4;\, 0{,}6]$.
 
 Il nostro $C_L = 0{,}55$ rientra perfettamente. ✅
@@ -160,6 +163,7 @@ $C_L = 2 \cdot 490500 / (0{,}381 \cdot 230^2 \cdot 124{,}6) = 981000 / 2511313 \
 → Con peso ridotto del 28,6%, anche $C_L$ scende del 28,6% (è proporzionale a $W$). Coerente.
 
 **Implicazione operativa**: a fine volo (quando l'aereo è leggero), il pilota può:
+
 - Salire di quota (FL370, FL390): la $\rho$ scende ma il $C_L$ richiesto è già basso
 - Risparmiare carburante grazie a parassita ridotta
 

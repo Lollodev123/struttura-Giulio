@@ -11,6 +11,7 @@
 Un **Airbus A320-200** è in decollo al **MTOW** (peso massimo al decollo) di 78 000 kg con configurazione flap CONF 1+F (decollo). Aeroporto al livello del mare ISA.
 
 Dati:
+
 - Massa: $m = 78\,000$ kg
 - Superficie alare: $S = 122{,}6$ m²
 - $C_{L,max}$ ala pulita: 1,40
@@ -88,6 +89,7 @@ $$W = m \cdot g = 78\,000 \times 9{,}81 = 765\,180 \text{ N}$$
 $$V_S = \sqrt{\dfrac{2W}{\rho_0 S C_{L,max,TO}}} = \sqrt{\dfrac{2 \times 765\,180}{1{,}225 \times 122{,}6 \times 2{,}00}}$$
 
 Calcolo:
+
 - Numeratore: $2 \times 765\,180 = 1\,530\,360$
 - Denominatore: $1{,}225 \times 122{,}6 \times 2{,}00 = 300{,}37$
 - Rapporto: $1\,530\,360/300{,}37 = 5\,094$
@@ -118,6 +120,7 @@ $\rho$ a 4000 m: dalla [tabella ISA](../00-formulario/formulario.md#7-atmosfera-
 $$V_S(4000) = V_S(0) \cdot \sqrt{\dfrac{\rho_0}{\rho_{4000}}} = 71{,}4 \cdot \sqrt{\dfrac{1{,}225}{0{,}820}} = 71{,}4 \cdot \sqrt{1{,}494}$$
 
 Calcolo:
+
 - $\sqrt{1{,}494} = 1{,}222$
 - $V_S(4000) = 71{,}4 \times 1{,}222 = 87{,}3$ m/s = 169,7 kt
 

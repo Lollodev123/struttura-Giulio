@@ -79,6 +79,7 @@ $$C_{D,i} = \frac{C_L^2}{\pi \cdot \lambda \cdot e}$$
 | $e$ | Fattore di Oswald (efficienza distribuzione portanza) | 0,7–0,9 tipico |
 
 **Letture chiave**:
+
 - $C_{D,i}$ cresce col **quadrato di $C_L$**: a bassa velocità (alti $C_L$ per sostenersi) la resistenza indotta esplode → atterraggio è la fase a indotta dominante
 - $C_{D,i}$ scende con l'**allungamento alare** $\lambda$: ali lunghe e strette → meno indotta. **Per questo gli alianti hanno quelle ali**.
 - I **winglet** (alette verticali al tip) ostacolano i vortici, aumentano l'$e$ effettivo, riducono l'indotta — risparmio carburante 3–5% per i jet di linea.

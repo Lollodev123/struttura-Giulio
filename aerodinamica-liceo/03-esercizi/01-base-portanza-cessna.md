@@ -102,6 +102,7 @@ Calcolo a tappe per evitare errori:
 - Denominatore: $1{,}225 \times 3\,938{,}82 \times 16{,}2$
   - $1{,}225 \times 3\,938{,}82 = 4\,825{,}05$
   - $4\,825{,}05 \times 16{,}2 = 78\,165{,}81$
+
 - Quindi: $C_L = 20\,463{,}66 / 78\,165{,}81 = 0{,}2618$
 
 ### Passo 6 — Risultato

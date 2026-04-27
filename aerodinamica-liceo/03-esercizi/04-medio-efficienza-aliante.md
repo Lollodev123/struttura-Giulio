@@ -99,6 +99,7 @@ $$\boxed{C_L^* \approx 0{,}83}$$
 $$E_{max} = \dfrac{1}{2}\sqrt{\dfrac{\pi \lambda e}{C_{D,0}}}$$
 
 Sostituisco:
+
 - Numeratore (sotto radice): $\pi \times 16{,}6 \times 0{,}95 = 49{,}57$
 - Denominatore: $0{,}014$
 - Rapporto: $49{,}57/0{,}014 = 3\,541$
@@ -114,6 +115,7 @@ $$\boxed{E_{max} \approx 29{,}8}$$
 $$V^* = \sqrt{\dfrac{2W}{\rho S C_L^*}}$$
 
 Sostituisco:
+
 - Numeratore: $2 \times 5\,886 = 11\,772$
 - Denominatore: $1{,}225 \times 17{,}95 \times 0{,}833 = 18{,}31$
 - Rapporto: $11\,772/18{,}31 = 643{,}0$

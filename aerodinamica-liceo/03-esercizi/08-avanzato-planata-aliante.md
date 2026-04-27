@@ -11,6 +11,7 @@
 Un **aliante DG-1000** è in planata stabilizzata a **1 500 m** sopra l'aeroporto di destinazione, in atmosfera ISA. Soffia un **vento contrario** (head wind) costante di **20 kt** = $10{,}3$ m/s lungo tutta la traiettoria.
 
 Dati DG-1000:
+
 - Massa con due piloti: $m = 700$ kg
 - Superficie alare: $S = 16{,}7$ m²
 - Allungamento: $\lambda = 24$
@@ -86,6 +87,7 @@ $$W = m \cdot g = 700 \times 9{,}81 = 6\,867 \text{ N}$$
 $$E_{max} = \dfrac{1}{2}\sqrt{\dfrac{\pi \lambda e}{C_{D,0}}} = \dfrac{1}{2}\sqrt{\dfrac{\pi \times 24 \times 0{,}95}{0{,}012}}$$
 
 Calcolo:
+
 - $\pi \times 24 \times 0{,}95 = 71{,}63$
 - $71{,}63/0{,}012 = 5\,969$
 - $\sqrt{5\,969} = 77{,}26$
@@ -104,6 +106,7 @@ $V^*$:
 $$V^* = \sqrt{\dfrac{2W}{\rho S C_L^*}} = \sqrt{\dfrac{2 \times 6\,867}{1{,}225 \times 16{,}7 \times 0{,}927}}$$
 
 Calcolo:
+
 - Numeratore: $2 \times 6\,867 = 13\,734$
 - Denominatore: $1{,}225 \times 16{,}7 \times 0{,}927 = 18{,}96$
 - Rapporto: $13\,734/18{,}96 = 724{,}4$
@@ -155,6 +158,7 @@ $$\dfrac{\text{distanza con vento}}{\text{distanza calma}} = \dfrac{35{,}7}{58} 
 ## 🔄 Variante per autovalutazione
 
 Stesso aliante, stessa quota, stesso vento, ma il pilota decide di **volare più veloce** a $V_2 = 32$ m/s per "tagliare" il vento. Calcola:
+
 - La nuova velocità verticale $V_z$
 - La nuova distanza al suolo
 
