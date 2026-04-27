@@ -71,11 +71,13 @@
     tbody.innerHTML = items.map(e => {
       const col = COLORS[e.difficolta];
       const isAlt = e.tipo === 'alternativo';
+      const isProf = e.tipo === 'stile_prof';
       const altBadge = isAlt ? '<span style="background:#7b1fa2;color:white;padding:0.1em 0.4em;border-radius:6px;font-size:0.7em;margin-left:0.3em;font-weight:600;">ALT</span>' : '';
+      const profBadge = isProf ? '<span style="background:#d32f2f;color:white;padding:0.1em 0.4em;border-radius:6px;font-size:0.7em;margin-left:0.3em;font-weight:600;">PROF</span>' : '';
       return `<tr>
         <td style="text-align:center;font-weight:600;">${e.id}</td>
         <td><span style="background:${col.bg};color:white;padding:0.15em 0.5em;border-radius:8px;font-size:0.75em;font-weight:600;">${col.label}</span></td>
-        <td><a href="../${e.file.replace('.md','')}/" style="color:#1976d2;font-weight:500;">${e.titolo}</a>${altBadge}</td>
+        <td><a href="../${e.file.replace('.md','')}/" style="color:#1976d2;font-weight:500;">${e.titolo}</a>${altBadge}${profBadge}</td>
         <td><em style="color:#666;">${e.velivolo}</em></td>
         <td><span style="color:#888;font-size:0.9em;">${e.argomento}</span></td>
       </tr>`;
