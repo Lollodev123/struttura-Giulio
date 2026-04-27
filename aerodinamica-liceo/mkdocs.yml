@@ -1,0 +1,73 @@
+site_name: Aerodinamica — Liceo Aeronautico
+site_description: Pacchetto didattico (teoria, esercizi, quiz) per liceo aeronautico IT
+site_url: https://lollodev123.github.io/struttura-Giulio/
+repo_url: https://github.com/Lollodev123/struttura-Giulio
+repo_name: Lollodev123/struttura-Giulio
+edit_uri: edit/main/aerodinamica-liceo/
+docs_dir: .
+site_dir: ../site
+
+exclude_docs: |
+  SETUP.md
+  CONTRIBUTING.md
+  /**/_template-*.md
+  .github/
+
+theme:
+  name: material
+  language: it
+  features:
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - navigation.tracking
+    - search.highlight
+    - search.suggest
+    - content.code.copy
+    - content.action.edit
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: blue
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Modalità scura
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: blue
+      accent: light blue
+      toggle:
+        icon: material/weather-sunny
+        name: Modalità chiara
+  icon:
+    repo: fontawesome/brands/github
+
+markdown_extensions:
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.highlight
+  - pymdownx.details
+  - pymdownx.tabbed:
+      alternate_style: true
+  - admonition
+  - tables
+  - attr_list
+  - md_in_html
+  - toc:
+      permalink: true
+      toc_depth: 3
+
+extra_javascript:
+  - assets/js/katex-init.js
+  - https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js
+  - https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js
+  - https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js
+
+extra_css:
+  - https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css

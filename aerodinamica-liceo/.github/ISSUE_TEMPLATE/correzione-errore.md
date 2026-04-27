@@ -2,7 +2,7 @@
 name: 🐛 Errore nel materiale
 about: Hai trovato un errore di calcolo, refuso, link rotto?
 title: "[ERRORE] "
-labels: bug
+labels: errore-materiale
 ---
 
 ## 📍 Dove

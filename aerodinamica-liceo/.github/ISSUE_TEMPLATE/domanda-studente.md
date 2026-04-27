@@ -2,7 +2,7 @@
 name: 🤔 Domanda su una lezione/esercizio
 about: Per quando non capisci un passaggio o un concetto
 title: "[DOMANDA] "
-labels: domanda
+labels: domanda-studente
 ---
 
 ## 📖 Su cosa stavo studiando
