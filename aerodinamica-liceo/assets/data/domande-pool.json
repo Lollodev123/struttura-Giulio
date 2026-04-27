@@ -1,0 +1,785 @@
+{
+  "_meta": {
+    "versione": "1.0",
+    "data": "2026-04-27",
+    "totale_domande": 60,
+    "come_aggiungere": "Vedi assets/data/COME-AGGIUNGERE-DOMANDE.md. Format per nuove voci: { id, livello, argomento, domanda, opzioni: ['A...', 'B...', 'C...', 'D...'], correct: 'a'|'b'|'c'|'d', spiegazione }"
+  },
+  "domande": [
+    {
+      "id": 1,
+      "livello": "BASE",
+      "argomento": "Profilo alare",
+      "domanda": "Cosa rappresenta la corda di un profilo alare?",
+      "opzioni": [
+        "A. La distanza tra le due estremità dell'ala (tip a tip)",
+        "B. Il segmento rettilineo dal bordo d'attacco al bordo d'uscita",
+        "C. La linea curva che separa dorso e ventre del profilo",
+        "D. La distanza massima tra dorso e ventre"
+      ],
+      "correct": "b",
+      "spiegazione": "La corda è la lunghezza del profilo, riferimento per tutto. L'apertura alare (A) è la lunghezza tip-a-tip; lo spessore massimo (D) è la distanza tra dorso e ventre."
+    },
+    {
+      "id": 2,
+      "livello": "BASE",
+      "argomento": "Profilo alare",
+      "domanda": "Nel codice NACA 2412, cosa indica la cifra '12'?",
+      "opzioni": [
+        "A. La curvatura massima al 12% della corda",
+        "B. Lo spessore massimo al 12% della corda",
+        "C. La posizione della curvatura al 12% della corda",
+        "D. Il numero di Reynolds critico × 10⁵"
+      ],
+      "correct": "b",
+      "spiegazione": "In NACA MPXX, le ultime due cifre sono lo spessore in % della corda. M=2 (curvatura), P=4 (posizione curvatura in decimi), 12 (spessore)."
+    },
+    {
+      "id": 3,
+      "livello": "BASE",
+      "argomento": "Profilo alare",
+      "domanda": "Quale dei seguenti profili NACA è simmetrico?",
+      "opzioni": ["A. NACA 2412", "B. NACA 4412", "C. NACA 0012", "D. NACA 23012"],
+      "correct": "c",
+      "spiegazione": "Le prime due cifre 00 indicano curvatura zero → profilo simmetrico. Tutti gli altri sono asimmetrici (cambered)."
+    },
+    {
+      "id": 4,
+      "livello": "BASE",
+      "argomento": "Portanza",
+      "domanda": "La formula della portanza è:",
+      "opzioni": [
+        "A. L = ρ V S C_L",
+        "B. L = ½ ρ V² S C_L",
+        "C. L = ρ V² S C_L",
+        "D. L = ½ ρ V S C_L"
+      ],
+      "correct": "b",
+      "spiegazione": "Mai dimenticare il fattore ½ (sta nella pressione dinamica q = ½ρV²) e il quadrato della velocità."
+    },
+    {
+      "id": 5,
+      "livello": "BASE",
+      "argomento": "Portanza",
+      "domanda": "Se raddoppi la velocità del velivolo, mantenendo C_L e ρ costanti, la portanza:",
+      "opzioni": ["A. Raddoppia", "B. Quadruplica", "C. Resta uguale", "D. Si dimezza"],
+      "correct": "b",
+      "spiegazione": "L ∝ V², quindi raddoppi V → L × 4. Errore classico: pensare che raddoppi."
+    },
+    {
+      "id": 6,
+      "livello": "BASE",
+      "argomento": "Volo livellato",
+      "domanda": "In volo livellato a velocità costante, quale relazione vale?",
+      "opzioni": [
+        "A. L > W e T > D",
+        "B. L = W e T = D",
+        "C. L < W e T = D",
+        "D. L = W e T > D"
+      ],
+      "correct": "b",
+      "spiegazione": "Equilibrio in volo livellato: forze a coppie (verticale L=W e orizzontale T=D)."
+    },
+    {
+      "id": 7,
+      "livello": "BASE",
+      "argomento": "Stallo",
+      "domanda": "Lo stallo di un'ala dipende principalmente da:",
+      "opzioni": [
+        "A. La velocità del velivolo",
+        "B. La densità dell'aria",
+        "C. L'angolo di attacco",
+        "D. Il peso del velivolo"
+      ],
+      "correct": "c",
+      "spiegazione": "Lo stallo arriva quando α supera il valore critico (~16° per profili tipici). La velocità di stallo è una conseguenza, non la causa."
+    },
+    {
+      "id": 8,
+      "livello": "BASE",
+      "argomento": "Profili laminari",
+      "domanda": "Perché il P-51 Mustang viene 'lavato' prima di ogni missione di precisione?",
+      "opzioni": [
+        "A. Per estetica, era importante per la propaganda",
+        "B. Per ridurre il peso dovuto a sporcizia",
+        "C. Il profilo alare laminare è sensibile a contaminazione",
+        "D. Per evitare ossidazione dell'alluminio"
+      ],
+      "correct": "c",
+      "spiegazione": "Il P-51 ha profilo NACA serie 6 (laminare). Una mosca o sporcizia sul bordo d'attacco innesca transizione precoce a turbolento → resistenza maggiore, E_max crolla del 20%."
+    },
+    {
+      "id": 9,
+      "livello": "BASE",
+      "argomento": "Profilo alare",
+      "domanda": "Nel Cessna 172 (NACA 2412), la curvatura massima si trova:",
+      "opzioni": [
+        "A. Al 20% della corda",
+        "B. Al 40% della corda",
+        "C. Al 24% della corda",
+        "D. Al 50% della corda"
+      ],
+      "correct": "b",
+      "spiegazione": "In NACA MPXX, la cifra P (seconda) indica la posizione della curvatura max in decimi della corda. P=4 → 40%."
+    },
+    {
+      "id": 10,
+      "livello": "BASE",
+      "argomento": "Portanza (teoria)",
+      "domanda": "La 'vista di Newton' della portanza si basa su:",
+      "opzioni": [
+        "A. La differenza di pressione tra dorso e ventre",
+        "B. L'ala deflette aria verso il basso → reazione verso l'alto",
+        "C. La velocità maggiore sopra che sotto l'ala",
+        "D. L'effetto Coanda"
+      ],
+      "correct": "b",
+      "spiegazione": "La vista di Newton è quella della reazione (downwash). La vista di Bernoulli (pressione, A o C) è complementare ma diversa."
+    },
+    {
+      "id": 11,
+      "livello": "BASE",
+      "argomento": "Profilo alare",
+      "domanda": "Un profilo alare con linea media coincidente con la corda è:",
+      "opzioni": ["A. Asimmetrico", "B. Simmetrico", "C. Laminare", "D. Cambered"],
+      "correct": "b",
+      "spiegazione": "Linea media = corda → profilo simmetrico. La portanza è zero a α = 0."
+    },
+    {
+      "id": 12,
+      "livello": "BASE",
+      "argomento": "Portanza (formula)",
+      "domanda": "Quale fattore matematico NON deve essere dimenticato nella formula della portanza?",
+      "opzioni": ["A. Il fattore ρ", "B. Il fattore S", "C. Il fattore ½", "D. Il fattore C_L"],
+      "correct": "c",
+      "spiegazione": "Il fattore ½ è l'errore più comune; sta dentro il termine di pressione dinamica ½ρV². Mai dimenticarlo."
+    },
+    {
+      "id": 13,
+      "livello": "BASE",
+      "argomento": "Peso",
+      "domanda": "Per un Cessna 172 (massa 1043 kg) in volo livellato, il peso W è approssimativamente:",
+      "opzioni": ["A. 1043 N", "B. 5215 N", "C. 10232 N", "D. 20464 N"],
+      "correct": "c",
+      "spiegazione": "W = m·g = 1043 × 9,81 = 10231,83 N. L'opzione A confonde kg con N (errore di unità grave)."
+    },
+    {
+      "id": 14,
+      "livello": "BASE",
+      "argomento": "Stallo",
+      "domanda": "Allo stallo di un profilo, cosa succede al C_L?",
+      "opzioni": [
+        "A. Continua a crescere indefinitamente",
+        "B. Resta costante",
+        "C. Crolla bruscamente",
+        "D. Diventa negativo"
+      ],
+      "correct": "c",
+      "spiegazione": "Allo stallo, il flusso si separa dal dorso → C_L scende drasticamente. È il motivo per cui lo stallo è pericoloso."
+    },
+    {
+      "id": 15,
+      "livello": "BASE",
+      "argomento": "Conversioni",
+      "domanda": "Una velocità di 120 nodi corrisponde a circa:",
+      "opzioni": ["A. 12 m/s", "B. 30 m/s", "C. 60 m/s", "D. 120 m/s"],
+      "correct": "c",
+      "spiegazione": "120 kt × 0,5144 = 61,7 m/s ≈ 60 m/s. Trucco rapido: kt → m/s ≈ × ½."
+    },
+    {
+      "id": 16,
+      "livello": "MEDIO",
+      "argomento": "Resistenza",
+      "domanda": "La resistenza totale di un velivolo si decompone in:",
+      "opzioni": [
+        "A. Parassita + induzione + interferenza",
+        "B. Parassita + indotta",
+        "C. Forma + attrito + lift",
+        "D. Stallo + viscosa + di pressione"
+      ],
+      "correct": "b",
+      "spiegazione": "C_D = C_D,0 + C_D,i. La parassita esiste anche senza portanza; l'indotta è il prezzo della portanza."
+    },
+    {
+      "id": 17,
+      "livello": "MEDIO",
+      "argomento": "Resistenza indotta",
+      "domanda": "La resistenza indotta cresce proporzionalmente a:",
+      "opzioni": ["A. C_L", "B. C_L²", "C. V", "D. V²"],
+      "correct": "b",
+      "spiegazione": "C_D,i = C_L²/(πλe). Cresce col QUADRATO di C_L."
+    },
+    {
+      "id": 18,
+      "livello": "MEDIO",
+      "argomento": "Geometria alare",
+      "domanda": "Ali lunghe e sottili (alianti) sono progettate per:",
+      "opzioni": [
+        "A. Aumentare la velocità massima",
+        "B. Ridurre la resistenza parassita",
+        "C. Ridurre la resistenza indotta tramite alto allungamento alare",
+        "D. Aumentare il C_L,max"
+      ],
+      "correct": "c",
+      "spiegazione": "Allungamento λ alto → C_D,i basso → efficienza massima alta. Principio cardine degli alianti."
+    },
+    {
+      "id": 19,
+      "livello": "MEDIO",
+      "argomento": "Efficienza",
+      "domanda": "L'efficienza aerodinamica E è definita come:",
+      "opzioni": ["A. L/W", "B. C_L/C_D", "C. L · D", "D. C_D/C_L"],
+      "correct": "b",
+      "spiegazione": "E = C_L/C_D = L/D, rapporto adimensionale tra portanza e resistenza."
+    },
+    {
+      "id": 20,
+      "livello": "MEDIO",
+      "argomento": "Planata",
+      "domanda": "In planata (motore spento), un aliante con E = 30 a 1500 m di quota può percorrere al massimo:",
+      "opzioni": ["A. 30 km", "B. 45 km", "C. 15 km", "D. 1500 m"],
+      "correct": "b",
+      "spiegazione": "distanza = E × h = 30 × 1,5 km = 45 km. Formula della planata."
+    },
+    {
+      "id": 21,
+      "livello": "MEDIO",
+      "argomento": "Efficienza max",
+      "domanda": "La formula di E_max dipende da:",
+      "opzioni": [
+        "A. Solo dal peso",
+        "B. Solo dalla velocità",
+        "C. Allungamento, fattore di Oswald, e resistenza parassita",
+        "D. Solo dal C_L,max"
+      ],
+      "correct": "c",
+      "spiegazione": "E_max = (1/2)√(πλe/C_D,0). NON dipende dal peso! È un parametro puramente geometrico/aerodinamico."
+    },
+    {
+      "id": 22,
+      "livello": "MEDIO",
+      "argomento": "Polare",
+      "domanda": "A massima efficienza, qual è la relazione tra parassita e indotta?",
+      "opzioni": [
+        "A. Parassita = doppio dell'indotta",
+        "B. Indotta = zero",
+        "C. Parassita = indotta",
+        "D. Parassita = zero"
+      ],
+      "correct": "c",
+      "spiegazione": "A massima efficienza, le due componenti sono uguali. Risultato matematico molto elegante."
+    },
+    {
+      "id": 23,
+      "livello": "MEDIO",
+      "argomento": "ISA",
+      "domanda": "In atmosfera ISA standard, al livello del mare la temperatura è:",
+      "opzioni": ["A. 0 °C", "B. 10 °C", "C. 15 °C", "D. 25 °C"],
+      "correct": "c",
+      "spiegazione": "T_0 = 15 °C = 288,15 K. Da memorizzare."
+    },
+    {
+      "id": 24,
+      "livello": "MEDIO",
+      "argomento": "ISA",
+      "domanda": "Il gradiente termico in troposfera è approssimativamente:",
+      "opzioni": [
+        "A. -10 °C ogni 1000 m",
+        "B. -6,5 °C ogni 1000 m",
+        "C. -1 °C ogni 1000 m",
+        "D. +6,5 °C ogni 1000 m"
+      ],
+      "correct": "b",
+      "spiegazione": "Gradiente standard troposferico ISA. Da memorizzare."
+    },
+    {
+      "id": 25,
+      "livello": "MEDIO",
+      "argomento": "ISA",
+      "domanda": "A 10 000 m di quota ISA, la densità dell'aria è circa:",
+      "opzioni": [
+        "A. 1,225 kg/m³",
+        "B. 0,909 kg/m³",
+        "C. 0,413 kg/m³",
+        "D. 0,150 kg/m³"
+      ],
+      "correct": "c",
+      "spiegazione": "Dalla tabella ISA: a 10 km, densità ridotta a circa un terzo del livello mare."
+    },
+    {
+      "id": 26,
+      "livello": "MEDIO",
+      "argomento": "Quota e stallo",
+      "domanda": "La velocità di stallo V_S in alta quota:",
+      "opzioni": [
+        "A. Diminuisce rispetto al livello mare",
+        "B. Aumenta rispetto al livello mare",
+        "C. Resta uguale",
+        "D. Dipende solo dal peso"
+      ],
+      "correct": "b",
+      "spiegazione": "V_S = √(2W/(ρSC_L,max)): ρ scende → V_S sale. Per questo gli aeroporti d'alta quota hanno piste più lunghe."
+    },
+    {
+      "id": 27,
+      "livello": "MEDIO",
+      "argomento": "Reynolds",
+      "domanda": "Il numero di Reynolds è:",
+      "opzioni": [
+        "A. Una velocità in m/s",
+        "B. Un rapporto adimensionale tra forze inerziali e viscose",
+        "C. Una grandezza con unità di Pa·s",
+        "D. Il quadrato della velocità divisa per la densità"
+      ],
+      "correct": "b",
+      "spiegazione": "Re = ρVc/μ, numero puro. Determina il regime laminare vs turbolento."
+    },
+    {
+      "id": 28,
+      "livello": "MEDIO",
+      "argomento": "Reynolds",
+      "domanda": "Per un Cessna 172 in crociera, il regime di flusso sull'ala è tipicamente:",
+      "opzioni": ["A. Laminare", "B. Turbolento", "C. In transizione", "D. Inversione di flusso"],
+      "correct": "b",
+      "spiegazione": "Cessna in crociera: Re ≈ 6×10⁶ — pienamente turbolento. Tutti i velivoli convenzionali vivono in turbolento."
+    },
+    {
+      "id": 29,
+      "livello": "MEDIO",
+      "argomento": "Viscosità",
+      "domanda": "La viscosità dinamica μ dell'aria a 15 °C è circa:",
+      "opzioni": [
+        "A. 1,78 × 10⁻⁵ Pa·s",
+        "B. 1,78 × 10⁻³ Pa·s",
+        "C. 1,78 Pa·s",
+        "D. 1,78 × 10⁵ Pa·s"
+      ],
+      "correct": "a",
+      "spiegazione": "Da memorizzare. Confondere la potenza di 10 è un errore frequente che porta a Re sballato di milioni di volte."
+    },
+    {
+      "id": 30,
+      "livello": "MEDIO",
+      "argomento": "Velocità ottime",
+      "domanda": "La velocità di max efficienza V* del Cessna 172 è circa 70 kt, mentre la crociera è 122 kt. Perché si vola in crociera, non a V*?",
+      "opzioni": [
+        "A. Perché V* è il limite minimo strutturale",
+        "B. Perché si sacrifica un po' di efficienza per arrivare prima",
+        "C. Perché a V* l'aereo stallerebbe",
+        "D. Per via dell'effetto Coanda"
+      ],
+      "correct": "b",
+      "spiegazione": "A V* (~70 kt) si va più economici ma il tempo di volo raddoppia → crociera è un compromesso."
+    },
+    {
+      "id": 31,
+      "livello": "AVANZATO",
+      "argomento": "Allungamento",
+      "domanda": "L'allungamento alare λ è definito come:",
+      "opzioni": ["A. b/S", "B. b²/S", "C. S/b²", "D. c/b"],
+      "correct": "b",
+      "spiegazione": "Allungamento = apertura AL QUADRATO fratto superficie. Memorizza la formula: λ = b²/S."
+    },
+    {
+      "id": 32,
+      "livello": "AVANZATO",
+      "argomento": "Allungamento e indotta",
+      "domanda": "Un caccia ha λ ≈ 3, un aliante λ ≈ 25. La differenza si traduce nel fatto che il caccia ha:",
+      "opzioni": [
+        "A. Resistenza parassita molto maggiore",
+        "B. Resistenza indotta molto maggiore (a parità di C_L)",
+        "C. Velocità di stallo molto inferiore",
+        "D. Efficienza massima molto maggiore"
+      ],
+      "correct": "b",
+      "spiegazione": "C_D,i ∝ 1/λ. Caccia con λ=3 vs aliante con λ=25: indotta del caccia è ~8 volte quella dell'aliante."
+    },
+    {
+      "id": 33,
+      "livello": "AVANZATO",
+      "argomento": "Diedro",
+      "domanda": "Il 'diedro positivo' dell'ala serve per:",
+      "opzioni": [
+        "A. Aumentare la portanza",
+        "B. Ridurre la resistenza",
+        "C. Garantire stabilità laterale (l'aereo torna dritto se inclinato)",
+        "D. Permettere il volo supersonico"
+      ],
+      "correct": "c",
+      "spiegazione": "Diedro positivo: ala più bassa vede più aria → più portanza → aereo torna dritto. Meccanismo base di stabilità."
+    },
+    {
+      "id": 34,
+      "livello": "AVANZATO",
+      "argomento": "Stabilità",
+      "domanda": "Un velivolo è staticamente stabile in beccheggio se:",
+      "opzioni": [
+        "A. Il CG è davanti al CP / centro aerodinamico",
+        "B. Il CG è dietro al CP",
+        "C. Il CG coincide col CP",
+        "D. Non ha piano di coda"
+      ],
+      "correct": "a",
+      "spiegazione": "CG davanti al CP → momento di richiamo → l'aereo torna alla posizione di equilibrio dopo perturbazione."
+    },
+    {
+      "id": 35,
+      "livello": "AVANZATO",
+      "argomento": "Centro aerodinamico",
+      "domanda": "Il centro aerodinamico convenzionale di un'ala in regime subsonico è circa al:",
+      "opzioni": [
+        "A. 10% della corda dal bordo d'attacco",
+        "B. 25% della corda dal bordo d'attacco",
+        "C. 50% della corda dal bordo d'attacco",
+        "D. 75% della corda dal bordo d'attacco"
+      ],
+      "correct": "b",
+      "spiegazione": "Punto canonico per profili convenzionali a bassa velocità. AC ≈ 25% MAC. Riferimento per centraggio."
+    },
+    {
+      "id": 36,
+      "livello": "AVANZATO",
+      "argomento": "Coda",
+      "domanda": "Il piano di coda orizzontale di un velivolo convenzionale (es. Cessna):",
+      "opzioni": [
+        "A. Genera portanza sempre verso l'alto",
+        "B. Genera in genere una piccola deportanza per equilibrare il momento dell'ala principale",
+        "C. Non genera né portanza né deportanza",
+        "D. Genera resistenza pura"
+      ],
+      "correct": "b",
+      "spiegazione": "Errore comune: pensare che la coda spinga verso l'alto. In realtà fa una piccola deportanza correttiva."
+    },
+    {
+      "id": 37,
+      "livello": "AVANZATO",
+      "argomento": "Flap",
+      "domanda": "I flap di tipo Fowler sono speciali perché:",
+      "opzioni": [
+        "A. Sono permanenti, non si retraggono",
+        "B. Aumentano contemporaneamente la curvatura E la superficie alare scivolando indietro",
+        "C. Sono fatti di materiale composito",
+        "D. Si attivano automaticamente allo stallo"
+      ],
+      "correct": "b",
+      "spiegazione": "Caratteristica unica dei Fowler: scivolano indietro lungo binari. Massimo aumento di C_L,max disponibile."
+    },
+    {
+      "id": 38,
+      "livello": "AVANZATO",
+      "argomento": "Slat",
+      "domanda": "Lo 'slat' è installato:",
+      "opzioni": [
+        "A. Sul bordo d'uscita dell'ala",
+        "B. Sul bordo d'attacco dell'ala",
+        "C. Sulla coda orizzontale",
+        "D. Solo sui caccia ad alta manovrabilità"
+      ],
+      "correct": "b",
+      "spiegazione": "Slat e flap stanno in punti opposti dell'ala: slat avanti, flap dietro. Lo slat ritarda lo stallo (estende α critico da ~16° a ~22-25°)."
+    },
+    {
+      "id": 39,
+      "livello": "AVANZATO",
+      "argomento": "Limiti operativi",
+      "domanda": "Estendere flap a velocità troppo alta (oltre V_FE) causa:",
+      "opzioni": [
+        "A. Aumento eccessivo della portanza",
+        "B. Stallo immediato",
+        "C. Possibili danni strutturali al sistema flap",
+        "D. Riduzione della velocità di crociera"
+      ],
+      "correct": "c",
+      "spiegazione": "Il flap ha un limite di velocità (V_FE — flap extension speed). Oltre, il sistema strutturale può cedere."
+    },
+    {
+      "id": 40,
+      "livello": "AVANZATO",
+      "argomento": "Caccia moderni",
+      "domanda": "Un Eurofighter è progettato come intenzionalmente instabile in pitch perché:",
+      "opzioni": [
+        "A. Riduce i costi di produzione",
+        "B. Aumenta l'agilità in manovra (rapidità di rotazione)",
+        "C. Permette voli supersonici",
+        "D. Riduce il consumo di carburante"
+      ],
+      "correct": "b",
+      "spiegazione": "Velivolo intenzionalmente instabile = reazioni rapidissime, ma richiede fly-by-wire computerizzato. Paradigma dei caccia moderni post-anni '80."
+    },
+    {
+      "id": 41,
+      "livello": "MEDIO",
+      "argomento": "Polare",
+      "domanda": "La polare di un velivolo è il grafico di:",
+      "opzioni": [
+        "A. C_L vs angolo di attacco α",
+        "B. C_L vs C_D",
+        "C. V vs α",
+        "D. C_D vs ρ"
+      ],
+      "correct": "b",
+      "spiegazione": "La polare è il grafico fondamentale C_L–C_D che descrive l'identità aerodinamica del velivolo."
+    },
+    {
+      "id": 42,
+      "livello": "MEDIO",
+      "argomento": "Vortici di estremità",
+      "domanda": "I winglet (alette verticali al tip alare) servono per:",
+      "opzioni": [
+        "A. Ridurre la resistenza parassita",
+        "B. Ridurre la resistenza indotta ostacolando i vortici di estremità",
+        "C. Aumentare il C_L,max",
+        "D. Aumentare la velocità massima"
+      ],
+      "correct": "b",
+      "spiegazione": "I winglet ostacolano la migrazione del flusso dal ventre al dorso al tip → riducono indotta del 15-20% → risparmio carburante 3-5%."
+    },
+    {
+      "id": 43,
+      "livello": "AVANZATO",
+      "argomento": "Mach e freccia",
+      "domanda": "Perché i jet di linea hanno l'ala 'a freccia' (sweep) di ~25°?",
+      "opzioni": [
+        "A. Estetica e moda",
+        "B. Per ritardare gli effetti dell'onda d'urto a Mach > 0,7",
+        "C. Per migliorare il controllo a bassa velocità",
+        "D. Per ridurre la lunghezza dell'ala"
+      ],
+      "correct": "b",
+      "spiegazione": "Una freccia di 30° riduce la velocità 'vista' dal profilo lungo la corda → puoi volare più veloce prima del regime transonico."
+    },
+    {
+      "id": 44,
+      "livello": "BASE",
+      "argomento": "Densità aria",
+      "domanda": "La densità dell'aria al livello del mare ISA è:",
+      "opzioni": [
+        "A. 1,000 kg/m³",
+        "B. 1,225 kg/m³",
+        "C. 1,500 kg/m³",
+        "D. 1,000 g/m³"
+      ],
+      "correct": "b",
+      "spiegazione": "ρ_0 = 1,225 kg/m³ è il valore standard a livello mare ISA. Memorizzare assolutamente."
+    },
+    {
+      "id": 45,
+      "livello": "MEDIO",
+      "argomento": "Gimli Glider",
+      "domanda": "Il Boeing 767 'Gimli Glider' (1983) restò senza carburante a 12000 m. Quanti km percorse in planata circa?",
+      "opzioni": [
+        "A. 10 km",
+        "B. 30 km",
+        "C. 100 km",
+        "D. 500 km"
+      ],
+      "correct": "c",
+      "spiegazione": "Con E ≈ 17 e quota 12 km, distanza ≈ 17 × 12 = 204 km in teoria. Atterrò dopo ~100 km, dimostrando che la teoria del liceo può salvare vite."
+    },
+    {
+      "id": 46,
+      "livello": "AVANZATO",
+      "argomento": "MacCready",
+      "domanda": "Per un aliante in volo a vela con vento contrario di 20 kt, conviene:",
+      "opzioni": [
+        "A. Volare sempre a V* (max efficienza)",
+        "B. Volare più lento di V* per consumare meno",
+        "C. Volare più veloce di V* per ridurre l'effetto del vento",
+        "D. Atterrare immediatamente"
+      ],
+      "correct": "c",
+      "spiegazione": "Teoria di MacCready: con vento contrario, vola più veloce di V* per ridurre il tempo di esposizione al vento. Regola pratica: V* + V_wind/2."
+    },
+    {
+      "id": 47,
+      "livello": "BASE",
+      "argomento": "Volo livellato",
+      "domanda": "In volo livellato, qual è la formula esatta del peso W?",
+      "opzioni": [
+        "A. W = m",
+        "B. W = m · g",
+        "C. W = m · 2",
+        "D. W = m / g"
+      ],
+      "correct": "b",
+      "spiegazione": "Il peso è una forza: W = m · g, dove g = 9,81 m/s². Mai confondere massa (kg) con peso (N)."
+    },
+    {
+      "id": 48,
+      "livello": "MEDIO",
+      "argomento": "Hot and high",
+      "domanda": "Il fenomeno 'hot and high' in aeronautica si riferisce a:",
+      "opzioni": [
+        "A. Un velivolo molto veloce",
+        "B. Operazioni a aeroporti d'alta quota e con T elevata, dove ρ è ridotta",
+        "C. Un motore surriscaldato",
+        "D. Un atterraggio difficile in pioggia"
+      ],
+      "correct": "b",
+      "spiegazione": "Hot and high: aeroporti come La Paz (4000 m). Densità ridotta → V_S aumenta, motori meno efficaci, piste più lunghe."
+    },
+    {
+      "id": 49,
+      "livello": "AVANZATO",
+      "argomento": "Carico alare",
+      "domanda": "Il carico alare W/S di un Cessna 172 è circa 64 kg/m². Per un Boeing 737 è circa 580 kg/m². Quale conseguenza?",
+      "opzioni": [
+        "A. Il 737 stalla a velocità inferiori del Cessna",
+        "B. Il 737 stalla a velocità superiori del Cessna (tipo 130 kt vs 50 kt)",
+        "C. Hanno la stessa V_S",
+        "D. Il 737 vola più lento del Cessna"
+      ],
+      "correct": "b",
+      "spiegazione": "V_S ∝ √(W/S). Carico alare 9× più alto → V_S √9 = 3× più alta. È perché i jet hanno bisogno di flap+slat per atterrare 'a velocità ragionevole'."
+    },
+    {
+      "id": 50,
+      "livello": "BASE",
+      "argomento": "Conversione",
+      "domanda": "1 nodo (kt) corrisponde a circa:",
+      "opzioni": ["A. 1 m/s", "B. 0,5 m/s", "C. 1,8 m/s", "D. 3,6 m/s"],
+      "correct": "b",
+      "spiegazione": "1 kt = 0,5144 m/s. Trucco rapido: kt → m/s ≈ × ½. Usato nelle conversioni di velocità aeronautiche."
+    },
+    {
+      "id": 51,
+      "livello": "MEDIO",
+      "argomento": "Atterraggio",
+      "domanda": "Un aereo atterra a velocità inferiore quando si estendono i flap perché:",
+      "opzioni": [
+        "A. La superficie alare diminuisce",
+        "B. Aumenta il C_L,max, quindi V_S diminuisce",
+        "C. Il peso diminuisce",
+        "D. La densità dell'aria aumenta"
+      ],
+      "correct": "b",
+      "spiegazione": "Flap aumentano C_L,max → V_S = √(2W/ρSC_L,max) diminuisce. Per il 737 da 1,3 a 2,8 → V_S scende del 32%."
+    },
+    {
+      "id": 52,
+      "livello": "AVANZATO",
+      "argomento": "Polare di velivolo",
+      "domanda": "A massima efficienza E_max, il C_D è:",
+      "opzioni": [
+        "A. C_D = C_D,0",
+        "B. C_D = 2 · C_D,0",
+        "C. C_D = C_D,0 / 2",
+        "D. C_D = 0"
+      ],
+      "correct": "b",
+      "spiegazione": "A E_max, parassita = indotta = C_D,0 ciascuno → C_D totale = 2 C_D,0. Risultato pulito della matematica."
+    },
+    {
+      "id": 53,
+      "livello": "MEDIO",
+      "argomento": "Volo in quota",
+      "domanda": "Perché i jet di linea volano alti (10000-12000 m)?",
+      "opzioni": [
+        "A. Per evitare gli uccelli",
+        "B. Per evitare la pioggia",
+        "C. Per ridurre la resistenza parassita (ρ minore) e risparmiare carburante",
+        "D. Per ottenere un C_L maggiore"
+      ],
+      "correct": "c",
+      "spiegazione": "In quota ρ scende → parassita scende → meno consumo. Anche se l'indotta sale (C_L maggiore), il bilancio è positivo per voli lunghi."
+    },
+    {
+      "id": 54,
+      "livello": "BASE",
+      "argomento": "Stabilità",
+      "domanda": "Cosa significa che un aereo è 'staticamente stabile'?",
+      "opzioni": [
+        "A. È fermo a terra",
+        "B. Tende a tornare alla posizione di equilibrio dopo una perturbazione",
+        "C. Non vola mai",
+        "D. È molto pesante"
+      ],
+      "correct": "b",
+      "spiegazione": "Stabilità statica = un aereo che, dopo una perturbazione (es. raffica), tende da solo a tornare al volo equilibrato. Cessna sì, Eurofighter no."
+    },
+    {
+      "id": 55,
+      "livello": "AVANZATO",
+      "argomento": "Reynolds e quota",
+      "domanda": "A 11000 m (tropopausa), il Reynolds di un'ala a stessa V e c rispetto al livello mare:",
+      "opzioni": [
+        "A. Aumenta del 100%",
+        "B. Resta uguale",
+        "C. Diminuisce del 70% circa",
+        "D. Diventa zero"
+      ],
+      "correct": "c",
+      "spiegazione": "Re ∝ ρ. A 11 km ρ ≈ 0,365 vs 1,225 al mare → rapporto ~0,30. Re scende del 70% circa."
+    },
+    {
+      "id": 56,
+      "livello": "MEDIO",
+      "argomento": "Profili NACA",
+      "domanda": "Un profilo NACA 0009 vs NACA 4412: quale è simmetrico?",
+      "opzioni": [
+        "A. NACA 0009",
+        "B. NACA 4412",
+        "C. Entrambi",
+        "D. Nessuno"
+      ],
+      "correct": "a",
+      "spiegazione": "Le prime due cifre 00 indicano curvatura zero → simmetrico. NACA 4412 ha curvatura 4% (asimmetrico, cambered)."
+    },
+    {
+      "id": 57,
+      "livello": "AVANZATO",
+      "argomento": "Centraggio",
+      "domanda": "Caricare un Cessna 172 con due pesi nel sedile posteriore senza nessuno davanti rischia di:",
+      "opzioni": [
+        "A. Far stallare immediatamente l'aereo",
+        "B. Spostare il CG troppo indietro (fuori busta) → instabilità",
+        "C. Aumentare la velocità di crociera",
+        "D. Ridurre il consumo carburante"
+      ],
+      "correct": "b",
+      "spiegazione": "CG troppo posteriore = vicino o dietro al neutral point → aereo instabile, stallo non recuperabile. Calcolo W&B obbligatorio prima del volo."
+    },
+    {
+      "id": 58,
+      "livello": "BASE",
+      "argomento": "Parti del profilo",
+      "domanda": "Il bordo d'attacco di un profilo alare è:",
+      "opzioni": [
+        "A. La parte posteriore tagliente",
+        "B. La parte anteriore arrotondata",
+        "C. Lo spessore massimo",
+        "D. La distanza dorso-ventre"
+      ],
+      "correct": "b",
+      "spiegazione": "Bordo d'attacco = parte anteriore arrotondata che 'incontra' l'aria. Bordo d'uscita = parte posteriore tagliente."
+    },
+    {
+      "id": 59,
+      "livello": "MEDIO",
+      "argomento": "Tipi resistenza",
+      "domanda": "La resistenza di interferenza è:",
+      "opzioni": [
+        "A. Resistenza dovuta al sole",
+        "B. Resistenza extra dove due parti del velivolo si incontrano (es. ala-fusoliera)",
+        "C. Resistenza indotta",
+        "D. Una componente della spinta"
+      ],
+      "correct": "b",
+      "spiegazione": "Resistenza di interferenza = quando due flussi (es. attorno a fusoliera + attorno a ala) si disturbano nelle giunzioni. Componente della parassita."
+    },
+    {
+      "id": 60,
+      "livello": "AVANZATO",
+      "argomento": "Velocità ottime",
+      "domanda": "La velocità di max autonomia per un jet di linea è circa il 27% inferiore alla velocità di crociera. Perché si vola in crociera invece?",
+      "opzioni": [
+        "A. Per arrivare 27% prima a destinazione",
+        "B. Perché la velocità di max autonomia è troppo lenta",
+        "C. Per sacrificare 11% di efficienza in cambio di velocità maggiore (compromesso operativo)",
+        "D. Non è vero, si vola sempre a V*"
+      ],
+      "correct": "c",
+      "spiegazione": "A V* (max efficienza) = 27% più lento della crociera ma solo 11% più efficiente. Crociera commerciale = compromesso tra costo carburante e tempo/equipaggio/parcheggio gate."
+    }
+  ]
+}
