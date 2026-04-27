@@ -28,7 +28,7 @@ Questo repository raccoglie lezioni, quiz ed esercizi risolti su profilo alare, 
 6. [Numero di Reynolds](./01-teoria/06-numero-reynolds.md) ✅ *completa*
 7. [Geometria alare](./01-teoria/07-geometria-alare.md) ✅ *completa*
 8. [Momento e centraggio](./01-teoria/08-momento-centraggio.md) ✅ *completa*
-9. [Dispositivi di alta portanza](./01-teoria/09-alta-portanza.md) 🚧
+9. [Dispositivi di alta portanza](./01-teoria/09-alta-portanza.md) ✅ *completa*
 
 ## ✏️ Indice degli esercizi
 
